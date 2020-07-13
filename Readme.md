@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Барабанов](https://htmlacademy.ru/profile/id83701).
-* Наставник: [Дмитрий Барабанов](https://htmlacademy.ru/profile/id11939).
+* Наставник: [Илья Сачев](https://htmlacademy.ru/profile/id11939).
 
 ---
 
