@@ -46,7 +46,261 @@
 </header><!-- /.header -->
 
 <main class="main">
-  <!--TODO make main section of Form-->
+
+  <section class="selection">
+
+    <h1 class="blockTitle">
+      Подбор программы
+    </h1><!-- /.blockTitle -->
+
+    <p class="selection__invite">
+      Заполните анкету и мы подберем программу
+      питания для вашего кота
+    </p><!-- /.selection__invite -->
+
+    <form
+      class="form"
+      action="https://echo.htmlacademy.ru"
+      method="POST">
+
+      <fieldset class="form__block">
+
+        <div class="form__line">
+
+          <label class="form__label" for="petName">
+            Имя:*
+          </label>
+
+          <input
+            class="form__input"
+            id="petName"
+            type="text"
+            placeholder="Барсик"
+            name="petName"
+            required
+          />
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <label class="form__label" for="petWeight">
+            Вес (кг):*
+          </label>
+
+          <input
+            class="form__input"
+            id="petWeight"
+            type="number"
+            placeholder="7"
+            name="petWeight"
+            required
+          />
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <label class="form__label" for="petAge">
+            Возраст (лет):
+          </label>
+
+          <input
+            class="form__input"
+            id="petAge"
+            type="number"
+            placeholder="5"
+            name="petAge"
+          />
+
+        </div><!-- /.form__line -->
+
+      </fieldset><!-- /. .form__block-->
+
+      <fieldset class="form__block">
+
+        <div class="form__line">
+
+          <input
+            class="form__radio"
+            id="petSlimming"
+            type="radio"
+            name="petGoal"
+            value="petSlimming"
+          />
+
+          <label for="petSlimming" class="form__label">
+            Похудение
+          </label>
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <input
+            class="form__radio"
+            id="petPumping"
+            type="radio"
+            name="petGoal"
+            value="petPumping"
+          />
+
+          <label for="petPumping" class="form__label">
+            Набор массы
+          </label>
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <input
+            class="form__radio"
+            id="needAdvice"
+            type="radio"
+            name="petGoal"
+            value="needAdvice"
+          />
+
+          <label for="needAdvice" class="form__label">
+            Не знаю (нужен ваш совет)
+          </label>
+
+        </div><!-- /.form__line -->
+
+      </fieldset><!-- /.form__block -->
+
+      <h2 class="blockTitle blockTitle--sub">
+        Контактные данные (владельца кота)
+      </h2><!-- /.blockTitle -->
+
+      <fieldset class="form__block">
+
+        <div class="form__line">
+
+          <label class="form__label" for="email">
+            E-mail:*
+          </label>
+
+          <input
+            class="form__input"
+            id="email"
+            type="email"
+            placeholder="kuklachev@gmail.com"
+            name="email"
+            required
+          />
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <label class="form__label" for="phone">
+            Телефон:*
+          </label>
+
+          <input
+            class="form__input"
+            id="phone"
+            type="tel"
+            placeholder="8 (960) 900-60-90"
+            name="phone"
+            required
+          />
+
+        </div><!-- /.form__line -->
+
+      </fieldset><!-- /.form__block -->
+
+      <h2 class="blockTitle blockTitle--sub">
+        Комментарий
+      </h2><!-- /.blockTitle -->
+
+      <textarea
+        class="form__textArea"
+        name="comment"
+        placeholder="Расскажите обо всех повадках кота"></textarea>
+      <!-- /.form__textArea -->
+
+      <h2 class="blockTitle blockTitle--sub">
+        Дополнительно
+      </h2><!-- /.blockTitle -->
+
+      <fieldset class="form__block">
+
+        <div class="form__line">
+
+          <input
+            class="form__checkbox"
+            id="sweetener"
+            type="checkbox"
+            name="sweetener"
+            checked
+          />
+
+          <label for="sweetener" class="form__label">
+            Сахарозаменитель
+          </label>
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <input
+            class="form__checkbox"
+            id="water"
+            type="checkbox"
+            name="water"
+          />
+
+          <label for="water" class="form__label">
+            Питьевая вода
+          </label>
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <input
+            class="form__checkbox"
+            id="milk"
+            type="checkbox"
+            name="milk"
+          />
+
+          <label for="milk" class="form__label">
+            Молоко
+          </label>
+
+        </div><!-- /.form__line -->
+
+        <div class="form__line">
+
+          <input
+            class="form__checkbox"
+            id="vitamins"
+            type="checkbox"
+            name="vitamins"
+          />
+
+          <label for="vitamins" class="form__label">
+            Витамины
+          </label>
+
+        </div><!-- /.form__line -->
+
+      </fieldset><!-- /.form__block -->
+
+      <button class="button form__button button--form" type="submit">
+        Отправить заявку
+      </button><!-- /.button .form__button -->
+
+      <em class="form__attention">
+        * — Обязательные поля
+      </em><!-- /.form__attention -->
+
+    </form><!-- /.form -->
+
+  </section><!-- /.selection -->
 
 </main><!-- /.main -->
 
