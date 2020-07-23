@@ -9,39 +9,39 @@
 
   <header class="header">
 
-    <div class="header__logoWrap">
+    <a class="logo header__logoWrap" href="index.html">
 
-      <a class="logoAva" href="#">
+      <span class="logo__ava">
         <img
-          class="logoAva__img"
+          class="logo__avaImg"
           src="https://via.placeholder.com/150x150"
-          alt="logotype of cat-energy one"
+          alt="Логотип"
           width="34"
           height="38"
-        /><!-- /.logoAva__img -->
-      </a><!-- /.logoAva -->
+        /><!-- /.logo__avaImg -->
+      </span><!-- /.logo__ava -->
 
-      <a class="logoName" href="#">
+      <span class="logo__name">
         <img
-          class="logoName__img"
+          class="logo__nameImg"
           src="https://via.placeholder.com/150x150"
-          alt="logotype of cat-energy two"
+          alt="магазин Сat-energy"
           width="101"
           height="18"
-        /><!-- /.logoName__img -->
-      </a><!-- /.logoName -->
+        /><!-- /.logo__nameImg -->
+      </span><!-- /.logo__name -->
 
-    </div><!-- /.header__logoWrap -->
+    </a><!-- /.header__logoWrap -->
 
-    <button class="header__controlNav">
-      Open\Close
+    <button class="header__controlNav" type="button">
+      <span class="visuallyHidden">Переключить меню</span>
     </button><!-- /.header__controlNav -->
 
-    <div class="nav header__nav">
-      <a class="nav__link" href="#">Главная</a>
-      <a class="nav__link" href="catalog.html">Каталог продукции</a>
+    <nav class="nav header__nav">
+      <a class="nav__link" href="index.html">Главная</a>
+      <span class="nav__link nav__link--active">Каталог продукции</span>
       <a class="nav__link" href="form.html">Подбор программы</a>
-    </div><!-- /.nav .header__nav -->
+    </nav><!-- /.nav .header__nav -->
 
   </header><!-- /.header -->
 
@@ -57,14 +57,19 @@
 
         <li class="card productList__item">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt="Изображение товара Cat Energy PRO (курица) 500 г"/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Cat Energy PRO 500 г
+            <a class="card__link" href="#">
+              Cat Energy PRO 500 г
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -84,23 +89,28 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods">
+          <a class="button card__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
 
         <li class="card productList__item">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt="Изображение товара Cat Energy PRO (курица) 1000 г"/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Cat Energy PRO 1000 г
+            <a class="card__link" href="#">
+              Cat Energy PRO 1000 г
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -120,23 +130,28 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods">
+          <a class="button card__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
 
         <li class="card productList__item">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt="Изображение товара Cat Energy PRO (рыба) 500 г"/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Cat Energy PRO 500 г
+            <a class="card__link" href="#">
+              Cat Energy PRO 500 г
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -156,23 +171,28 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods">
+          <a class="button card__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
 
         <li class="card productList__item">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt="Изображение товара Cat Energy PRO (рыба) 1000 г"/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Cat Energy PRO 1000 г
+            <a class="card__link" href="#">
+              Cat Energy PRO 1000 г
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -192,23 +212,28 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods">
+          <a class="button card__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
 
         <li class="card productList__item">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt="Изображение товара Cat Energy Slim (гречка) 500 г"/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Cat Energy Slim 500 г
+            <a class="card__link" href="#">
+              Cat Energy Slim 500 г
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -228,23 +253,28 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods">
+          <a class="button card__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
 
         <li class="card productList__item">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt="Изображение товара Cat Energy Slim (гречка) 1000 г"/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Cat Energy Slim 1000 г
+            <a class="card__link" href="#">
+              Cat Energy Slim 1000 г
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -264,23 +294,28 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods">
+          <a class="button card__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
 
         <li class="card productList__item">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt="Изображение товара Cat Energy Slim Red (рис) 500 г"/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Cat Energy PRO 500 г
+            <a class="card__link" href="#">
+              Cat Energy Slim Red 500 г
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -300,23 +335,28 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods">
+          <a class="button card__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
 
         <li class="card productList__item card--more">
 
-          <picture class="card__picture">
-            <img
-              src="https://via.placeholder.com/150x150"
-              alt="picture of cat-energy food"/>
-          </picture><!-- /.card__picture -->
+          <a class="card__wrapImg" href="#">
+            <picture>
+              <img
+                class="card__img"
+                src="https://via.placeholder.com/150x150"
+                alt=""/>
+            </picture><!-- /.card__picture -->
+          </a>
 
           <h3 class="card__title">
-            Показать еще 100500 товаров
+            <a class="card__link" href="#">
+              Показать еще 100500 товаров
+            </a>
           </h3><!-- /.card__title -->
 
           <table class="card__spec">
@@ -329,9 +369,9 @@
             </tbody>
           </table><!-- /.card__spec -->
 
-          <button class="button card__button button--goods button--goodsMore">
+          <a class="button card__button card__button--pale" href="#">
             Показать все
-          </button>
+          </a>
           <!-- /.button card__button -->
 
         </li><!-- /.productList__item -->
@@ -351,7 +391,9 @@
         <li class="extraCard extraList__item">
 
           <h4 class="extraCard__title">
-            Cахарозаменитель
+            <a class="extraCard__link" href="#">
+              Cахарозаменитель
+            </a>
           </h4><!-- /.extraCard__title -->
 
           <table class="extraCard__spec">
@@ -363,9 +405,9 @@
             </tbody>
           </table><!-- /.extraCard__spec -->
 
-          <button class="button extraCard__button button--extra">
+          <a class="button extraCard__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button extraCard__button -->
 
         </li><!-- /.extraList__item -->
@@ -373,7 +415,9 @@
         <li class="extraCard extraList__item">
 
           <h4 class="extraCard__title">
-            Питьевая вода
+            <a class="extraCard__link" href="#">
+              Питьевая вода
+            </a>
           </h4><!-- /.extraCard__title -->
 
           <table class="extraCard__spec">
@@ -385,9 +429,9 @@
             </tbody>
           </table><!-- /.extraCard__spec -->
 
-          <button class="button extraCard__button button--extra">
+          <a class="button extraCard__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button extraCard__button -->
 
         </li><!-- /.extraList__item -->
@@ -395,7 +439,9 @@
         <li class="extraCard extraList__item">
 
           <h4 class="extraCard__title">
-            Молоко
+            <a class="extraCard__link" href="#">
+              Молоко
+            </a>
           </h4><!-- /.extraCard__title -->
 
           <table class="extraCard__spec">
@@ -407,9 +453,9 @@
             </tbody>
           </table><!-- /.extraCard__spec -->
 
-          <button class="button extraCard__button button--extra">
+          <a class="button extraCard__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button extraCard__button -->
 
         </li><!-- /.extraList__item -->
@@ -417,7 +463,9 @@
         <li class="extraCard extraList__item">
 
           <h4 class="extraCard__title">
-            Витамины
+            <a class="extraCard__link" href="#">
+              Витамины
+            </a>
           </h4><!-- /.extraCard__title -->
 
           <table class="extraCard__spec">
@@ -429,9 +477,9 @@
             </tbody>
           </table><!-- /.extraCard__spec -->
 
-          <button class="button extraCard__button button--extra">
+          <a class="button extraCard__button" href="#">
             Заказать
-          </button>
+          </a>
           <!-- /.button extraCard__button -->
 
         </li><!-- /.extraList__item -->
@@ -448,59 +496,64 @@
 
   <div class="location">
 
-    <article class="engagement">
+    <article class="contacts">
 
-      <h5 class="engagement__title">
+      <h5 class="contacts__title">
         Приглашаем к сотрудничеству дилеров!
       </h5>
-      <!-- /.engagement__title -->
+      <!-- /.contacts__title -->
 
-      <p class="engagement__address">
+      <address class="contacts__address">
 
-        <strong class="engagement__street">
+        <p class="contacts__street">
           ул. Большая Конюшенная, д. 19/8
-        </strong>
+        </p>
 
-        <strong class="engagement__city">
+        <p class="contacts__city">
           Санкт-Петербург
-        </strong>
+        </p>
 
-      </p>
-      <!-- /.engagement__address -->
+      </address>
+      <!-- /.contacts__address -->
 
-    </article><!-- /.engagement -->
+    </article><!-- /.contacts -->
 
     <div class="map">
       <img
         class="map__img"
         src="https://via.placeholder.com/150x150"
-        alt="Our location map">
+        alt="Наше местопололжение на карте">
     </div><!-- /.map -->
 
   </div><!-- /.location -->
 
   <footer class="footer">
 
-    <div class="footer__logoWrap">
-      <a class="logoName" href="#">
+    <a class="logo footer__logoWrap" href="index.html">
+
+      <span class="logo__name">
         <img
-          class="logoName__img"
+          class="logo__nameImg"
           src="https://via.placeholder.com/150x150"
-          alt="logotype of cat-energy two"
-          width="128"
-          height="24"
-        /><!-- /.logoName__img -->
-      </a><!-- /.logoName -->
-    </div><!-- /.footer__logoWrap -->
+          alt="магазин Сat-energy"
+          width="101"
+          height="18"
+        /><!-- /.logo__nameImg -->
+      </span><!-- /.logo__name -->
+
+    </a><!-- /.footer__logoWrap -->
 
     <ul class="social footer__social">
 
       <li class="social__item">
         <a class="social__link" href="#">
+          <em class="visuallyHidden">
+            Перейти на сайт vk.com
+          </em>
           <img
             class="social__img"
             src="https://via.placeholder.com/150x150"
-            alt="social link"
+            alt="Логотип сайта vk.com"
             width="23"
             height="23"
           /><!-- /.social__img -->
@@ -509,10 +562,13 @@
 
       <li class="social__item">
         <a class="social__link" href="#">
+          <em class="visuallyHidden">
+            Перейти на сайт instagram.com
+          </em>
           <img
             class="social__img"
             src="https://via.placeholder.com/150x150"
-            alt="social link"
+            alt="Логотип сайта instagram.com"
             width="23"
             height="23"
           /><!-- /.social__img -->
@@ -521,10 +577,13 @@
 
       <li class="social__item">
         <a class="social__link" href="#">
+          <em class="visuallyHidden">
+            Перейти на сайт facebook.com
+          </em>
           <img
             class="social__img"
             src="https://via.placeholder.com/150x150"
-            alt="social link"
+            alt="Логотип сайта facebook.com"
             width="23"
             height="23"
           /><!-- /.social__img -->
@@ -540,7 +599,7 @@
       <img
         class="authorSite__logo"
         src="https://via.placeholder.com/150x150"
-        alt="HTML Academy logotype"
+        alt="логотип HTML Academy"
         width="27"
         height="34"
       />

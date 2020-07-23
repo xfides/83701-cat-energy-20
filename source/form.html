@@ -9,39 +9,39 @@
 
   <header class="header">
 
-    <div class="header__logoWrap">
+    <a class="logo header__logoWrap" href="index.html">
 
-      <a class="logoAva" href="#">
+      <span class="logo__ava">
         <img
-          class="logoAva__img"
+          class="logo__avaImg"
           src="https://via.placeholder.com/150x150"
-          alt="logotype of cat-energy one"
+          alt="Логотип"
           width="34"
           height="38"
-        /><!-- /.logoAva__img -->
-      </a><!-- /.logoAva -->
+        /><!-- /.logo__avaImg -->
+      </span><!-- /.logo__ava -->
 
-      <a class="logoName" href="#">
+      <span class="logo__name">
         <img
-          class="logoName__img"
+          class="logo__nameImg"
           src="https://via.placeholder.com/150x150"
-          alt="logotype of cat-energy two"
+          alt="магазин Сat-energy"
           width="101"
           height="18"
-        /><!-- /.logoName__img -->
-      </a><!-- /.logoName -->
+        /><!-- /.logo__nameImg -->
+      </span><!-- /.logo__name -->
 
-    </div><!-- /.header__logoWrap -->
+    </a><!-- /.header__logoWrap -->
 
-    <button class="header__controlNav">
-      Open\Close
+    <button class="header__controlNav" type="button">
+      <span class="visuallyHidden">Переключить меню</span>
     </button><!-- /.header__controlNav -->
 
-    <div class="nav header__nav">
-      <a class="nav__link" href="#">Главная</a>
+    <nav class="nav header__nav">
+      <a class="nav__link" href="index.html">Главная</a>
       <a class="nav__link" href="catalog.html">Каталог продукции</a>
-      <a class="nav__link" href="form.html">Подбор программы</a>
-    </div><!-- /.nav .header__nav -->
+      <span class="nav__link nav__link--active">Подбор программы</span>
+    </nav><!-- /.nav .header__nav -->
 
   </header><!-- /.header -->
 
@@ -61,9 +61,9 @@
       <form
         class="form"
         action="https://echo.htmlacademy.ru"
-        method="POST">
+        method="post">
 
-        <fieldset class="form__block">
+        <fieldset class="form__group">
 
           <div class="form__line">
 
@@ -115,9 +115,9 @@
 
           </div><!-- /.form__line -->
 
-        </fieldset><!-- /. .form__block-->
+        </fieldset><!-- /. .form__group-->
 
-        <fieldset class="form__block">
+        <fieldset class="form__group">
 
           <div class="form__line">
 
@@ -168,13 +168,13 @@
 
           </div><!-- /.form__line -->
 
-        </fieldset><!-- /.form__block -->
+        </fieldset><!-- /.form__group -->
 
-        <h2 class="blockTitle blockTitle--sub">
-          Контактные данные (владельца кота)
-        </h2><!-- /.blockTitle -->
+        <fieldset class="form__group">
 
-        <fieldset class="form__block">
+          <h2 class="blockTitle blockTitle--sub">
+            Контактные данные (владельца кота)
+          </h2><!-- /.blockTitle -->
 
           <div class="form__line">
 
@@ -210,23 +210,27 @@
 
           </div><!-- /.form__line -->
 
-        </fieldset><!-- /.form__block -->
+        </fieldset><!-- /.form__group -->
 
-        <h2 class="blockTitle blockTitle--sub">
-          Комментарий
-        </h2><!-- /.blockTitle -->
+        <fieldset class="form__group">
 
-        <textarea
-          class="form__textArea"
-          name="comment"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
-        <!-- /.form__textArea -->
+          <h2 class="blockTitle blockTitle--sub">
+            Комментарий
+          </h2><!-- /.blockTitle -->
 
-        <h2 class="blockTitle blockTitle--sub">
-          Дополнительно
-        </h2><!-- /.blockTitle -->
+          <textarea
+            class="form__input form__input--textArea"
+            name="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+          <!-- /.form__textArea -->
 
-        <fieldset class="form__block">
+        </fieldset><!-- /.form__group -->
+
+        <fieldset class="form__group">
+
+          <h2 class="blockTitle blockTitle--sub">
+            Дополнительно
+          </h2><!-- /.blockTitle -->
 
           <div class="form__line">
 
@@ -289,9 +293,9 @@
 
           </div><!-- /.form__line -->
 
-        </fieldset><!-- /.form__block -->
+        </fieldset><!-- /.form__group -->
 
-        <button class="button form__button button--form" type="submit">
+        <button class="button form__button" type="submit">
           Отправить заявку
         </button><!-- /.button .form__button -->
 
@@ -307,59 +311,64 @@
 
   <div class="location">
 
-    <article class="engagement">
+    <article class="contacts">
 
-      <h5 class="engagement__title">
+      <h5 class="contacts__title">
         Приглашаем к сотрудничеству дилеров!
       </h5>
-      <!-- /.engagement__title -->
+      <!-- /.contacts__title -->
 
-      <p class="engagement__address">
+      <address class="contacts__address">
 
-        <strong class="engagement__street">
+        <p class="contacts__street">
           ул. Большая Конюшенная, д. 19/8
-        </strong>
+        </p>
 
-        <strong class="engagement__city">
+        <p class="contacts__city">
           Санкт-Петербург
-        </strong>
+        </p>
 
-      </p>
-      <!-- /.engagement__address -->
+      </address>
+      <!-- /.contacts__address -->
 
-    </article><!-- /.engagement -->
+    </article><!-- /.contacts -->
 
     <div class="map">
       <img
         class="map__img"
         src="https://via.placeholder.com/150x150"
-        alt="Our location map">
+        alt="Наше местопололжение на карте">
     </div><!-- /.map -->
 
   </div><!-- /.location -->
 
   <footer class="footer">
 
-    <div class="footer__logoWrap">
-      <a class="logoName" href="#">
+    <a class="logo footer__logoWrap" href="index.html">
+
+      <span class="logo__name">
         <img
-          class="logoName__img"
+          class="logo__nameImg"
           src="https://via.placeholder.com/150x150"
-          alt="logotype of cat-energy two"
-          width="128"
-          height="24"
-        /><!-- /.logoName__img -->
-      </a><!-- /.logoName -->
-    </div><!-- /.footer__logoWrap -->
+          alt="магазин Сat-energy"
+          width="101"
+          height="18"
+        /><!-- /.logo__nameImg -->
+      </span><!-- /.logo__name -->
+
+    </a><!-- /.footer__logoWrap -->
 
     <ul class="social footer__social">
 
       <li class="social__item">
         <a class="social__link" href="#">
+          <em class="visuallyHidden">
+            Перейти на сайт vk.com
+          </em>
           <img
             class="social__img"
             src="https://via.placeholder.com/150x150"
-            alt="social link"
+            alt="Логотип сайта vk.com"
             width="23"
             height="23"
           /><!-- /.social__img -->
@@ -368,10 +377,13 @@
 
       <li class="social__item">
         <a class="social__link" href="#">
+          <em class="visuallyHidden">
+            Перейти на сайт instagram.com
+          </em>
           <img
             class="social__img"
             src="https://via.placeholder.com/150x150"
-            alt="social link"
+            alt="Логотип сайта instagram.com"
             width="23"
             height="23"
           /><!-- /.social__img -->
@@ -380,10 +392,13 @@
 
       <li class="social__item">
         <a class="social__link" href="#">
+          <em class="visuallyHidden">
+            Перейти на сайт facebook.com
+          </em>
           <img
             class="social__img"
             src="https://via.placeholder.com/150x150"
-            alt="social link"
+            alt="Логотип сайта facebook.com"
             width="23"
             height="23"
           /><!-- /.social__img -->
@@ -399,7 +414,7 @@
       <img
         class="authorSite__logo"
         src="https://via.placeholder.com/150x150"
-        alt="HTML Academy logotype"
+        alt="логотип HTML Academy"
         width="27"
         height="34"
       />
