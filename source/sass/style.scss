@@ -1,1 +1,28 @@
-// Начните писать стили здесь
+//(( NORMALIZE ))
+@import '../../node_modules/normalize-scss/sass/normalize/import-now';
+
+//(( LOCAL SASS HELPERS ))
+@import './variables';
+@import './mixins';
+
+//(( COMMON STYLES: fonts, body, ... etc (NOT PAGE'S LAYOUT!) ))
+@import './common';
+
+//(( BLOCKS LAYOUT ))
+@import './blocks/layout/container';
+@import './blocks/layout/header/header';
+@import './blocks/layout/header/logo';
+@import './blocks/layout/header/nav';
+@import './blocks/layout/header/hamburger';
+
+
+//(( BLOCKS INDEX ))
+
+//(( BLOCKS CATALOG ))
+
+//(( BLOCKS FORM ))
+
+
+
+
+

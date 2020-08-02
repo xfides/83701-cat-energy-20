@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" rel="stylesheet">
   <title>Главная</title>
 </head>
 <body>
 
-  <header class="header">
+  <header class="header container">
 
     <div class="logo header__logoWrap">
 
@@ -33,11 +34,19 @@
 
     </div><!-- /.header__logoWrap -->
 
-    <button class="header__controlNav" type="button">
+    <button
+      class="hamburger header__controlNav"
+      type="button"
+      aria-label="Menu"
+      aria-controls="nav"
+    >
       <span class="visuallyHidden">Переключить меню</span>
+      <span class="hamburger__box">
+        <span class="hamburger__inner"></span>
+      </span>
     </button><!-- /.header__controlNav -->
 
-    <nav class="nav header__nav">
+    <nav class="nav header__nav" id="nav">
       <span class="nav__link nav__link--active">Главная</span>
       <a class="nav__link" href="catalog.html">Каталог продукции</a>
       <a class="nav__link" href="form.html">Подбор программы</a>
