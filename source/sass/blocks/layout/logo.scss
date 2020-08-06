@@ -1,0 +1,17 @@
+.logo{
+  @include wrapCenteredImage(192px, 38px);
+
+  &--name{
+    width: 128px;
+    height: 24px;
+  }
+
+  &--academy{
+    width: 27px;
+    height: 34px;
+  }
+}
+
+.logo__img{
+  @include centerImage;
+}

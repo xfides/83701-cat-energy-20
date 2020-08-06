@@ -1,11 +1,24 @@
 //(( MEDIA ))
 $widthTablet: 768px;
-$widthDesktop: 1300px;
+$widthDesktop: 1440px;
 
 //(( FONTS ))
 $fontMinor: 'Arial', 'Helvetica', sans-serif;
 $fontMajor: 'Oswald', 'Tahoma', 'Geneva', sans-serif;
 
 //(( COLORS ))
-$colorBackingMain: #fff;
-$colorFontMain: #000;
+$colorBackground--light: #fff;
+$colorBackground--lessLight: #F2F2F2;
+//   ---
+$colorFont--mostDark: #000000;
+$colorFont--moreDark: #111111;
+$colorFont--dark: #444444;
+
+//$colorFont--light: #444444;
+//$colorFont--moreLight: #444444;
+//$colorFont--mostLight: #444444;
+
+//   ---
+$colorDecor--morePale: #E6E6E6;
+$colorDecor--pale: #d9d9d9;
+$colorDecor--bright: #68B738;

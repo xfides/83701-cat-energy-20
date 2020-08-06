@@ -33,6 +33,7 @@
 }
 
 img {
+  display: inline-block;
   max-width: 100%;
   height: auto;
 }
@@ -41,13 +42,7 @@ a {
   text-decoration: none;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
 html, body {
-  background-color: $colorBackingMain;
-  color: $colorFontMain;
+  background-color: $colorBackground--light;
+  color: $colorFont--dark;
 }

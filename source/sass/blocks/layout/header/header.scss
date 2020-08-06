@@ -1,6 +1,17 @@
-.header{
+.header {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.header__logoWrap{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.header__nav{
+  width: 100%;
 }

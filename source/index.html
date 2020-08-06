@@ -10,46 +10,43 @@
 
   <header class="header container">
 
-    <div class="logo header__logoWrap">
-
-      <span class="logo__ava">
+    <span class="logo header__logoWrap">
         <img
-          class="logo__avaImg"
+          class="logo__img"
           src="https://via.placeholder.com/150x150"
           alt="Логотип"
-          width="34"
+          width="192"
           height="38"
-        /><!-- /.logo__avaImg -->
-      </span><!-- /.logo__ava -->
-
-      <span class="logo__name">
-        <img
-          class="logo__nameImg"
-          src="https://via.placeholder.com/150x150"
-          alt="магазин Сat-energy"
-          width="101"
-          height="18"
-        /><!-- /.logo__nameImg -->
-      </span><!-- /.logo__name -->
-
-    </div><!-- /.header__logoWrap -->
+        /><!-- /.header__logoImg -->
+    </span><!-- /.header__logoWrap -->
 
     <button
       class="hamburger header__controlNav"
       type="button"
-      aria-label="Menu"
+      aria-label="Переключить меню"
       aria-controls="nav"
     >
-      <span class="visuallyHidden">Переключить меню</span>
-      <span class="hamburger__box">
-        <span class="hamburger__inner"></span>
-      </span>
+      <span class="hamburger__inner">Переключить меню</span>
     </button><!-- /.header__controlNav -->
 
-    <nav class="nav header__nav" id="nav">
-      <span class="nav__link nav__link--active">Главная</span>
-      <a class="nav__link" href="catalog.html">Каталог продукции</a>
-      <a class="nav__link" href="form.html">Подбор программы</a>
+    <nav class="header__nav" id="nav">
+      <ul class="nav">
+        <li class="nav__item">
+          <span class="nav__link nav__link--active">
+            Главная
+          </span>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul><!-- /.nav -->
     </nav><!-- /.nav .header__nav -->
 
   </header><!-- /.header -->
@@ -263,7 +260,7 @@
 
   <div class="location">
 
-    <article class="contacts">
+    <article class="contacts container">
 
       <h5 class="contacts__title">
         Приглашаем к сотрудничеству дилеров!
@@ -294,21 +291,17 @@
 
   </div><!-- /.location -->
 
-  <footer class="footer">
+  <footer class="footer container">
 
-    <div class="logo footer__logoWrap">
-
-      <span class="logo__name">
-        <img
-          class="logo__nameImg"
-          src="https://via.placeholder.com/150x150"
-          alt="магазин Сat-energy"
-          width="101"
-          height="18"
-        /><!-- /.logo__nameImg -->
-      </span><!-- /.logo__name -->
-
-    </div><!-- /.footer__logoWrap -->
+    <span class="logo logo--name footer__logoWrap">
+      <img
+        class="logo__img"
+        src="https://via.placeholder.com/150x150"
+        alt="магазин Сat-energy"
+        width="128"
+        height="24"
+      /><!-- /.footer__logoImg -->
+    </span><!-- /.footer__logoWrap -->
 
     <ul class="social footer__social">
 
@@ -363,13 +356,15 @@
       class="authorSite footer__authorSite"
       href="https://htmlacademy.ru/intensive/adaptive">
       <strong class="authorSite__text">HTML Academy</strong>
-      <img
-        class="authorSite__logo"
-        src="https://via.placeholder.com/150x150"
-        alt="логотип HTML Academy"
-        width="27"
-        height="34"
-      />
+      <span class="logo logo--academy">
+        <img
+          class="logo__img"
+          src="https://via.placeholder.com/150x150"
+          alt="логотип HTML Academy"
+          width="27"
+          height="34"
+        />
+      </span>
     </a><!-- /.authorSite .footer__authorSite-->
 
   </footer><!-- /.footer -->

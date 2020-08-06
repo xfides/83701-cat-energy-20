@@ -1,0 +1,18 @@
+.authorSite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.authorSite__text {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $fontMinor;
+  font-weight: normal;
+  color: $colorFont--dark;
+}
+

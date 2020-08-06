@@ -1,1 +1,13 @@
+@mixin centerImage {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+@mixin wrapCenteredImage($width: 100%, $height: auto) {
+  width: $width;
+  height: $height;
+  position: relative;
+  overflow: hidden;
+}

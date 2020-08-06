@@ -10,10 +10,19 @@
 
 //(( BLOCKS LAYOUT ))
 @import './blocks/layout/container';
+@import './blocks/layout/logo';
+//   ---
 @import './blocks/layout/header/header';
-@import './blocks/layout/header/logo';
 @import './blocks/layout/header/nav';
 @import './blocks/layout/header/hamburger';
+//   ---
+@import './blocks/layout/location/location';
+@import './blocks/layout/location/contacts';
+@import './blocks/layout/location/map';
+//   ---
+@import './blocks/layout/footer/footer';
+@import './blocks/layout/footer/social';
+@import './blocks/layout/footer/authorSite';
 
 
 //(( BLOCKS INDEX ))
