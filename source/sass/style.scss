@@ -11,6 +11,8 @@
 //(( BLOCKS LAYOUT ))
 @import './blocks/layout/container';
 @import './blocks/layout/logo';
+@import './blocks/layout/blockTitle';
+@import './blocks/layout/button';
 //   ---
 @import './blocks/layout/header/header';
 @import './blocks/layout/header/nav';
@@ -24,9 +26,14 @@
 @import './blocks/layout/footer/social';
 @import './blocks/layout/footer/authorSite';
 
-
 //(( BLOCKS INDEX ))
-
+@import './blocks/index/benefit';
+@import './blocks/index/expenses';
+@import './blocks/index/promo';
+@import './blocks/index/results';
+@import './blocks/index/sample';
+@import './blocks/index/slider';
+@import './blocks/index/stepsList';
 //(( BLOCKS CATALOG ))
 
 //(( BLOCKS FORM ))
