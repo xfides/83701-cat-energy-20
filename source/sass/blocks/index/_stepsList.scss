@@ -1,0 +1,34 @@
+.stepsList {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0;
+}
+
+.stepsList__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stepsList__itemWrapImg {
+  background-color: $colorBackground--dark;
+  @include wrapCenteredImage(60px, 60px);
+  min-width: 60px;
+
+}
+
+.stepsList__itemImg {
+  @include centerImage;
+  width: 100%;
+}
+
+.stepsList__itemText {
+  padding-left: 20px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $fontMinor;
+  font-weight: normal;
+  color: $colorFont--lessDark;
+}

@@ -6,6 +6,7 @@
   &:active {
     opacity: 0.3;
   }
+
 }
 
 .authorSite__text {
@@ -13,6 +14,18 @@
   line-height: 18px;
   font-family: $fontMinor;
   font-weight: normal;
-  color: $colorFont--dark;
-} 
+  color: $colorFont--lessDark;
+  padding-right: 10px;
+}
+
+.authorSite__wrapImg {
+  @include wrapCenteredImage(34px, 34px);
+  min-width: 34px;
+}
+
+.authorSite__img {
+  @include centerImage;
+  width: 100%;
+}
+
 

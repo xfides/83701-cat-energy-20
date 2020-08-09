@@ -1,0 +1,16 @@
+.expenses {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.expenses__title {
+  display: inline-block;
+}
+
+.expenses__currency {
+  display: inline-block;
+}

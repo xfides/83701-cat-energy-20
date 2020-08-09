@@ -1,33 +1,28 @@
 .social {
-  margin-top: 32px;
-  margin-bottom: 22px;
   padding: 0;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid $colorDecor--pale;
-  border-bottom: 1px solid $colorDecor--pale;
+  border-top: 1px solid $colorDecor--leastLight;
+  border-bottom: 1px solid $colorDecor--leastLight;
 }
 
 .social__item {
   margin: 20px 18px;
-
-  &:first-of-type {
-    margin-left: 0;
-  }
-
-  &:last-of-type {
-    margin-right: 0;
-  }
 }
 
 .social__link {
   display: block;
   @include wrapCenteredImage(23px, 23px);
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .social__img {
   @include centerImage;
+  height: 100%;
 }

@@ -1,0 +1,22 @@
+.sample {
+  background-color: $colorBackground--lessLight;
+}
+
+.sample__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $fontMinor;
+  font-weight: normal;
+  color: $colorFont--lessDark;
+  margin: 0;
+  padding-bottom: 25px;
+  word-spacing: 1px;
+}
+
+.sample__results{
+  margin: 0;
+}
+
+.sample__expenses{
+  margin-bottom: 40px;
+}

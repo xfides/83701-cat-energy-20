@@ -1,0 +1,31 @@
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  text-align: center;
+  color: $colorFont--mostLight;
+  background-color: $colorBackground--dark;
+  text-transform: uppercase;
+  padding: 11px;
+
+  &--long {
+    display: block;
+    width: 100%;
+  }
+
+  &--high {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 13px 25px;
+  }
+
+  &:hover {
+    background-color: $colorBackground--moreDark
+  }
+
+  &:active {
+    background-color: $colorBackground--moreDark;
+    color: $colorFont--leastLight;
+  }
+}

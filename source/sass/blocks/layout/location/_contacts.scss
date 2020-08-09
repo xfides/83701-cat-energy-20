@@ -1,33 +1,35 @@
-.contacts{
+.contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 28px;
   padding-bottom: 22px;
-  background-color: $colorBackground--light;
+  background-color: $colorBackground--mostLight;
   overflow: hidden;
 }
 
-.contacts__title{
+.contacts__title {
   font-size: 16px;
   line-height: 18px;
   font-family: $fontMajor;
-  font-weight:normal;
+  font-weight: normal;
   text-transform: uppercase;
   margin: 0;
   padding-right: 10px;
+  color: $colorFont--moreDark;
 }
 
-.contacts__address{
+.contacts__address {
   font-size: 14px;
   line-height: 20px;
   font-family: $fontMinor;
   font-style: normal;
   font-weight: normal;
   min-width: 135px;
+  color: $colorFont--lessDark;
 }
 
-.contacts__address p{
+.contacts__address p {
   padding: 0;
   margin: 0;
 }

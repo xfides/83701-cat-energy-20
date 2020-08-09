@@ -7,11 +7,15 @@
   overflow: hidden;
 }
 
-.header__logoWrap{
+.header__logoWrap {
   margin-top: 12px;
   margin-bottom: 12px;
 }
 
-.header__nav{
+.header__wrapNav {
   width: 100%;
+}
+
+.header__nav{
+  margin: 0;
 }

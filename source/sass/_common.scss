@@ -40,9 +40,15 @@ img {
 
 a {
   text-decoration: none;
+  color: $colorFont--mostDark;
 }
 
 html, body {
-  background-color: $colorBackground--light;
-  color: $colorFont--dark;
+  background-color: $colorBackground--mostLight;
+  color: $colorFont--mostDark;
+}
+
+picture{
+  line-height: 0;
+  font-size: 0;
 }

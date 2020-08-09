@@ -1,11 +1,22 @@
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
-  background-color: $colorBackground--lessLight;
+  background-color: $colorBackground--moreLight;
   padding-top: 40px;
-  padding-bottom: 22px;
 }
 
-.footer__logoWrap{
+.footer__logoWrap {
   align-self: center;
+  margin-bottom: 32px;
 }
+
+.footer__social{
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.footer__authorSite{
+  margin-bottom: 22px;
+}
+
+

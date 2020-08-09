@@ -27,13 +27,16 @@
 @import './blocks/layout/footer/authorSite';
 
 //(( BLOCKS INDEX ))
+@import './blocks/index/promo';
+@import './blocks/index/benefits';
 @import './blocks/index/benefit';
 @import './blocks/index/expenses';
-@import './blocks/index/promo';
-@import './blocks/index/results';
-@import './blocks/index/sample';
-@import './blocks/index/slider';
+@import './blocks/index/steps';
 @import './blocks/index/stepsList';
+@import './blocks/index/sample';
+@import './blocks/index/results';
+@import './blocks/index/slider';
+
 //(( BLOCKS CATALOG ))
 
 //(( BLOCKS FORM ))

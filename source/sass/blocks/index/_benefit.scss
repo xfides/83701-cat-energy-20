@@ -1,0 +1,119 @@
+// @formatter:off
+.benefit {
+  background-color: $colorBackground--moreLight;
+  display: grid;
+  grid-template-columns: 67px 1fr;
+  grid-template-areas:
+    "wrapImg     title"
+    "description description"
+    "link        link   ";
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+// @formatter:on
+
+.benefit__wrapImg {
+  @include wrapCenteredImage(67px, 67px);
+  grid-area: wrapImg;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: $colorBackground--dark;
+    border-radius: 50%;
+    @include centerImage;
+  }
+}
+
+.benefit__img {
+  @include centerImage;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  &--slim {
+    height: 75%;
+    transform: translate(-50%, -57%);
+  }
+
+  &--pro {
+
+  }
+}
+
+.benefit__title {
+  grid-area: title;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.benefit__description {
+  grid-area: description;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $fontMinor;
+  font-weight: normal;
+  color: $colorFont--lessDark;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  margin: 0;
+  border-bottom: 1px solid $colorDecor--leastLight;
+}
+
+.benefit__link {
+  grid-area: link;
+  justify-self: start;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:hover .benefit__linkWrapImg {
+    transform: translateX(0);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+.benefit__linkText {
+  position: relative;
+  padding-right: 15px;
+  background-color: $colorBackground--moreLight;
+  z-index: 50;
+}
+
+.benefit__linkWrapImg {
+  @include wrapCenteredImage(32px, 11px);
+  min-width: 32px;
+  font-size: 0;
+  line-height: 0;
+  transform: translateX(-8px);
+  z-index: 49;
+  transition: transform 0.2s;
+
+}
+
+.benefit__linkImg {
+  @include centerImage;
+}
+

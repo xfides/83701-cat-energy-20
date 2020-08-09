@@ -1,8 +1,8 @@
-.map{
-  @include wrapCenteredImage();
+.map {
+  @include wrapCenteredImage(100%, 362px);
 }
 
 .map__img {
-  display: block;
+  @include centerImage;
   width: 100%;
 }
