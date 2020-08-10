@@ -1,0 +1,120 @@
+.slider {
+  background-color: $colorBackground--lessLight;
+  padding-bottom: 28px;
+}
+
+.slider__track {
+  height: 240px;
+  width: 100%;
+  max-width: 320px;
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider__slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  &:first-of-type {
+    left: 0;
+    z-index: 40;
+    //width: 50%;
+
+    .slider__img {
+      object-position: left;
+    }
+  }
+
+  &:last-of-type {
+    right: 0;
+    z-index: 39;
+    width: 0%;
+
+    .slider__img {
+      object-position: right;
+    }
+  }
+}
+
+.slider__img {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider__control {
+  width: 208px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__btn {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 6px;
+  border: none;
+  position: relative;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: calc(100% - 2 * 6px);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px dotted $colorDecor--dark;
+  }
+
+  &:hover:after {
+    border-bottom: 1px solid $colorDecor--moreDark;
+  }
+
+  &:active:after {
+    display: none;
+  }
+}
+
+.slider__bar {
+  width: 84px;
+  height: 14px;
+  background-color: $colorBackground--mostLight;
+  border-radius: 6px;
+  border: 1px solid $colorDecor--lessDark;
+  position: relative;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.slider__roll {
+  width: 35px;
+  height: 6px;
+  border-radius: 6px;
+  background-color: $colorBackground--dark;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
