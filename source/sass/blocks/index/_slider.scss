@@ -76,8 +76,8 @@
     outline: none;
   }
 
-  &:after {
-    content: '';
+  &::after {
+    content: "";
     display: block;
     height: 1px;
     width: calc(100% - 2 * 6px);
@@ -88,11 +88,11 @@
     border-bottom: 1px dotted $colorDecor--dark;
   }
 
-  &:hover:after {
+  &:hover::after {
     border-bottom: 1px solid $colorDecor--moreDark;
   }
 
-  &:active:after {
+  &:active::after {
     display: none;
   }
 }
@@ -117,4 +117,3 @@
   top: 50%;
   transform: translateY(-50%);
 }
-

@@ -1,47 +1,42 @@
 //(( NORMALIZE ))
-@import '../../node_modules/normalize-scss/sass/normalize/import-now';
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
 
 //(( LOCAL SASS HELPERS ))
-@import './variables';
-@import './mixins';
+@import "./variables";
+@import "./mixins";
 
 //(( COMMON STYLES: fonts, body, ... etc (NOT PAGE'S LAYOUT!) ))
-@import './common';
+@import "./common";
 
 //(( BLOCKS LAYOUT ))
-@import './blocks/layout/container';
-@import './blocks/layout/logo';
-@import './blocks/layout/blockTitle';
-@import './blocks/layout/button';
+@import "./blocks/layout/container";
+@import "./blocks/layout/logo";
+@import "./blocks/layout/blockTitle";
+@import "./blocks/layout/button";
 //   ---
-@import './blocks/layout/header/header';
-@import './blocks/layout/header/nav';
-@import './blocks/layout/header/hamburger';
+@import "./blocks/layout/header/header";
+@import "./blocks/layout/header/nav";
+@import "./blocks/layout/header/hamburger";
 //   ---
-@import './blocks/layout/location/location';
-@import './blocks/layout/location/contacts';
-@import './blocks/layout/location/map';
+@import "./blocks/layout/location/location";
+@import "./blocks/layout/location/contacts";
+@import "./blocks/layout/location/map";
 //   ---
-@import './blocks/layout/footer/footer';
-@import './blocks/layout/footer/social';
-@import './blocks/layout/footer/authorSite';
+@import "./blocks/layout/footer/footer";
+@import "./blocks/layout/footer/social";
+@import "./blocks/layout/footer/authorSite";
 
 //(( BLOCKS INDEX ))
-@import './blocks/index/promo';
-@import './blocks/index/benefits';
-@import './blocks/index/benefit';
-@import './blocks/index/expenses';
-@import './blocks/index/steps';
-@import './blocks/index/stepsList';
-@import './blocks/index/sample';
-@import './blocks/index/results';
-@import './blocks/index/slider';
+@import "./blocks/index/promo";
+@import "./blocks/index/benefits";
+@import "./blocks/index/benefit";
+@import "./blocks/index/expenses";
+@import "./blocks/index/steps";
+@import "./blocks/index/stepsList";
+@import "./blocks/index/sample";
+@import "./blocks/index/results";
+@import "./blocks/index/slider";
 
 //(( BLOCKS CATALOG ))
 
 //(( BLOCKS FORM ))
-
-
-
-
-

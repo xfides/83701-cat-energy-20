@@ -12,10 +12,9 @@
 }
 
 .stepsList__itemWrapImg {
-  background-color: $colorBackground--dark;
   @include wrapCenteredImage(60px, 60px);
+  background-color: $colorBackground--dark;
   min-width: 60px;
-
 }
 
 .stepsList__itemImg {

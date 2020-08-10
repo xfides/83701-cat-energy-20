@@ -3,27 +3,27 @@ $widthTablet: 768px;
 $widthDesktop: 1440px;
 
 //(( FONTS ))
-$fontMinor: 'Arial', 'Helvetica', sans-serif;
-$fontMajor: 'Oswald', 'Tahoma', 'Geneva', sans-serif;
+$fontMinor: "Arial", "Helvetica", sans-serif;
+$fontMajor: "Oswald", "Tahoma", "Geneva", sans-serif;
 
 //(( COLORS ))
 
 // Background
-$colorBackground--mostLight: #FFFFFF;
-$colorBackground--moreLight: #F2F2F2;
-$colorBackground--light: #EBEBEB;
-$colorBackground--lessLight: #EAEAEA;
-$colorBackground--leastLight: #D2E9C3;
+$colorBackground--mostLight: #ffffff;
+$colorBackground--moreLight: #f2f2f2;
+$colorBackground--light: #ebebeb;
+$colorBackground--lessLight: #eaeaea;
+$colorBackground--leastLight: #d2e9c3;
 //   ---
-$colorBackground--dark: #68B738;
-$colorBackground--moreDark: #5EAA2F;
+$colorBackground--dark: #68b738;
+$colorBackground--moreDark: #5eaa2f;
 
 // Font
 $colorFont--mostLight: #ffffff;
-$colorFont--moreLight: #B9B9B9;      //#BDBDBD
-$colorFont--light: #B2B2B2;          //#B3B3B3
-$colorFont--lessLight: #BFDDAC;
-$colorFont--leastLight: #8EC36D;
+$colorFont--moreLight: #b9b9b9;      //#bdbdbd
+$colorFont--light: #b2b2b2;          //#b3b3b3
+$colorFont--lessLight: #bfddac;
+$colorFont--leastLight: #8ec36d;
 //   ---
 $colorFont--leastDark: #666666;
 $colorFont--lessDark: #444444;
@@ -32,19 +32,16 @@ $colorFont--moreDark: #111111;
 $colorFont--mostDark: #000000;
 
 // Decor
-$colorDecor--mostLight: #F2F2F2;
-$colorDecor--moreLight: #EBEBEB;
-$colorDecor--light: #E6E6E6;          //#E7E7E7
-$colorDecor--lessLight: #DCDCDC;
-$colorDecor--leastLight: #D9D9D9;
+$colorDecor--mostLight: #f2f2f2;
+$colorDecor--moreLight: #ebebeb;
+$colorDecor--light: #e6e6e6;          //#e7e7e7
+$colorDecor--lessLight: #dcdcdc;
+$colorDecor--leastLight: #d9d9d9;
 //   ---
-$colorDecor--leastDark: #D3D3D3;
-$colorDecor--lessDark: #CDCDCD;
-$colorDecor--dark: #BABABA;           //#B8B8B8
+$colorDecor--leastDark: #d3d3d3;
+$colorDecor--lessDark: #cdcdcd;
+$colorDecor--dark: #bababa;           //#b8b8b8
 $colorDecor--moreDark: #919191;
 $colorDecor--mostDark: #444444;
 //   ---
-$colorDecor--error: #FF8282;
-
-
-
+$colorDecor--error: #ff8282;

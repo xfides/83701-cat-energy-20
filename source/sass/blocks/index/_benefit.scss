@@ -18,13 +18,14 @@
   @include wrapCenteredImage(67px, 67px);
   grid-area: wrapImg;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     display: block;
     width: 50px;
     height: 50px;
     background-color: $colorBackground--dark;
     border-radius: 50%;
+
     @include centerImage;
   }
 }
@@ -41,7 +42,7 @@
   }
 
   &--pro {
-
+    // for future
   }
 }
 
@@ -92,7 +93,6 @@
   &:active {
     opacity: 0.3;
   }
-
 }
 
 .benefit__linkText {
@@ -110,10 +110,8 @@
   transform: translateX(-8px);
   z-index: 49;
   transition: transform 0.2s;
-
 }
 
 .benefit__linkImg {
   @include centerImage;
 }
-

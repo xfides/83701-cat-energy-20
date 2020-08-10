@@ -22,6 +22,7 @@
   }
 }
 
+// @formatter:off
 .hamburger__inner {
   display: block;
   top: 50%;
@@ -32,7 +33,8 @@
   position: absolute;
   transition: background-color 0.125s ease-in 0.175s;
 
-  &:before, &:after {
+  &::before,
+  &::after {
     content: "";
     display: block;
     width: 24px;
@@ -41,53 +43,53 @@
     position: absolute;
   }
 
-  &:before {
+  &::before {
     top: -7px;
     left: 0;
-    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
-    top 0.05s linear 0.125s,
-    left 0.125s ease-in 0.175s;
+    transition:
+      transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+      top 0.05s linear 0.125s,
+      left 0.125s ease-in 0.175s;
   }
 
-  &:after {
+  &::after {
     bottom: -7px;
     right: 0;
-    transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
-    top 0.05s linear 0.125s,
-    right 0.125s ease-in 0.175s;
+    transition:
+      transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+      top 0.05s linear 0.125s,
+      right 0.125s ease-in 0.175s;
   }
-
 }
 
 // TODO .hamburger:active fot testing (IN FUTURE DELETE)!!!
-.hamburger--pressedJS, .hamburger:active {
-
+.hamburger--pressedJS,
+.hamburger:active {
   .hamburger__inner {
     transition-delay: 0s;
     transition-timing-function: ease-out;
     background-color: transparent;
   }
 
-  .hamburger__inner:before {
+  .hamburger__inner::before {
     left: -10px;
     top: -10px;
     transform: translate3d(10px, 10px, 0) rotate(45deg);
-    transition: transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
-    left 0.125s ease-out,
-    top 0.05s 0.125s linear;
-
+    transition:
+      transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
+      left 0.125s ease-out,
+      top 0.05s 0.125s linear;
   }
 
-  .hamburger__inner:after {
+  .hamburger__inner::after {
     right: -10px;
     top: -10px;
     transform: translate3d(-10px, 10px, 0) rotate(-45deg);
-    transition: transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
-    right 0.125s ease-out,
-    top 0.05s 0.125s linear;
+    transition:
+      transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
+      right 0.125s ease-out,
+      top 0.05s 0.125s linear;
   }
-
 }
 
-
-
+// @formatter:on

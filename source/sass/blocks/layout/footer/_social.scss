@@ -14,8 +14,8 @@
 }
 
 .social__link {
-  display: block;
   @include wrapCenteredImage(23px, 23px);
+  display: block;
 
   &:active {
     opacity: 0.3;
