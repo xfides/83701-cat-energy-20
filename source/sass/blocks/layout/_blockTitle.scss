@@ -6,3 +6,36 @@
   font-family: $fontMajor;
   font-weight: normal;
 }
+
+.blockTitle--sub{
+  font-size: 24px;
+  line-height: 26px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  position: relative;
+
+  &--long{
+    max-width: 75%;
+  }
+
+  &::before{
+    content: "";
+    display: block;
+    width: 200%;
+    height: 2px;
+    background-color: $colorBackground--dark;
+    position: absolute;
+    top: 40px;
+    left: 0;
+  }
+
+  span {
+    position: relative;
+    background-color: $colorBackground--mostLight;
+    display: inline-block;
+    padding-right: 20px;
+    max-width: 75%;
+  }
+}

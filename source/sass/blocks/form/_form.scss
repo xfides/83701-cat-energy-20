@@ -1,0 +1,212 @@
+.form {
+
+}
+
+.form__group {
+  position: relative;
+  border: none;
+  padding: 0;
+
+  &--withoutTitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &--withoutTitle::after {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: $colorDecor--leastLight;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--withoutTitle::after {
+    bottom: 0;
+  }
+
+  &:last-of-type{
+    padding-bottom: 35px;
+  }
+}
+
+.form__line {
+  padding-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  &:last-of-type {
+    padding-bottom: 0;
+  }
+
+}
+
+.form__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  color: $colorFont--lessDark;
+  text-transform: uppercase;
+  padding-right: 12px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+}
+
+.form__input {
+  border: 1px solid $colorDecor--light;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: $fontMajor;
+  font-weight: normal;
+  color: $colorFont--lessDark;
+  text-transform: uppercase;
+  padding: 12px;
+  flex-grow: 1;
+  outline: none;
+
+  &--textArea {
+    display: block;
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+    text-transform: inherit;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  @include stylePlaceholder {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: $fontMajor;
+    font-weight: normal;
+    color: $colorFont--lessDark;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    border: 1px solid $colorDecor--lessDark;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    border: 1px solid $colorDecor--mostDark;
+    box-shadow: 0 0 0 1px $colorDecor--mostDark;
+  }
+
+  &--error {
+    border: 1px solid $colorDecor--error;
+    box-shadow: 0 0 0 1px $colorDecor--error;
+  }
+
+}
+
+.form__radio + .form__label {
+  padding-left: 45px;
+  cursor: pointer;
+  line-height: 30px;
+  color: $colorFont--dark;
+}
+
+.form__radio + .form__label::before,
+.form__radio + .form__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__radio + .form__label::before {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $colorDecor--lessDark;
+  left: 0;
+}
+
+.form__radio + .form__label:hover::before {
+  border: 1px solid $colorDecor--dark;
+}
+
+.form__radio:checked + .form__label::after {
+  width: 14px;
+  height: 14px;
+  background-color: $colorBackground--dark;
+  left: 8px;
+}
+
+.form__radio + .form__label:focus,
+.form__radio + .form__label:active,
+.form__checkbox + .form__label:focus,
+.form__checkbox + .form__label:active {
+  opacity: 0.3;
+}
+
+.form__checkbox + .form__label {
+  padding-left: 45px;
+  line-height: 26px;
+  cursor: pointer;
+  color: $colorFont--mostDark;
+}
+
+.form__checkbox + .form__label::before,
+.form__checkbox + .form__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.form__checkbox + .form__label::before {
+  width: 26px;
+  height: 26px;
+  border: 1px solid $colorDecor--lessDark;
+  left: 0;
+}
+
+.form__checkbox + .form__label:hover::before {
+  border: 1px solid $colorDecor--dark;
+}
+
+.form__checkbox:checked + .form__label::after {
+  width: 14px;
+  height: 14px;
+  left: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' viewBox='0 0 21.1 15.5' preserveAspectRatio='xMidYMid meet' xml:space='preserve'%3E%3Cpolygon fill='%2368b738' points='20.1,0 7.7,13.3 1,6.1 0,7.2 7.6,15.4 7.7,15.5 21,1.2 21.1,1.1 '/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  //outline: 1px solid red;
+}
+
+.form__button {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+
+.form__attention {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: $fontMinor;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 32px;
+}

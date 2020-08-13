@@ -17,8 +17,9 @@
     height: 1px;
     background-color: $colorDecor--light;
     position: absolute;
-    left: -50%;
+    left: 50%;
     bottom: 0;
+    transform: translateX(-50%);
   }
 
   &:first-child::before {

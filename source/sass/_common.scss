@@ -14,7 +14,9 @@
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
 }
 
-* {
+*,
+*::before,
+*::after {
   //outline: 1px solid red;
   box-sizing: border-box;
 }

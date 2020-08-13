@@ -6,6 +6,10 @@
   padding-bottom: 22px;
   background-color: $colorBackground--mostLight;
   overflow: hidden;
+
+  &--backgroundDark{
+    background-color: $colorBackground--moreLight;
+  }
 }
 
 .contacts__title {

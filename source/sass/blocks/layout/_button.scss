@@ -24,7 +24,8 @@
     background-color: $colorBackground--moreDark;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     background-color: $colorBackground--moreDark;
     color: $colorFont--leastLight;
   }
