@@ -9,8 +9,7 @@
   text-align: center;
   position: relative;
 
-  &::after,
-  &:first-child::before {
+  &::before {
     content: "";
     display: block;
     width: 200%;
@@ -18,12 +17,8 @@
     background-color: $colorDecor--light;
     position: absolute;
     left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-  }
-
-  &:first-child::before {
     top: 0;
+    transform: translateX(-50%);
   }
 }
 

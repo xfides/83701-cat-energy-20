@@ -5,6 +5,19 @@
   align-items: center;
   background-color: transparent;
   overflow: hidden;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 200%;
+    height: 1px;
+    background-color: $colorDecor--light;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
 }
 
 .header__logoWrap {

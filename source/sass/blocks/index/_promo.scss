@@ -36,3 +36,10 @@
 .promo__img {
   @include centerImage;
 }
+
+.promo__refLink {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px;
+  width: 100%;
+}
