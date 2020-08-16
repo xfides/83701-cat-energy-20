@@ -7,7 +7,7 @@
   padding-top: 5px;
 
   &::before,
-  &::after {
+  &:last-of-type::after {
     content: "";
     display: block;
     position: absolute;
@@ -16,12 +16,14 @@
     background-color: $colorDecor--moreLight;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  &::before{
     top: 0;
   }
 
-  &::after {
+  &:last-of-type::after {
     bottom: 0;
-    top: auto;
   }
 }
 

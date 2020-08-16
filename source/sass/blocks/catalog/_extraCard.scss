@@ -1,0 +1,61 @@
+.extraCard {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::before,
+  &:last-of-type::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $colorDecor--lessDark;
+    position: absolute;
+    left: 0;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &:last-of-type::after {
+    bottom: 0;
+  }
+}
+
+.extraCard__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  font-family: $fontMajor;
+  color: $colorFont--dark;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.extraCard__link {
+
+}
+
+.extraCard__spec {
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  font-family: $fontMinor;
+  color: $colorFont--lessDark;
+  padding-bottom: 15px;
+}
+
+.extraCard__spec td:nth-of-type(2) {
+  text-align: right;
+}
+
+.extraCard__button {
+  width: 100%;
+}
+
