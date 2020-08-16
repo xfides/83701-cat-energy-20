@@ -13,13 +13,24 @@
 }
 
 @mixin stylePlaceholder {
-  &::-webkit-input-placeholder { @content; }
-  &:-moz-placeholder           { @content; }
-  &::-moz-placeholder          { @content; }
-  &:-ms-input-placeholder      { @content; }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+
+  &:-moz-placeholder {
+    @content;
+  }
+
+  &::-moz-placeholder {
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    @content;
+  }
 }
 
-@mixin enlargeButton{
+@mixin enlargeButton {
   font-size: 20px;
   line-height: 24px;
   padding: 13px 25px;

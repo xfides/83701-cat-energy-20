@@ -18,7 +18,7 @@
     transform: translateX(-50%);
   }
 
-  &::before{
+  &::before {
     top: 0;
   }
 
@@ -130,7 +130,6 @@
     &:focus::after {
       background-color: $colorDecor--moreLight;
     }
-
   }
 
   .card__title {
