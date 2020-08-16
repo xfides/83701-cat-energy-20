@@ -8,8 +8,8 @@
   padding: 0;
 
   &--withoutTitle {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 22px;
   }
 
   &--withoutTitle::after {
@@ -25,13 +25,17 @@
   }
 
   &:last-of-type {
+    .blockTitle--sub {
+      margin-bottom: 8px;
+    }
+
     padding-bottom: 35px;
   }
 }
 
 .form__line {
   position: relative;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   display: flex;
   align-items: center;
 
@@ -47,7 +51,7 @@
   font-weight: normal;
   color: $colorFont--lessDark;
   text-transform: uppercase;
-  padding-right: 12px;
+  padding-right: 14px;
   vertical-align: middle;
   position: relative;
   display: inline-block;
@@ -61,9 +65,14 @@
   font-weight: normal;
   color: $colorFont--lessDark;
   text-transform: uppercase;
-  padding: 12px;
+  padding: 12px 14px;
   flex-grow: 1;
   outline: none;
+
+  &--withIcon {
+    padding-right: 34px;
+    padding-left: 10px;
+  }
 
   &--textArea {
     display: block;
@@ -71,8 +80,9 @@
     min-height: 150px;
     resize: vertical;
     text-transform: inherit;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+    padding-left: 13px;
+    margin-top: 4px;
   }
 
   @include stylePlaceholder {
@@ -106,8 +116,8 @@
 
   display: block;
   position: absolute;
-  right: 12px;
-  top: 12px;
+  right: 10px;
+  top: 15px;
 }
 
 .form__icon {
@@ -119,7 +129,7 @@
 .form__radio + .form__label {
   padding-left: 45px;
   cursor: pointer;
-  line-height: 30px;
+  line-height: 28px;
   color: $colorFont--dark;
 }
 
@@ -175,8 +185,8 @@
 }
 
 .form__checkbox + .form__label::before {
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
   border: 1px solid $colorDecor--lessDark;
   left: 0;
 }
