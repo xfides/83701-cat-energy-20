@@ -8,7 +8,7 @@
     "description description"
     "link        link   ";
   align-items: center;
-  padding-top: 15px;
+  padding-top: 17px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -17,6 +17,7 @@
 .benefit__wrapImg {
   @include wrapCenteredImage(67px, 67px);
   grid-area: wrapImg;
+  left: -7px;
 
   &::before {
     content: "";
@@ -54,7 +55,7 @@
   font-weight: normal;
   text-transform: uppercase;
   margin: 0;
-  padding-left: 10px;
+  padding-left: 4px;
   padding-right: 10px;
 }
 

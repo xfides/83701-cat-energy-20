@@ -19,7 +19,9 @@
 
 .authorSite__wrapImg {
   @include wrapCenteredImage(34px, 34px);
+
   min-width: 34px;
+  left: 4px;
 }
 
 .authorSite__img {
