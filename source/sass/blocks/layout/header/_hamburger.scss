@@ -15,8 +15,6 @@
   width: 26px;
   height: 22px;
   position: relative;
-  top: -1px;
-  left: 1px;
 
   &:hover {
     box-shadow: 0 0 1px 1px transparentize($colorFont--mostDark, 0.5);

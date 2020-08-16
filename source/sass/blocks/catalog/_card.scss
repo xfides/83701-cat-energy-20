@@ -1,10 +1,10 @@
 .card {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
   display: grid;
   grid-template-columns: 140px 1fr;
   grid-template-rows: auto 1fr auto;
-  padding-top: 5px;
+  padding-top: 2px;
 
   &::before,
   &:last-of-type::after {
@@ -35,6 +35,7 @@
   margin-left: auto;
   margin-right: auto;
   z-index: 24;
+  top: 6px;
 }
 
 .card__img {
@@ -137,6 +138,8 @@
     grid-row: auto;
     color: $colorFont--moreDark;
     text-align: center;
+    padding-top: 30px;
+    padding-bottom: 8px;
   }
 
   .card__link {
