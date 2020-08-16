@@ -294,7 +294,41 @@
     }
   }
 
+  class Nav {
+
+    static classNames = {
+      NAV: 'header__wrapNav',
+      NAV_CLOSED: 'header__wrapNav--closedJS',
+      SPIN_BTN: 'hamburger',
+      SPIN_BTN_CLOSED_NAV: 'hamburger--pressedJS',
+    };
+
+    constructor(){
+      this._domNav = document.querySelector(`.${Nav.classNames.NAV}`);
+      this._domSpinBtn = document.querySelector(`.${Nav.classNames.SPIN_BTN}`);
+      this._handleSpinBtn = this._handleSpinBtn.bind(this);
+      this._readyToInit = this._domNav && this._domSpinBtn;
+    }
+
+    init(){
+      if (!this._readyToInit) {
+        return;
+      }
+
+      this._domNav.classList.add(Nav.classNames.NAV_CLOSED);
+      this._domSpinBtn.addEventListener('click', this._handleSpinBtn);
+    }
+
+    _handleSpinBtn(evt){
+      this._domNav.classList.toggle(Nav.classNames.NAV_CLOSED);
+      this._domSpinBtn.classList.toggle(Nav.classNames.SPIN_BTN_CLOSED_NAV);
+    }
+  }
+
+
   //(( client code ))
   let slider = new Slider();
+  let nav = new Nav();
   slider.init();
+  nav.init();
 }());

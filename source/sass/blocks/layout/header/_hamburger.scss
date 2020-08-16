@@ -62,9 +62,7 @@
   }
 }
 
-// TODO .hamburger:active fot testing (IN FUTURE DELETE)!!!
-.hamburger--pressedJS,
-.hamburger:active {
+.hamburger--pressedJS {
   .hamburger__inner {
     transition-delay: 0s;
     transition-timing-function: ease-out;
