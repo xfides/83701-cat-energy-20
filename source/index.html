@@ -11,6 +11,10 @@
   <header class="header container">
 
     <span class="logo logo--active header__logoWrap">
+
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg" />
+        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg" />
         <img
           class="logo__img"
           src="./img/logo-mobile.svg"
@@ -18,10 +22,12 @@
           width="192"
           height="38"
         /><!-- /.header__logoImg -->
+      </picture>
+
     </span><!-- /.header__logoWrap -->
 
     <button
-      class="hamburger header__controlNav"
+      class="hamburger header__controlNav hamburger--hiddenWithNoJS"
       type="button"
       aria-label="Переключить меню"
       aria-controls="nav"
@@ -342,7 +348,7 @@
 
     </article><!-- /.contacts -->
 
-    <div class="map">
+    <div class="map" id="map">
       <img
         class="map__img"
         src="./img/bg-map-mobile@1x.png"

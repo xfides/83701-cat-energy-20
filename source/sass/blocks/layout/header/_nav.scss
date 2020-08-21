@@ -1,6 +1,10 @@
 .nav {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: $widthTablet) {
+    display: flex;
+  }
 }
 
 .nav__item {
@@ -19,6 +23,13 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+  }
+
+  @media (min-width: $widthTablet) {
+    &::before {
+      display: none;
+    }
+    margin-left: 35px;
   }
 }
 

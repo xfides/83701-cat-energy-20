@@ -20,6 +20,14 @@
     box-shadow: 0 0 1px 1px transparentize($colorFont--mostDark, 0.5);
     opacity: 0.5;
   }
+
+  &--hiddenWithNoJS {
+    display: none;
+  }
+
+  @media (min-width: $widthTablet) {
+    display: none;
+  }
 }
 
 // @formatter:off
