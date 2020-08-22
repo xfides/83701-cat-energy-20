@@ -477,7 +477,6 @@
         this._currentTypeView === Map.config.desktop.TYPE_VIEW
         && (!Helpers.isMobileView(Map.config.tablet.MAX_VIEW_WIDTH))
       ) {
-        console.log(`no change`);
         return;
       }
 

@@ -23,7 +23,6 @@
   &:first-of-type {
     left: 0;
     z-index: 40;
-    //width: 50%;
 
     .slider__img {
       object-position: left;
@@ -68,6 +67,7 @@
   padding: 6px;
   border: none;
   position: relative;
+  background-color: transparent;
 
   &:hover,
   &:active,
@@ -85,7 +85,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    border-bottom: 1px dotted $colorDecor--dark;
+    border-bottom: 1px dotted transparent;
   }
 
   &:hover::after {
@@ -117,4 +117,10 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+
+@media (min-width: $widthTablet) {
+  .slider__btn {
+    border-bottom: 1px dotted $colorDecor--dark;
+  }
 }
