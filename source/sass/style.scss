@@ -1,11 +1,12 @@
 //(( NORMALIZE ))
-@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "./normalize";
 
 //(( LOCAL SASS HELPERS ))
 @import "./variables";
 @import "./mixins";
 
 //(( COMMON STYLES: fonts, body, ... etc (NOT PAGE'S LAYOUT!) ))
+@import "./fonts";
 @import "./common";
 
 //(( BLOCKS LAYOUT ))

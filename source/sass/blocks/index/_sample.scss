@@ -3,13 +3,14 @@
 }
 
 .sample__text {
+  margin: 0;
+  padding-bottom: 25px;
+
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   font-family: $fontMinor;
-  font-weight: normal;
   color: $colorFont--lessDark;
-  margin: 0;
-  padding-bottom: 25px;
   word-spacing: 1px;
 }
 

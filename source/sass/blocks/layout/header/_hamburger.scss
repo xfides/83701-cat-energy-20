@@ -1,20 +1,24 @@
 .hamburger {
+  position: relative;
+
   display: block;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 0;
-  padding-right: 0;
-  cursor: pointer;
-  transition: box-shadow 0.15s linear, opacity 0.15s linear;
-  font-size: 0;
-  line-height: 0;
-  background-color: transparent;
-  outline: none;
-  border: 1px solid transparent;
-  opacity: 1;
   width: 26px;
   height: 22px;
-  position: relative;
+  padding-top: 2px;
+  padding-right: 0;
+  padding-bottom: 2px;
+  padding-left: 0;
+
+  font-size: 0;
+  line-height: 0;
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  opacity: 1;
+
+  transition: box-shadow 0.15s linear, opacity 0.15s linear;
 
   &:hover {
     box-shadow: 0 0 1px 1px transparentize($colorFont--mostDark, 0.5);
@@ -30,72 +34,81 @@
   }
 }
 
-// @formatter:off
 .hamburger__inner {
-  display: block;
+  position: absolute;
   top: 50%;
-  margin-top: -1px;
+
+  display: block;
   width: 24px;
   height: 2px;
+  margin-top: -1px;
+
   background-color: $colorFont--mostDark;
-  position: absolute;
+
   transition: background-color 0.125s ease-in 0.175s;
 
   &::before,
   &::after {
     content: "";
+    position: absolute;
+
     display: block;
     width: 24px;
     height: 2px;
+
     background-color: $colorFont--mostDark;
-    position: absolute;
   }
 
   &::before {
     top: -7px;
     left: 0;
-    transition:
-      transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
-      top 0.05s linear 0.125s,
-      left 0.125s ease-in 0.175s;
+
+    transition: // formatter line
+    transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 0.05s linear 0.125s,
+    left 0.125s ease-in 0.175s;
   }
 
   &::after {
-    bottom: -7px;
     right: 0;
-    transition:
-      transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
-      top 0.05s linear 0.125s,
-      right 0.125s ease-in 0.175s;
+    bottom: -7px;
+
+    transition: // formatter line
+    transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 0.05s linear 0.125s,
+    right 0.125s ease-in 0.175s;
   }
 }
 
 .hamburger--pressedJS {
   .hamburger__inner {
+    background-color: transparent;
+
     transition-delay: 0s;
     transition-timing-function: ease-out;
-    background-color: transparent;
   }
 
   .hamburger__inner::before {
-    left: -10px;
     top: -10px;
+    left: -10px;
+
     transform: translate3d(10px, 10px, 0) rotate(45deg);
-    transition:
-      transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
-      left 0.125s ease-out,
-      top 0.05s 0.125s linear;
+
+    transition: // formatter line
+    transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
+    left 0.125s ease-out,
+    top 0.05s 0.125s linear;
   }
 
   .hamburger__inner::after {
-    right: -10px;
     top: -10px;
+    right: -10px;
+
     transform: translate3d(-10px, 10px, 0) rotate(-45deg);
-    transition:
-      transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
-      right 0.125s ease-out,
-      top 0.05s 0.125s linear;
+
+    transition: // formatter line
+    transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
+    right 0.125s ease-out,
+    top 0.05s 0.125s linear;
   }
 }
-
-// @formatter:on

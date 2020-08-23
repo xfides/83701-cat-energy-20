@@ -1,10 +1,12 @@
 .social {
-  padding: 0;
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 0;
+
+  list-style-type: none;
+
   border-top: 1px solid $colorDecor--leastLight;
   border-bottom: 1px solid $colorDecor--leastLight;
 }
@@ -15,6 +17,7 @@
 
 .social__link {
   @include wrapCenteredImage(23px, 23px);
+
   display: block;
 
   &:active {
@@ -24,5 +27,6 @@
 
 .social__img {
   @include centerImage;
+
   height: 100%;
 }

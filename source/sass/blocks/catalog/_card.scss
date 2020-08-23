@@ -1,20 +1,24 @@
 .card {
   position: relative;
-  padding-bottom: 23px;
+
   display: grid;
+  padding-top: 2px;
+  padding-bottom: 23px;
+
   grid-template-columns: 140px 1fr;
   grid-template-rows: auto 1fr auto;
-  padding-top: 2px;
 
   &::before,
   &:last-of-type::after {
     content: "";
-    display: block;
     position: absolute;
+    left: 50%;
+
+    display: block;
     width: 200%;
     height: 1px;
+
     background-color: $colorDecor--moreLight;
-    left: 50%;
     transform: translateX(-50%);
   }
 
@@ -30,12 +34,14 @@
 .card__wrapImg {
   @include wrapCenteredImage(140px, auto);
 
-  grid-row: 1 / span 2;
-  align-self: end;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 24;
   top: 6px;
+  z-index: 24;
+
+  align-self: end;
+  margin-right: auto;
+  margin-left: auto;
+
+  grid-row: 1 / span 2;
 }
 
 .card__img {
@@ -45,17 +51,19 @@
 }
 
 .card__title {
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 14px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   font-family: $fontMajor;
-  font-weight: normal;
   color: $colorFont--dark;
   text-transform: uppercase;
+
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
-  padding-bottom: 14px;
-  padding-top: 22px;
-  margin: 0;
 }
 
 .card__link {
@@ -64,19 +72,20 @@
 }
 
 .card__spec {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-weight: normal;
   font-size: 12px;
   line-height: 16px;
   font-family: $fontMinor;
-  font-weight: normal;
   color: $colorFont--lessDark;
+
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
-  border-spacing: 0;
-  border-collapse: collapse;
 
   & td {
-    padding: 0;
     margin: 0;
+    padding: 0;
   }
 
   & td:nth-of-type(2) {
@@ -85,28 +94,33 @@
 }
 
 .card__button {
-  width: 100%;
-  grid-column: 1 / -1;
   position: relative;
   z-index: 25;
+
+  width: 100%;
+
+  grid-column: 1 / -1;
 }
 
 .card--more {
   .card__wrapImg {
-    grid-row: auto;
-    grid-column: 1 / -1;
     width: 30px;
     height: 30px;
     margin-top: 20px;
 
+    grid-column: 1 / -1;
+    grid-row: auto;
+
     &::before,
     &::after {
       content: "";
-      display: block;
-      background-color: $colorDecor--leastDark;
       position: absolute;
       top: 50%;
       left: 50%;
+
+      display: block;
+
+      background-color: $colorDecor--leastDark;
       transform: translate(-50%, -50%);
     }
 
@@ -134,12 +148,14 @@
   }
 
   .card__title {
-    grid-column: 1 / -1;
-    grid-row: auto;
-    color: $colorFont--moreDark;
-    text-align: center;
     padding-top: 30px;
     padding-bottom: 8px;
+
+    text-align: center;
+    color: $colorFont--moreDark;
+
+    grid-column: 1 / -1;
+    grid-row: auto;
   }
 
   .card__link {
@@ -147,15 +163,18 @@
   }
 
   .card__spec {
-    grid-row: auto;
-    grid-column: 1 / -1;
-    text-align: center;
     margin-bottom: 20px;
+
+    text-align: center;
+
+    grid-column: 1 / -1;
+    grid-row: auto;
   }
 
   .card__button {
-    background-color: $colorBackground--moreLight;
     color: $colorFont--lessDark;
+
+    background-color: $colorBackground--moreLight;
 
     &:hover {
       background-color: $colorBackground--light;

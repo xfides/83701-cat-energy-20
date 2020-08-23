@@ -1,14 +1,16 @@
 .button {
   display: inline-block;
+  padding: 10px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   font-family: $fontMajor;
-  font-weight: normal;
   text-align: center;
   color: $colorFont--mostLight;
-  background-color: $colorBackground--dark;
   text-transform: uppercase;
-  padding: 10px;
+
+  background-color: $colorBackground--dark;
   cursor: pointer;
 
   &:hover {
@@ -17,7 +19,8 @@
 
   &:active,
   &:focus {
-    background-color: $colorBackground--moreDark;
     color: $colorFont--leastLight;
+
+    background-color: $colorBackground--moreDark;
   }
 }

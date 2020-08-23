@@ -1,7 +1,8 @@
 {
   "exclude": [
     ".git/**",
-    "node_modules/**"
+    "node_modules/**",
+    "source/sass/blocks/_normalize.scss"
   ],
 
   "always-semicolon": true,
@@ -29,6 +30,11 @@
   "unitless-zero": true,
   "vendor-prefix-align": true,
   "sort-order": [
+    [ "$variable" ],
+    [ "$include" ],
+    [ "$include media" ],
+    [ "$extend" ],
+    [ "$import" ],
     [
       "content",
       "position",

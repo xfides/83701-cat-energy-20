@@ -1,22 +1,25 @@
 .slider {
-  background-color: $colorBackground--lessLight;
   padding-bottom: 28px;
+
+  background-color: $colorBackground--lessLight;
 }
 
 .slider__track {
-  height: 240px;
+  position: relative;
+
   width: 100%;
   max-width: 320px;
-  position: relative;
-  margin-bottom: 27px;
-  overflow: hidden;
-  margin-left: auto;
+  height: 240px;
   margin-right: auto;
+  margin-bottom: 27px;
+  margin-left: auto;
+  overflow: hidden;
 }
 
 .slider__slide {
   position: absolute;
   top: 0;
+
   width: 100%;
   height: 100%;
 
@@ -32,7 +35,8 @@
   &:last-of-type {
     right: 0;
     z-index: 39;
-    width: 0%;
+
+    width: 0;
 
     .slider__img {
       object-position: right;
@@ -42,32 +46,38 @@
 
 .slider__img {
   position: absolute;
-  height: 100%;
-  object-fit: cover;
   top: 50%;
+
+  height: 100%;
+
   transform: translateY(-50%);
+
+  object-fit: cover;
 }
 
 .slider__control {
-  width: 208px;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 208px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .slider__btn {
-  cursor: pointer;
+  position: relative;
+
+  padding: 6px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   font-family: $fontMajor;
-  font-weight: normal;
   text-transform: uppercase;
-  padding: 6px;
-  border: none;
-  position: relative;
+
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 
   &:hover,
   &:active,
@@ -78,14 +88,16 @@
 
   &::after {
     content: "";
-    display: block;
-    height: 1px;
-    width: calc(100% - 2 * 6px);
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+
+    display: block;
+    width: calc(100% - 2 * 6px);
+    height: 1px;
+
     border-bottom: 1px dotted transparent;
+    transform: translateX(-50%);
   }
 
   &:hover::after {
@@ -98,24 +110,28 @@
 }
 
 .slider__bar {
+  position: relative;
+
   width: 84px;
   height: 14px;
-  background-color: $colorBackground--mostLight;
-  border-radius: 6px;
-  border: 1px solid $colorDecor--lessDark;
-  position: relative;
-  padding-left: 6px;
   padding-right: 6px;
+  padding-left: 6px;
   overflow: hidden;
+
+  background-color: $colorBackground--mostLight;
+  border: 1px solid $colorDecor--lessDark;
+  border-radius: 6px;
 }
 
 .slider__roll {
-  width: 35px;
-  height: 6px;
-  border-radius: 6px;
-  background-color: $colorBackground--dark;
   position: relative;
   top: 50%;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: $colorBackground--dark;
+  border-radius: 6px;
   transform: translateY(-50%);
 }
 

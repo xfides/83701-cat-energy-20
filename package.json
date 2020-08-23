@@ -21,7 +21,7 @@
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp",
-    "comb": "csscomb source/sass/blocks"
+    "comb": "csscomb source/sass"
   },
   "browserslist": [
     "last 2 versions",
@@ -39,7 +39,5 @@
   "engines": {
     "node": "12.18.2"
   },
-  "dependencies": {
-    "normalize-scss": "7.0.1"
-  }
+  "dependencies": {}
 }

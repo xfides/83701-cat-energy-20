@@ -9,22 +9,25 @@
 }
 
 .authorSite__text {
+  padding-right: 10px;
+
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   font-family: $fontMinor;
-  font-weight: normal;
   color: $colorFont--lessDark;
-  padding-right: 10px;
 }
 
 .authorSite__wrapImg {
   @include wrapCenteredImage(34px, 34px);
 
-  min-width: 34px;
   left: 4px;
+
+  min-width: 34px;
 }
 
 .authorSite__img {
   @include centerImage;
+
   width: 100%;
 }

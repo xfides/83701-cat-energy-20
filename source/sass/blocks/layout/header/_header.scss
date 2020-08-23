@@ -1,34 +1,40 @@
 .header {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   overflow: hidden;
-  position: relative;
+
+  background-color: transparent;
 
   &::after {
     content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
     display: block;
     width: 200%;
     height: 1px;
+
     background-color: $colorDecor--light;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
     transform: translateX(-50%);
   }
 }
 
 .header__logoWrap {
+  position: relative;
+
   margin-top: 11px;
   margin-bottom: 16px;
-  position: relative;
 }
 
 .header__wrapNav {
   width: 100%;
   max-height: 999px;
+
   transition: max-height 0.2s;
 
   &--closedJS {
@@ -36,11 +42,10 @@
   }
 
   @media (min-width: $widthTablet) {
+    width: auto;
     &--closedJS {
       max-height: none;
     }
-
-    width: auto;
   }
 }
 

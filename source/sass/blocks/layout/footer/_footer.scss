@@ -1,8 +1,9 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: $colorBackground--moreLight;
   padding-top: 39px;
+
+  background-color: $colorBackground--moreLight;
 }
 
 .footer__logoWrap {
@@ -11,8 +12,8 @@
 }
 
 .footer__social {
-  margin-bottom: 22px;
   margin-top: 0;
+  margin-bottom: 22px;
 }
 
 .footer__authorSite {

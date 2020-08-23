@@ -1,9 +1,11 @@
 .stepsList {
-  list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr;
   padding-top: 4px;
   padding-left: 0;
+
+  list-style-type: none;
+
+  grid-template-columns: 1fr;
 }
 
 .stepsList__item {
@@ -14,21 +16,25 @@
 
 .stepsList__itemWrapImg {
   @include wrapCenteredImage(60px, 60px);
-  background-color: $colorBackground--dark;
+
   min-width: 60px;
+
+  background-color: $colorBackground--dark;
 }
 
 .stepsList__itemImg {
   @include centerImage;
+
   width: 100%;
 }
 
 .stepsList__itemText {
-  padding-left: 20px;
   margin: 0;
+  padding-left: 20px;
+
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   font-family: $fontMinor;
-  font-weight: normal;
   color: $colorFont--lessDark;
 }

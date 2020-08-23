@@ -3,12 +3,13 @@
 }
 
 .selection__invite {
+  margin: 0;
+  padding-right: 5%;
+  padding-bottom: 20px;
+
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   font-family: $fontMajor;
-  font-weight: normal;
   text-transform: uppercase;
-  padding-right: 5%;
-  padding-bottom: 20px;
-  margin: 0;
 }

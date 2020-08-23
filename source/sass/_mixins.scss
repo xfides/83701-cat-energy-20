@@ -2,36 +2,21 @@
   position: relative;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 }
 
 @mixin wrapCenteredImage($width: 100%, $height: auto) {
+  position: relative;
+
   width: $width;
   height: $height;
-  position: relative;
   overflow: hidden;
 }
 
-@mixin stylePlaceholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-
-  &:-moz-placeholder {
-    @content;
-  }
-
-  &::-moz-placeholder {
-    @content;
-  }
-
-  &:-ms-input-placeholder {
-    @content;
-  }
-}
-
 @mixin enlargeButton {
+  padding: 13px 25px;
+
   font-size: 20px;
   line-height: 24px;
-  padding: 13px 25px;
 }
