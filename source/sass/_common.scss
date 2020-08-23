@@ -1,8 +1,18 @@
 *,
 *::before,
 *::after {
-  outline: 1px solid red;
   box-sizing: border-box;
+
+  outline: 1px solid red;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: $fontMinor;
+  color: $colorFont--mostDark;
+
+  background-color: $colorBackground--mostLight;
 }
 
 .visuallyHidden {
@@ -31,11 +41,4 @@ img {
 a {
   color: $colorFont--mostDark;
   text-decoration: none;
-}
-
-html,
-body {
-  color: $colorFont--mostDark;
-
-  background-color: $colorBackground--mostLight;
 }

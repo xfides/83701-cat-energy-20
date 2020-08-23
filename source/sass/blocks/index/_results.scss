@@ -25,7 +25,6 @@
 .results__value {
   display: block;
 
-  font-weight: normal;
   font-size: 24px;
   line-height: 24px;
   font-family: $fontMajor;
@@ -40,10 +39,8 @@
   display: inline-block;
   width: 65%;
 
-  font-weight: normal;
   font-size: 12px;
   line-height: 12px;
-  font-family: $fontMinor;
   color: $colorFont--lessDark;
 
   background-color: $colorBackground--lessLight;
