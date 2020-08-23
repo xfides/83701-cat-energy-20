@@ -81,12 +81,12 @@
   grid-column: 2 / span 1;
   grid-row: 2 / span 1;
 
-  & td {
+  td {
     margin: 0;
     padding: 0;
   }
 
-  & td:nth-of-type(2) {
+  td:nth-of-type(2) {
     text-align: right;
   }
 }
@@ -120,16 +120,13 @@
 
       background-color: $colorDecor--leastDark;
       transform: translate(-50%, -50%);
-    }
 
-    &::before {
       width: 30px;
       height: 2px;
     }
 
     &::after {
-      width: 2px;
-      height: 30px;
+      transform: translate(-50%, -50%) rotate(90deg);
     }
 
     &:hover::before,

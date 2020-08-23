@@ -52,10 +52,10 @@
   font-size: 14px;
   line-height: 18px;
   color: $colorFont--lessDark;
-}
 
-.extraCard__spec td:nth-of-type(2) {
-  text-align: right;
+  td:nth-of-type(2) {
+    text-align: right;
+  }
 }
 
 .extraCard__button {

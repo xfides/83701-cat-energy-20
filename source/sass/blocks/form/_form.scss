@@ -12,20 +12,20 @@
   &--withoutTitle {
     padding-top: 18px;
     padding-bottom: 22px;
-  }
 
-  &--withoutTitle::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
 
-    display: block;
-    width: 200%;
-    height: 1px;
+      display: block;
+      width: 200%;
+      height: 1px;
 
-    background-color: $colorDecor--leastLight;
-    transform: translateX(-50%);
+      background-color: $colorDecor--leastLight;
+      transform: translateX(-50%);
+    }
   }
 
   &:last-of-type {
@@ -74,6 +74,7 @@
 
   border: 1px solid $colorDecor--light;
   outline: none;
+
   //noinspection CssInvalidPseudoSelector
   &::placeholder {
     color: $colorFont--lessDark;
@@ -92,9 +93,13 @@
     padding-right: 5px;
     padding-left: 13px;
 
-    text-transform: inherit;
-
+    text-transform: none;
     resize: vertical;
+
+    //noinspection CssInvalidPseudoSelector
+    &::placeholder {
+      text-transform: uppercase;
+    }
   }
 
   &:hover {
@@ -240,8 +245,7 @@
 }
 
 .form__attention {
-  display: inline-block;
-  width: 100%;
+  display: block;
   padding-top: 21px;
   padding-bottom: 32px;
 
