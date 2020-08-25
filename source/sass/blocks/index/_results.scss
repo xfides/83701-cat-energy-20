@@ -1,10 +1,9 @@
 .results {
+  @include pureUl;
+
   display: flex;
   justify-content: space-between;
   padding-bottom: 35px;
-  padding-left: 0;
-
-  list-style-type: none;
 }
 
 .results__item {
@@ -26,7 +25,7 @@
   display: block;
 
   font-size: 24px;
-  line-height: 24px;
+  line-height: (24 / 24);
   font-family: $fontMajor;
   text-transform: uppercase;
 }
@@ -40,7 +39,7 @@
   width: 65%;
 
   font-size: 12px;
-  line-height: 12px;
+  line-height: (12 / 12);
   color: $colorFont--lessDark;
 
   background-color: $colorBackground--lessLight;

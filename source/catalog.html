@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="noJS">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
   <title>Каталог</title>
+  <script>
+    document.documentElement.className =
+      document.documentElement.className.replace(/\bnoJS\b/g, '');
+  </script>
 </head>
 <body>
 
@@ -349,7 +353,9 @@
 
         <li class="card productList__item card--more">
 
-          <a class="card__wrapImg" href="#"></a>
+          <a class="card__wrapImg" href="#">
+            Значок дополнительных товаров
+          </a>
 
           <h3 class="card__title">
             <a class="card__link" href="#">
@@ -489,7 +495,7 @@
           <img
             class="discount__img"
             src="./img/icon-gift.svg"
-            alt="Картинка акции" >
+            alt="Картинка акции">
         </span>
         <span class="discount__text">
         Закажите все и получите чехол для кота в подарок!

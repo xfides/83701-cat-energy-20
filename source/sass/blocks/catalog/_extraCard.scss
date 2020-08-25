@@ -3,28 +3,13 @@
 
   display: flex;
   flex-wrap: wrap;
-  padding-top: 13px;
-  padding-bottom: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
-  &::before,
-  &:last-of-type::after {
-    content: "";
-    position: absolute;
-    left: 0;
+  border-top: 1px solid $colorDecor--lessDark;
 
-    display: block;
-    width: 100%;
-    height: 1px;
-
-    background-color: $colorDecor--lessDark;
-  }
-
-  &::before {
-    top: 0;
-  }
-
-  &:last-of-type::after {
-    bottom: 0;
+  &:last-of-type {
+    border-bottom: 1px solid $colorDecor--lessDark;
   }
 }
 
@@ -35,7 +20,7 @@
 
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: (20 / 16);
   font-family: $fontMajor;
   color: $colorFont--dark;
   text-transform: uppercase;
@@ -50,7 +35,7 @@
   padding-bottom: 10px;
 
   font-size: 14px;
-  line-height: 18px;
+  line-height: (18 / 14);
   color: $colorFont--lessDark;
 
   td:nth-of-type(2) {

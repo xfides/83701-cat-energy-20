@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="noJS">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
   <title>Заказать</title>
+  <script>
+    document.documentElement.className =
+      document.documentElement.className.replace(/\bnoJS\b/g, '');
+  </script>
 </head>
 <body>
 
   <header class="header container">
 
     <a class="logo header__logoWrap" href="index.html">
-        <img
-          class="logo__img"
-          src="./img/logo-mobile.svg"
-          alt="Логотип"
-          width="192"
-          height="38"
-        /><!-- /.header__logoImg -->
+      <img
+        class="logo__img"
+        src="./img/logo-mobile.svg"
+        alt="Логотип"
+        width="192"
+        height="38"
+      /><!-- /.header__logoImg -->
     </a><!-- /.header__logoWrap -->
 
     <button
-      class="hamburger header__controlNav hamburger--hiddenWithNoJS"
+      class="hamburger header__controlNav"
       type="button"
       aria-controls="nav"
     >

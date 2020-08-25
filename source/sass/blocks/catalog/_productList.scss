@@ -1,9 +1,8 @@
 .productList {
+  @include pureUl;
+
   display: grid;
   margin: 0;
-  padding-left: 0;
-
-  list-style-type: none;
 
   grid-template-columns: 1fr;
 }

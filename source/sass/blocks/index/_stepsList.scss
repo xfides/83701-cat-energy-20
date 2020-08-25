@@ -1,9 +1,8 @@
 .stepsList {
+  @include pureUl;
+
   display: grid;
   padding-top: 4px;
-  padding-left: 0;
-
-  list-style-type: none;
 
   grid-template-columns: 1fr;
 }
@@ -33,6 +32,6 @@
   padding-left: 20px;
 
   font-size: 14px;
-  line-height: 18px;
+  line-height: (18 / 14);
   color: $colorFont--lessDark;
 }

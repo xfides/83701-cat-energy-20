@@ -57,7 +57,7 @@
 
   font-weight: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: (20 / 16);
   font-family: $fontMajor;
   color: $colorFont--dark;
   text-transform: uppercase;
@@ -75,7 +75,7 @@
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 12px;
-  line-height: 16px;
+  line-height: (16 / 12);
   color: $colorFont--lessDark;
 
   grid-column: 2 / span 1;
@@ -106,8 +106,12 @@
     height: 30px;
     margin-top: 20px;
 
+    font-size: 0;
+    line-height: 0;
+
     grid-column: 1 / -1;
     grid-row: auto;
+
 
     &::before,
     &::after {
@@ -117,12 +121,11 @@
       left: 50%;
 
       display: block;
+      width: 30px;
+      height: 2px;
 
       background-color: $colorDecor--leastDark;
       transform: translate(-50%, -50%);
-
-      width: 30px;
-      height: 2px;
     }
 
     &::after {

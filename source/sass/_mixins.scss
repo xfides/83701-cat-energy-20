@@ -14,14 +14,15 @@
   overflow: hidden;
 }
 
-@mixin no-list {
-  list-style: none;
+@mixin pureUl {
   padding: 0;
+
+  list-style-type: none;
 }
 
 @mixin enlargeButton {
   padding: 13px 25px;
 
   font-size: 20px;
-  line-height: 24px;
+  line-height: (24 / 20);
 }

@@ -336,8 +336,7 @@
       NAV: 'header__wrapNav',
       NAV_CLOSED: 'header__wrapNav--closedJS',
       SPIN_BTN: 'hamburger',
-      SPIN_BTN_CLOSED_NAV: 'hamburger--pressedJS',
-      SPIN_BTN_HIDDEN: 'hamburger--hiddenWithNoJS',
+      SPIN_BTN_CLOSED_NAV: 'hamburger--pressedJS'
     };
 
     static config = {
@@ -359,7 +358,6 @@
         return;
       }
 
-      this._domSpinBtn.classList.remove(Nav.classNames.SPIN_BTN_HIDDEN);
       this._domSpinBtn.addEventListener('click', this._handleSpinBtn);
       window.addEventListener('resize', this._reload);
 

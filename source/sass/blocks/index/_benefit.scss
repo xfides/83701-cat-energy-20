@@ -9,6 +9,7 @@
 
   grid-template-areas: // formatter line
   "wrapImg     title" "description description" "link        link   ";
+
   grid-template-columns: 67px 1fr;
 }
 
@@ -59,7 +60,7 @@
 
   font-weight: normal;
   font-size: 24px;
-  line-height: 37px;
+  line-height: (37 / 24);
   font-family: $fontMajor;
   text-transform: uppercase;
 
@@ -72,7 +73,7 @@
   padding-bottom: 20px;
 
   font-size: 14px;
-  line-height: 18px;
+  line-height: (18 / 14);
   color: $colorFont--lessDark;
 
   border-bottom: 1px solid $colorDecor--leastLight;
@@ -90,7 +91,7 @@
   margin-bottom: 20px;
 
   font-size: 16px;
-  line-height: 16px;
+  line-height: (16 / 16);
   font-family: $fontMajor;
   text-transform: uppercase;
 
