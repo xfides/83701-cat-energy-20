@@ -1,10 +1,10 @@
 .discount {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding-top: 59px;
+  padding-bottom: 39px;
 
   font-weight: normal;
   font-size: 16px;
-  line-height: (20 / 16);
+  line-height: calc(20 / 16);
   text-align: center;
   color: $colorFont--mostLight;
 

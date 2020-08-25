@@ -10,13 +10,8 @@
   border: none;
 
   &--withoutTitle {
-    padding-top: 18px;
+    padding-top: 19px;
     padding-bottom: 22px;
-
-    .form__line {
-      padding-top: 4px;
-      padding-bottom: 11px;
-    }
 
     &::after {
       content: "";
@@ -35,6 +30,7 @@
 
   &:last-of-type {
     padding-bottom: 35px;
+
     .blockTitle--sub {
       margin-bottom: 8px;
     }
@@ -60,7 +56,7 @@
   padding-right: 14px;
 
   font-size: 16px;
-  line-height: (18 / 16);
+  line-height: calc(18 / 16);
   font-family: $fontMajor;
   vertical-align: middle;
   color: $colorFont--lessDark;
@@ -74,7 +70,7 @@
   padding-left: 14px;
 
   font-size: 16px;
-  line-height: (42 / 16);
+  line-height: calc(42 / 16);
   font-family: $fontMajor;
   color: $colorFont--lessDark;
   text-transform: uppercase;
@@ -96,7 +92,6 @@
     display: block;
     width: 100%;
     min-height: 150px;
-    margin-top: 4px;
     padding-right: 5px;
     padding-left: 13px;
 
@@ -156,7 +151,7 @@
 
 .form__checkbox + .form__label {
   padding-top: 4px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   padding-left: 45px;
 
   color: $colorFont--mostDark;
@@ -227,6 +222,7 @@
 
 .form__button {
   width: 100%;
+  margin-top: 2px;
 }
 
 .form__attention {
@@ -237,8 +233,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: (16 / 14);
+  line-height: calc(16 / 14);
   text-align: center;
 }
-
-

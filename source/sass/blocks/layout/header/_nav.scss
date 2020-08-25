@@ -30,6 +30,7 @@
 
   @media (min-width: $widthTablet) {
     margin-left: 35px;
+
     &::before {
       display: none;
     }
@@ -41,7 +42,7 @@
 
   font-weight: 500;
   font-size: 20px;
-  line-height: (20 / 20);
+  line-height: calc(20 / 20);
   font-family: $fontMajor;
   color: $colorFont--mostDark;
   text-transform: uppercase;

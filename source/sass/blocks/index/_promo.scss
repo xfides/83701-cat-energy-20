@@ -20,7 +20,7 @@
 
   font-weight: normal;
   font-size: 36px;
-  line-height: (36 / 36);
+  line-height: calc(36 / 36);
   text-align: center;
 }
 
@@ -31,7 +31,7 @@
 
   font-weight: normal;
   font-size: 14px;
-  line-height: (14 / 14);
+  line-height: calc(14 / 14);
   text-align: center;
   text-transform: uppercase;
 }
@@ -50,5 +50,5 @@
   padding: 11px;
 
   font-size: 14px;
-  line-height: (18 / 14);
+  line-height: calc(18 / 14);
 }

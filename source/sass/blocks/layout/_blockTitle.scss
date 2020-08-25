@@ -4,7 +4,7 @@
 
   font-weight: normal;
   font-size: 36px;
-  line-height: (36 / 36);
+  line-height: calc(36 / 36);
   font-family: $fontMajor;
 }
 
@@ -16,7 +16,7 @@
 
   font-weight: normal;
   font-size: 24px;
-  line-height: (26 / 24);
+  line-height: calc(26 / 24);
   font-family: $fontMajor;
 
   &::before {

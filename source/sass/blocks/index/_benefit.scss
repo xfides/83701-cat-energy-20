@@ -7,9 +7,6 @@
 
   background-color: $colorBackground--moreLight;
 
-  grid-template-areas: // formatter line
-  "wrapImg     title" "description description" "link        link   ";
-
   grid-template-columns: 67px 1fr;
 }
 
@@ -17,8 +14,6 @@
   @include wrapCenteredImage(67px, 67px);
 
   left: -7px;
-
-  grid-area: wrapImg;
 
   &::before {
     @include centerImage;
@@ -60,11 +55,9 @@
 
   font-weight: normal;
   font-size: 24px;
-  line-height: (37 / 24);
+  line-height: calc(37 / 24);
   font-family: $fontMajor;
   text-transform: uppercase;
-
-  grid-area: title;
 }
 
 .benefit__description {
@@ -73,12 +66,12 @@
   padding-bottom: 20px;
 
   font-size: 14px;
-  line-height: (18 / 14);
+  line-height: calc(18 / 14);
   color: $colorFont--lessDark;
 
   border-bottom: 1px solid $colorDecor--leastLight;
 
-  grid-area: description;
+  grid-column: 1 / -1;
 }
 
 .benefit__link {
@@ -91,11 +84,11 @@
   margin-bottom: 20px;
 
   font-size: 16px;
-  line-height: (16 / 16);
+  line-height: calc(16 / 16);
   font-family: $fontMajor;
   text-transform: uppercase;
 
-  grid-area: link;
+  grid-column: 1 / -1;
   justify-self: start;
 
   &:hover .benefit__linkWrapImg {

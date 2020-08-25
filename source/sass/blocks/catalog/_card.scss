@@ -1,33 +1,21 @@
 .card {
   position: relative;
 
-  display: grid;
-  padding-top: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-top: 1px;
+  padding-right: 20px;
   padding-bottom: 23px;
+  padding-left: 20px;
 
-  grid-template-columns: 140px 1fr;
-  grid-template-rows: auto 1fr auto;
+  border-top: 1px solid $colorDecor--moreLight;
 
-  &::before,
-  &:last-of-type::after {
-    content: "";
-    position: absolute;
-    left: 50%;
+  &:last-of-type {
+    padding-bottom: 22px;
 
-    display: block;
-    width: 200%;
-    height: 1px;
-
-    background-color: $colorDecor--moreLight;
-    transform: translateX(-50%);
-  }
-
-  &::before {
-    top: 0;
-  }
-
-  &:last-of-type::after {
-    bottom: 0;
+    border-bottom: 1px solid $colorDecor--moreLight;
   }
 }
 
@@ -40,8 +28,10 @@
   align-self: end;
   margin-right: auto;
   margin-left: auto;
+}
 
-  grid-row: 1 / span 2;
+.card__info {
+  width: calc(100% - 140px);
 }
 
 .card__img {
@@ -57,13 +47,10 @@
 
   font-weight: normal;
   font-size: 16px;
-  line-height: (20 / 16);
+  line-height: calc(20 / 16);
   font-family: $fontMajor;
   color: $colorFont--dark;
   text-transform: uppercase;
-
-  grid-column: 2 / span 1;
-  grid-row: 1 / span 1;
 }
 
 .card__link {
@@ -72,14 +59,13 @@
 }
 
 .card__spec {
+  width: 100%;
+
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 12px;
-  line-height: (16 / 12);
+  line-height: calc(16 / 12);
   color: $colorFont--lessDark;
-
-  grid-column: 2 / span 1;
-  grid-row: 2 / span 1;
 
   td {
     margin: 0;
@@ -96,8 +82,6 @@
   z-index: 25;
 
   width: 100%;
-
-  grid-column: 1 / -1;
 }
 
 .card--more {
@@ -108,10 +92,6 @@
 
     font-size: 0;
     line-height: 0;
-
-    grid-column: 1 / -1;
-    grid-row: auto;
-
 
     &::before,
     &::after {
@@ -145,15 +125,16 @@
     }
   }
 
+  .card__info {
+    width: 100%;
+  }
+
   .card__title {
     padding-top: 30px;
     padding-bottom: 8px;
 
     text-align: center;
     color: $colorFont--moreDark;
-
-    grid-column: 1 / -1;
-    grid-row: auto;
   }
 
   .card__link {
@@ -164,9 +145,6 @@
     margin-bottom: 20px;
 
     text-align: center;
-
-    grid-column: 1 / -1;
-    grid-row: auto;
   }
 
   .card__button {

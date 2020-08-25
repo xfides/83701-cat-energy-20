@@ -1,6 +1,6 @@
 .expenses {
   font-size: 14px;
-  line-height: (20 / 14);
+  line-height: calc(20 / 14);
   font-family: $fontMajor;
   text-align: center;
   text-transform: uppercase;
