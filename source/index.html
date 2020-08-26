@@ -1,53 +1,68 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="noJS">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./css/style.css" rel="stylesheet">
   <title>Главная</title>
+  <script>
+    document.documentElement.className =
+      document.documentElement.className.replace(/\bnoJS\b/g, '');
+  </script>
 </head>
 <body>
 
-  <header class="header">
+  <header class="header container">
 
-    <div class="logo header__logoWrap">
+    <span class="logo logo--active header__logoWrap">
 
-      <span class="logo__ava">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg"/>
+        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg"/>
         <img
-          class="logo__avaImg"
-          src="https://via.placeholder.com/150x150"
+          class="logo__img"
+          src="./img/logo-mobile.svg"
           alt="Логотип"
-          width="34"
+          width="192"
           height="38"
-        /><!-- /.logo__avaImg -->
-      </span><!-- /.logo__ava -->
+        /><!-- /.header__logoImg -->
+      </picture>
 
-      <span class="logo__name">
-        <img
-          class="logo__nameImg"
-          src="https://via.placeholder.com/150x150"
-          alt="магазин Сat-energy"
-          width="101"
-          height="18"
-        /><!-- /.logo__nameImg -->
-      </span><!-- /.logo__name -->
+    </span><!-- /.header__logoWrap -->
 
-    </div><!-- /.header__logoWrap -->
-
-    <button class="header__controlNav" type="button">
-      <span class="visuallyHidden">Переключить меню</span>
+    <button
+      class="hamburger header__controlNav"
+      type="button"
+      aria-controls="nav"
+    >
+      <span class="hamburger__inner">Переключить меню</span>
     </button><!-- /.header__controlNav -->
 
-    <nav class="nav header__nav">
-      <span class="nav__link nav__link--active">Главная</span>
-      <a class="nav__link" href="catalog.html">Каталог продукции</a>
-      <a class="nav__link" href="form.html">Подбор программы</a>
+    <nav class="header__wrapNav" id="nav">
+      <ul class="header__nav nav">
+        <li class="nav__item">
+          <span class="nav__link nav__link--active">
+            Главная
+          </span>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul><!-- /.nav -->
     </nav><!-- /.nav .header__nav -->
 
   </header><!-- /.header -->
 
   <main class="main">
 
-    <section class="promo">
+    <section class="promo container">
 
       <h1 class="promo__mainTitle">
         Функциональное питание для котов
@@ -57,12 +72,14 @@
         Занялся собой? Займись котом!
       </h2><!-- /.promo__subTitle -->
 
-      <picture>
-        <img
-          class="promo__img"
-          src="https://via.placeholder.com/150x150"
-          alt="Изображение лучшего товара от магазина Cat-energy"/>
-      </picture><!-- /.promo__img -->
+      <div class="promo__wrapImg">
+        <picture>
+          <img
+            class="promo__img"
+            src="./img/index-can-mobile@1x.png"
+            alt="Изображение лучшего товара от магазина Cat-energy"/>
+        </picture><!-- /.promo__img -->
+      </div><!-- /.promo__wrapImg -->
 
       <a class="button promo__refLink" href="form.html">
         Подобрать программу
@@ -70,9 +87,17 @@
 
     </section><!-- /.promo -->
 
-    <div class="benefits">
+    <div class="benefits container">
 
-      <article class="benefit">
+      <article class="benefit benefits__item">
+
+        <div class="benefit__wrapImg">
+          <img
+            class="benefit__img benefit__img--slim"
+            src="./img/icon-cat-slim.svg"
+            alt="Худеющий питомец"
+          >
+        </div><!-- /.benefit__wrapImg -->
 
         <h4 class="benefit__title">
           Похудение
@@ -86,12 +111,27 @@
         </p><!-- /.benefit__description -->
 
         <a class="benefit__link" href="catalog.html">
-          Каталог Slim
+          <span class="benefit__linkText">Каталог Slim</span>
+          <span class="benefit__linkWrapImg">
+            <img
+              class="benefit__linkImg"
+              src="./img/icon-right-arrow-verylong.svg"
+              alt="Перейти в каталог продукции Slim"
+            >
+          </span>
         </a><!-- /.benefit__link -->
 
       </article><!-- /.benefit -->
 
-      <article class="benefit">
+      <article class="benefit benefits__item">
+
+        <div class="benefit__wrapImg">
+          <img
+            class="benefit__img benefit__img--pro"
+            src="./img/icon-cat-pro.svg"
+            alt="Набирающий массу питомец"
+          >
+        </div><!-- /.benefit__wrapImg -->
 
         <h4 class="benefit__title">
           Набор массы
@@ -104,24 +144,37 @@
         </p><!-- /.benefit__description -->
 
         <a class="benefit__link" href="catalog.html">
-          Каталог Pro
+          <span class="benefit__linkText">Каталог Pro</span>
+          <span class="benefit__linkWrapImg">
+            <img
+              class="benefit__linkImg"
+              src="./img/icon-right-arrow-verylong.svg"
+              alt="Перейти в каталог продукции Pro"
+            >
+          </span>
         </a><!-- /.benefit__link -->
 
       </article><!-- /.benefit -->
 
     </div><!-- /.benefits -->
 
-    <section class="steps">
+    <section class="steps container">
 
-      <h3 class="blockTitle">
+      <h3 class="blockTitle container__blockTitle">
         Как это работает
       </h3><!-- /.blockTitle -->
 
-      <ul class="stepsList">
+      <ul class="stepsList steps__panel">
 
         <li class="stepsList__item">
 
-          <div class="stepsList__itemIconWrap"></div>
+          <div class="stepsList__itemWrapImg">
+            <img
+              class="stepsList__itemImg"
+              src="./img/advantage-leaf@1x.png"
+              alt="питание с полезными питательными веществами"
+            >
+          </div>
 
           <p class="stepsList__itemText">
             Функциональное питание содержит только
@@ -132,7 +185,13 @@
 
         <li class="stepsList__item">
 
-          <div class="stepsList__itemIconWrap"></div>
+          <div class="stepsList__itemWrapImg">
+            <img
+              class="stepsList__itemImg"
+              src="./img/advantage-powder@1x.png"
+              alt="Выпускается в виде порошка"
+            >
+          </div>
 
           <p class="stepsList__itemText">
             Выпускается в виде порошка, который нужно
@@ -143,7 +202,13 @@
 
         <li class="stepsList__item">
 
-          <div class="stepsList__itemIconWrap"></div>
+          <div class="stepsList__itemWrapImg">
+            <img
+              class="stepsList__itemImg"
+              src="./img/advantage-dining@1x.png"
+              alt="попробуйте наше фунцкциональное питание"
+            >
+          </div>
 
           <p class="stepsList__itemText">
             Замените один-два приема обычной еды на
@@ -154,7 +219,13 @@
 
         <li class="stepsList__item">
 
-          <div class="stepsList__itemIconWrap"></div>
+          <div class="stepsList__itemWrapImg">
+            <img
+              class="stepsList__itemImg"
+              src="./img/advantage-clock@1x.png"
+              alt="смотрите результат через месяц"
+            >
+          </div>
 
           <p class="stepsList__itemText">
             Уже через месяц наслаждайтесь изменениями
@@ -167,9 +238,9 @@
 
     </section><!-- /.steps -->
 
-    <section class="sample">
+    <section class="sample container">
 
-      <h3 class="blockTitle">
+      <h3 class="blockTitle container__blockTitle">
         Живой пример
       </h3><!-- /.blockTitle -->
 
@@ -184,9 +255,9 @@
       <ul class="results sample__results">
 
         <li class="results__item">
-        <span class="results__value">
-          5 КГ
-        </span>
+          <span class="results__value">
+            5 КГ
+          </span>
           <span class="results__claim">
           снижение веса
         </span>
@@ -194,12 +265,12 @@
         <!-- /.results__item -->
 
         <li class="results__item">
-        <span class="results__value">
-          60 ДНЕЙ
-        </span>
+          <span class="results__value">
+            60 ДНЕЙ
+          </span>
           <span class="results__claim">
-          затрачено времени
-        </span>
+            затрачено времени
+          </span>
         </li>
         <!-- /.results__item -->
 
@@ -214,47 +285,51 @@
         </span>
       </div><!-- /.expenses .sample__expenses -->
 
-      <div class="slider sample__slider">
-
-        <div class="slider__track">
-
-          <div class="slider__slide">
-            <img
-              class="slider__img"
-              src="https://via.placeholder.com/150x150"
-              alt="ваш питомец до использования еды Cat-energy"
-            /><!-- /.slider__img -->
-          </div><!-- /.slider__slide -->
-
-          <div class="slider__slide">
-            <img
-              class="slider__img"
-              src="https://via.placeholder.com/150x150"
-              alt="ваш питомец после использования еды Cat-energy"
-            /><!-- /.slider__img -->
-          </div><!-- /.slider__slide -->
-
-        </div><!-- /.slider__track -->
-
-        <div class="slider__control">
-
-          <button class="slider__prev" type="button">Было</button>
-          <div class="slider__bar">
-            <div class="slider__roll"></div>
-          </div>
-          <button class="slider__next" type="button">Стало</button>
-
-        </div><!-- /.slider__control -->
-
-      </div><!-- /.slider sample__slider -->
-
     </section><!-- /.sample -->
+
+    <div class="slider">
+
+      <div class="slider__track">
+
+        <div class="slider__slide">
+          <img
+            class="slider__img"
+            src="./img/before-mobile@1x.png"
+            alt="ваш питомец до использования еды Cat-energy"
+          /><!-- /.slider__img -->
+        </div><!-- /.slider__slide -->
+
+        <div class="slider__slide">
+          <img
+            class="slider__img"
+            src="./img/after-mobile@1x.png"
+            alt="ваш питомец после использования еды Cat-energy"
+          /><!-- /.slider__img -->
+        </div><!-- /.slider__slide -->
+
+      </div><!-- /.slider__track -->
+
+      <div class="slider__control">
+
+        <button class="slider__btn slider__btn--prevJS" type="button">
+          Было
+        </button>
+        <div class="slider__bar">
+          <div class="slider__roll"></div>
+        </div>
+        <button class="slider__btn slider__btn--nextJS" type="button">
+          Стало
+        </button>
+
+      </div><!-- /.slider__control -->
+
+    </div><!-- /.slider sample__slider -->
 
   </main><!-- /.main -->
 
   <div class="location">
 
-    <article class="contacts">
+    <article class="contacts container">
 
       <h5 class="contacts__title">
         Приглашаем к сотрудничеству дилеров!
@@ -276,30 +351,26 @@
 
     </article><!-- /.contacts -->
 
-    <div class="map">
+    <div class="map" id="map">
       <img
         class="map__img"
-        src="https://via.placeholder.com/150x150"
+        src="./img/bg-map-mobile@1x.png"
         alt="Наше местопололжение на карте">
     </div><!-- /.map -->
 
   </div><!-- /.location -->
 
-  <footer class="footer">
+  <footer class="footer container">
 
-    <div class="logo footer__logoWrap">
-
-      <span class="logo__name">
-        <img
-          class="logo__nameImg"
-          src="https://via.placeholder.com/150x150"
-          alt="магазин Сat-energy"
-          width="101"
-          height="18"
-        /><!-- /.logo__nameImg -->
-      </span><!-- /.logo__name -->
-
-    </div><!-- /.footer__logoWrap -->
+    <span class="logo logo--name logo--active footer__logoWrap">
+      <img
+        class="logo__img"
+        src="./img/logo-footer.svg"
+        alt="магазин Сat-energy"
+        width="128"
+        height="24"
+      /><!-- /.footer__logoImg -->
+    </span><!-- /.footer__logoWrap -->
 
     <ul class="social footer__social">
 
@@ -310,7 +381,7 @@
           </em>
           <img
             class="social__img"
-            src="https://via.placeholder.com/150x150"
+            src="./img/icon-vk.svg"
             alt="Логотип сайта vk.com"
             width="23"
             height="23"
@@ -325,7 +396,7 @@
           </em>
           <img
             class="social__img"
-            src="https://via.placeholder.com/150x150"
+            src="./img/icon-insta.svg"
             alt="Логотип сайта instagram.com"
             width="23"
             height="23"
@@ -340,7 +411,7 @@
           </em>
           <img
             class="social__img"
-            src="https://via.placeholder.com/150x150"
+            src="./img/icon-fb.svg"
             alt="Логотип сайта facebook.com"
             width="23"
             height="23"
@@ -354,16 +425,19 @@
       class="authorSite footer__authorSite"
       href="https://htmlacademy.ru/intensive/adaptive">
       <strong class="authorSite__text">HTML Academy</strong>
-      <img
-        class="authorSite__logo"
-        src="https://via.placeholder.com/150x150"
-        alt="логотип HTML Academy"
-        width="27"
-        height="34"
-      />
+      <span class="authorSite__wrapImg">
+        <img
+          class="authorSite__img"
+          src="./img/htmlacademy.svg"
+          alt="логотип HTML Academy"
+          width="27"
+          height="34"
+        />
+      </span>
     </a><!-- /.authorSite .footer__authorSite-->
 
   </footer><!-- /.footer -->
 
+  <script src="./js/index.js" defer></script>
 </body>
 </html>

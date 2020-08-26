@@ -1,0 +1,32 @@
+.authorSite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.authorSite__text {
+  padding-right: 10px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+  color: $colorFont--lessDark;
+}
+
+.authorSite__wrapImg {
+  @include wrapCenteredImage(34px, 34px);
+
+  left: 4px;
+
+  min-width: 34px;
+}
+
+.authorSite__img {
+  @include centerImage;
+
+  width: 100%;
+}

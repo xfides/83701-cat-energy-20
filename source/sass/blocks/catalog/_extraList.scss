@@ -1,0 +1,10 @@
+.extraList {
+  @include pureUl;
+
+  margin: 0;
+  padding-top: 4px;
+}
+
+.extraList__item {
+  // for the future
+}

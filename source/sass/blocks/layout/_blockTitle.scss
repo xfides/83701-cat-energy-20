@@ -1,0 +1,47 @@
+.blockTitle {
+  padding-top: 30px;
+  padding-bottom: 37px;
+
+  font-weight: normal;
+  font-size: 36px;
+  line-height: calc(36 / 36);
+  font-family: $fontMajor;
+}
+
+.blockTitle--sub {
+  position: relative;
+
+  padding-top: 28px;
+  padding-bottom: 30px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: calc(26 / 24);
+  font-family: $fontMajor;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    display: block;
+    width: 200%;
+    height: 2px;
+
+    background-color: $colorBackground--dark;
+  }
+
+  span {
+    position: relative;
+
+    display: inline-block;
+    padding-right: 20px;
+
+    background-color: $colorBackground--mostLight;
+  }
+}
+
+.blockTitle--stripped {
+  max-width: 75%;
+}

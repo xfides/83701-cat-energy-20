@@ -1,0 +1,15 @@
+.selection {
+  overflow: hidden;
+}
+
+.selection__invite {
+  max-width: 230px;
+  margin: 0;
+  padding-bottom: 20px;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  font-family: $fontMajor;
+  text-transform: uppercase;
+}

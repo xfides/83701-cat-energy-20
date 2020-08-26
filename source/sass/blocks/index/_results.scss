@@ -1,0 +1,47 @@
+.results {
+  @include pureUl;
+
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+
+.results__item {
+  position: relative;
+
+  width: 124px;
+  padding-top: 13px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+
+  text-align: center;
+
+  border: 1px solid $colorDecor--lessDark;
+  border-radius: 5px;
+}
+
+.results__value {
+  display: block;
+
+  font-size: 24px;
+  line-height: calc(24 / 24);
+  font-family: $fontMajor;
+  text-transform: uppercase;
+}
+
+.results__claim {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+
+  display: inline-block;
+  width: 65%;
+
+  font-size: 12px;
+  line-height: calc(12 / 12);
+  color: $colorFont--lessDark;
+
+  background-color: $colorBackground--lessLight;
+  transform: translateX(-50%);
+}

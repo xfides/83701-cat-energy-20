@@ -1,0 +1,31 @@
+.social {
+  @include pureUl;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  border-top: 1px solid $colorDecor--leastLight;
+  border-bottom: 1px solid $colorDecor--leastLight;
+}
+
+.social__item {
+  margin: 19px 16px;
+}
+
+.social__link {
+  @include wrapCenteredImage(23px, 23px);
+
+  display: block;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__img {
+  @include centerImage;
+
+  height: 100%;
+}

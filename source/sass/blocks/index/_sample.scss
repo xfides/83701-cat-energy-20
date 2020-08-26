@@ -1,0 +1,21 @@
+.sample {
+  background-color: $colorBackground--lessLight;
+}
+
+.sample__text {
+  margin: 0;
+  padding-bottom: 25px;
+
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: $colorFont--lessDark;
+  word-spacing: 1px;
+}
+
+.sample__results {
+  margin: 0;
+}
+
+.sample__expenses {
+  padding-bottom: 34px;
+}

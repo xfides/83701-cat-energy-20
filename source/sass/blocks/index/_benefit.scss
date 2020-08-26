@@ -1,0 +1,129 @@
+.benefit {
+  display: grid;
+  align-items: center;
+  padding-top: 17px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: $colorBackground--moreLight;
+
+  grid-template-columns: 67px 1fr;
+}
+
+.benefit__wrapImg {
+  @include wrapCenteredImage(67px, 67px);
+
+  left: -7px;
+
+  &::before {
+    @include centerImage;
+
+    content: "";
+
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-color: $colorBackground--dark;
+    border-radius: 50%;
+  }
+}
+
+.benefit__img {
+  @include centerImage;
+
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  &--slim {
+    height: 75%;
+
+    transform: translate(-50%, -57%);
+  }
+
+  &--pro {
+    // for the future
+  }
+}
+
+.benefit__title {
+  margin: 0;
+  padding-right: 10px;
+  padding-left: 4px;
+
+  font-weight: normal;
+  font-size: 24px;
+  line-height: calc(37 / 24);
+  font-family: $fontMajor;
+  text-transform: uppercase;
+}
+
+.benefit__description {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: $colorFont--lessDark;
+
+  border-bottom: 1px solid $colorDecor--leastLight;
+
+  grid-column: 1 / -1;
+}
+
+.benefit__link {
+  position: relative;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: calc(16 / 16);
+  font-family: $fontMajor;
+  text-transform: uppercase;
+
+  grid-column: 1 / -1;
+  justify-self: start;
+
+  &:hover .benefit__linkWrapImg {
+    transform: translateX(0);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.benefit__linkText {
+  position: relative;
+  z-index: 50;
+
+  padding-right: 15px;
+
+  background-color: $colorBackground--moreLight;
+}
+
+.benefit__linkWrapImg {
+  @include wrapCenteredImage(32px, 11px);
+
+  z-index: 49;
+
+  min-width: 32px;
+
+  font-size: 0;
+  line-height: 0;
+
+  transform: translateX(-8px);
+
+  transition: transform 0.2s;
+}
+
+.benefit__linkImg {
+  @include centerImage;
+}

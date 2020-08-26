@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  padding: 10px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: $fontMajor;
+  text-align: center;
+  color: $colorFont--mostLight;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $colorBackground--dark;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $colorBackground--moreDark;
+  }
+
+  &:active,
+  &:focus {
+    color: $colorFont--leastLight;
+
+    background-color: $colorBackground--moreDark;
+  }
+}

@@ -1,0 +1,141 @@
+.slider {
+  padding-bottom: 28px;
+
+  background-color: $colorBackground--lessLight;
+}
+
+.slider__track {
+  position: relative;
+
+  width: 100%;
+  max-width: 320px;
+  height: 240px;
+  margin-right: auto;
+  margin-bottom: 27px;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+.slider__slide {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+
+  &:first-of-type {
+    left: 0;
+    z-index: 40;
+
+    .slider__img {
+      object-position: left;
+    }
+  }
+
+  &:last-of-type {
+    right: 0;
+    z-index: 39;
+
+    width: 0;
+
+    .slider__img {
+      object-position: right;
+    }
+  }
+}
+
+.slider__img {
+  position: absolute;
+  top: 50%;
+
+  height: 100%;
+
+  transform: translateY(-50%);
+
+  object-fit: cover;
+}
+
+.slider__control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 208px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slider__btn {
+  position: relative;
+
+  padding: 6px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: $fontMajor;
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+    width: calc(100% - 2 * 6px);
+    height: 1px;
+
+    border-bottom: 1px dotted transparent;
+    transform: translateX(-50%);
+  }
+
+  &:hover::after {
+    border-bottom: 1px solid $colorDecor--moreDark;
+  }
+
+  &:active::after {
+    display: none;
+  }
+}
+
+.slider__bar {
+  position: relative;
+
+  width: 84px;
+  height: 14px;
+  padding-right: 6px;
+  padding-left: 6px;
+  overflow: hidden;
+
+  background-color: $colorBackground--mostLight;
+  border: 1px solid $colorDecor--lessDark;
+  border-radius: 6px;
+}
+
+.slider__roll {
+  position: relative;
+  top: 50%;
+
+  width: 35px;
+  height: 6px;
+
+  background-color: $colorBackground--dark;
+  border-radius: 6px;
+  transform: translateY(-50%);
+}
+
+@media (min-width: $widthTablet) {
+  .slider__btn {
+    border-bottom: 1px dotted $colorDecor--dark;
+  }
+}

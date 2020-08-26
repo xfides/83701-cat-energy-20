@@ -1,0 +1,28 @@
+@mixin centerImage {
+  position: relative;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+@mixin wrapCenteredImage($width: 100%, $height: auto) {
+  position: relative;
+
+  width: $width;
+  height: $height;
+  overflow: hidden;
+}
+
+@mixin pureUl {
+  padding: 0;
+
+  list-style-type: none;
+}
+
+@mixin enlargeButton {
+  padding: 13px 25px;
+
+  font-size: 20px;
+  line-height: calc(24 / 20);
+}

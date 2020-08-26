@@ -1,0 +1,15 @@
+.map {
+  @include wrapCenteredImage(100%, 362px);
+}
+
+.map__img {
+  @include centerImage;
+
+  width: 100%;
+}
+
+@media (min-width: $widthTablet) {
+  .map {
+    height: 400px;
+  }
+}

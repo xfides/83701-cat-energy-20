@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 39px;
+
+  background-color: $colorBackground--moreLight;
+}
+
+.footer__logoWrap {
+  align-self: center;
+  margin-bottom: 32px;
+}
+
+.footer__social {
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.footer__authorSite {
+  margin-bottom: 22px;
+}

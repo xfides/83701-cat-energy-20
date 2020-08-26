@@ -1,0 +1,15 @@
+.expenses {
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  font-family: $fontMajor;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.expenses__title {
+  display: inline-block;
+}
+
+.expenses__currency {
+  display: inline-block;
+}

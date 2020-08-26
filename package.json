@@ -6,11 +6,12 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
     "browser-sync": "2.26.7",
+    "csscomb": "4.3.0",
+    "gulp": "4.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "2.6.5",
-    "gulp": "4.0.2",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -19,7 +20,8 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "start": "gulp"
+    "start": "gulp",
+    "comb": "csscomb source/sass"
   },
   "browserslist": [
     "last 2 versions",
@@ -36,5 +38,6 @@
   ],
   "engines": {
     "node": "12.18.2"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,48 @@
+.extraCard {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 17px;
+
+  border-top: 1px solid $colorDecor--lessDark;
+
+  &:last-of-type {
+    border-bottom: 1px solid $colorDecor--lessDark;
+  }
+}
+
+.extraCard__title {
+  width: 100%;
+  margin: 0;
+  padding-bottom: 5px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: $fontMajor;
+  color: $colorFont--dark;
+  text-transform: uppercase;
+}
+
+.extraCard__link {
+  // for the future
+}
+
+.extraCard__spec {
+  width: 100%;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  color: $colorFont--lessDark;
+
+  td:nth-of-type(2) {
+    text-align: right;
+  }
+}
+
+.extraCard__button {
+  width: 100%;
+}

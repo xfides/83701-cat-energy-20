@@ -1,0 +1,164 @@
+.card {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-top: 1px;
+  padding-right: 20px;
+  padding-bottom: 23px;
+  padding-left: 20px;
+
+  border-top: 1px solid $colorDecor--moreLight;
+
+  &:last-of-type {
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid $colorDecor--moreLight;
+  }
+}
+
+.card__wrapImg {
+  @include wrapCenteredImage(140px, auto);
+
+  top: 6px;
+  z-index: 24;
+
+  align-self: end;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card__info {
+  width: calc(100% - 140px);
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card__title {
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 14px;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  font-family: $fontMajor;
+  color: $colorFont--dark;
+  text-transform: uppercase;
+}
+
+.card__link {
+  display: block;
+  max-width: 65%;
+}
+
+.card__spec {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  color: $colorFont--lessDark;
+
+  td {
+    margin: 0;
+    padding: 0;
+  }
+
+  td:nth-of-type(2) {
+    text-align: right;
+  }
+}
+
+.card__button {
+  position: relative;
+  z-index: 25;
+
+  width: 100%;
+}
+
+.card--more {
+  .card__wrapImg {
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+
+    font-size: 0;
+    line-height: 0;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      display: block;
+      width: 30px;
+      height: 2px;
+
+      background-color: $colorDecor--leastDark;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $colorDecor--dark;
+    }
+
+    &:active::before,
+    &:focus::before,
+    &:active::after,
+    &:focus::after {
+      background-color: $colorDecor--moreLight;
+    }
+  }
+
+  .card__info {
+    width: 100%;
+  }
+
+  .card__title {
+    padding-top: 30px;
+    padding-bottom: 8px;
+
+    text-align: center;
+    color: $colorFont--moreDark;
+  }
+
+  .card__link {
+    max-width: 100%;
+  }
+
+  .card__spec {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+
+  .card__button {
+    color: $colorFont--lessDark;
+
+    background-color: $colorBackground--moreLight;
+
+    &:hover {
+      background-color: $colorBackground--light;
+    }
+
+    &:active,
+    &:focus {
+      color: $colorFont--moreLight;
+    }
+  }
+}
