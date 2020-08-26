@@ -399,7 +399,7 @@
           COORDS: [59.93852105, 30.32322291],
           icon: {
             LAYOUT: 'default#image',
-            IMAGE_HREF: '../img/map-pin.png',
+            IMAGE_HREF: 'img/map-pin.png',
             IMAGE_SIZE: [57, 53],
             IMAGE_OFFSET: [-28, -53]
           }
@@ -418,7 +418,7 @@
           COORDS: [59.93852105, 30.32322291],
           icon: {
             LAYOUT: 'default#image',
-            IMAGE_HREF: '../img/map-pin.png',
+            IMAGE_HREF: 'img/map-pin.png',
             IMAGE_SIZE: [113, 106],
             IMAGE_OFFSET: [-52, -106]
           }
@@ -436,7 +436,7 @@
           COORDS: [59.93852105, 30.32322291],
           icon: {
             LAYOUT: 'default#image',
-            IMAGE_HREF: '../img/map-pin.png',
+            IMAGE_HREF: 'img/map-pin.png',
             IMAGE_SIZE: [113, 106],
             IMAGE_OFFSET: [-52, -106]
           }
