@@ -465,6 +465,8 @@
 
     _reload() {
       if (
+        !window.ymaps
+        ||
         this._currentTypeView === Map.config.mobile.TYPE_VIEW
         && Helpers.isMobileView()
         ||
