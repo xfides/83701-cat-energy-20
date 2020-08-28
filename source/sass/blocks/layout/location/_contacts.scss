@@ -34,7 +34,35 @@
   color: $colorFont--lessDark;
 }
 
-.contacts__address p {
-  margin: 0;
+.contacts__street,
+.contacts__city {
   padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $widthTablet) {
+
+  .contacts {
+    padding-top: 63px;
+    padding-bottom: 58px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    max-width: 175px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: right;
+    max-width: 180px;
+  }
+
+  .contacts__street {
+    padding-bottom: 20px;
+  }
 }

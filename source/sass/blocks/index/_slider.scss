@@ -53,6 +53,8 @@
   transform: translateY(-50%);
 
   object-fit: cover;
+
+  user-select: none;
 }
 
 .slider__control {
@@ -77,6 +79,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  user-select: none;
 
   &:hover,
   &:active,
@@ -135,7 +139,78 @@
 }
 
 @media (min-width: $widthTablet) {
-  .slider__btn {
-    border-bottom: 1px dotted $colorDecor--dark;
+
+  .slider {
+    background-color: transparent;
+    position: relative;
+    padding-top: 52px;
+    padding-left: 14px;
+    padding-bottom: 65px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 425px;
+      background-color: $colorBackground--lessLight;
+    }
   }
+
+  .slider__track {
+    height: 516px;
+    max-width: 688px;
+    margin-bottom: 10px;
+  }
+
+  .slider__control {
+    position: relative;
+    width: 582px;
+    left: -7px;
+  }
+
+  .slider__bar {
+    width: auto;
+    height: 6px;
+    max-width: 428px;
+    flex-grow: 1;
+    background-color: $colorDecor--lessDark;
+    overflow: visible;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .slider__btn {
+    font-size: 20px;
+    line-height: calc(27 / 20);
+
+    &::after {
+      bottom: 3px;
+      border-bottom: 1px dotted $colorFont--light;
+    }
+  }
+
+  .slider__roll {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: $colorBackground--mostLight;
+    border: 1px solid $colorDecor--lessDark;
+    box-shadow: 0 1px 3px $colorDecor--lessDark;
+    cursor: pointer;
+
+    &::after {
+      @include centerImage;
+
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $colorBackground--dark;
+    }
+  }
+
 }

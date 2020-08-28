@@ -45,3 +45,34 @@
   background-color: $colorBackground--lessLight;
   transform: translateX(-50%);
 }
+
+@media (min-width: $widthTablet) {
+  .results {
+    width: 366px;
+    flex-wrap: wrap;
+  }
+
+  .results__item {
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+
+  .results__value {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+
+  .results__claim {
+    width: auto;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: calc(14 / 14);
+    bottom: -6px;
+    background-color: $colorBackground--mostLight;
+    padding: 0 10px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+}

@@ -16,8 +16,8 @@
   opacity: 1;
 
   transition: // formatter line
-    box-shadow 0.15s linear,
-    opacity 0.15s linear;
+  box-shadow 0.15s linear,
+  opacity 0.15s linear;
 
   &:hover {
     box-shadow: 0 0 1px 1px transparentize($colorFont--mostDark, 0.5);
@@ -25,10 +25,6 @@
   }
 
   .noJS & {
-    display: none;
-  }
-
-  @media (min-width: $widthTablet) {
     display: none;
   }
 }
@@ -63,9 +59,9 @@
     left: 0;
 
     transition: // formatter line
-      transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
-      top 0.05s linear 0.125s,
-      left 0.125s ease-in 0.175s;
+    transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 0.05s linear 0.125s,
+    left 0.125s ease-in 0.175s;
   }
 
   &::after {
@@ -73,9 +69,9 @@
     bottom: -7px;
 
     transition: // formatter line
-      transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
-      top 0.05s linear 0.125s,
-      right 0.125s ease-in 0.175s;
+    transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+    top 0.05s linear 0.125s,
+    right 0.125s ease-in 0.175s;
   }
 }
 
@@ -94,9 +90,9 @@
     transform: translate3d(10px, 10px, 0) rotate(45deg);
 
     transition: // formatter line
-      transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
-      left 0.125s ease-out,
-      top 0.05s 0.125s linear;
+    transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
+    left 0.125s ease-out,
+    top 0.05s 0.125s linear;
   }
 
   .hamburger__inner::after {
@@ -106,8 +102,14 @@
     transform: translate3d(-10px, 10px, 0) rotate(-45deg);
 
     transition: // formatter line
-      transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
-      right 0.125s ease-out,
-      top 0.05s 0.125s linear;
+    transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
+    right 0.125s ease-out,
+    top 0.05s 0.125s linear;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .hamburger {
+    display: none;
   }
 }

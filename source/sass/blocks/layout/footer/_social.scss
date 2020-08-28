@@ -29,3 +29,22 @@
 
   height: 100%;
 }
+
+@media (min-width: $widthTablet) {
+  .social {
+    border: none;
+  }
+
+  .social__item {
+    margin: 0 11px;
+  }
+
+  .social__link {
+    width: 28px;
+    height: 28px;
+  }
+
+  .social__img {
+    width: 100%;
+  }
+}

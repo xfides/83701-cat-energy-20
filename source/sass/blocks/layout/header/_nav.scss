@@ -1,9 +1,5 @@
 .nav {
   @include pureUl;
-
-  @media (min-width: $widthTablet) {
-    display: flex;
-  }
 }
 
 .nav__item {
@@ -26,14 +22,6 @@
 
     background-color: $colorDecor--light;
     transform: translateX(-50%);
-  }
-
-  @media (min-width: $widthTablet) {
-    margin-left: 35px;
-
-    &::before {
-      display: none;
-    }
   }
 }
 
@@ -66,5 +54,33 @@
 
   &:not(&--active):active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav__item {
+    margin-left: 35px;
+    padding-top: 7px;
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .nav__link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+
+    &--active::after {
+      bottom: -9px;
+    }
   }
 }

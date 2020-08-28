@@ -19,3 +19,28 @@
 .footer__authorSite {
   margin-bottom: 22px;
 }
+
+@media (min-width: $widthTablet) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 7px;
+    padding-right: 29px;
+    padding-bottom: 40px;
+  }
+
+  .footer__logoWrap {
+    margin-bottom: 0;
+  }
+
+  .footer__social {
+    margin-bottom: 0;
+  }
+
+  .footer__authorSite {
+    margin-bottom: 0;
+  }
+
+}

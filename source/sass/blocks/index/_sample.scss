@@ -19,3 +19,31 @@
 .sample__expenses {
   padding-bottom: 34px;
 }
+
+@media (min-width: $widthTablet) {
+  .sample {
+    background-color: $colorBackground--mostLight;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sample__text {
+    padding-top: 33px;
+    padding-right: 15px;
+    padding-bottom: 0;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    word-spacing: 0;
+  }
+
+  .sample__results {
+    margin-top: 53px;
+  }
+
+  .sample__expenses {
+    margin-top: 53px;
+  }
+}

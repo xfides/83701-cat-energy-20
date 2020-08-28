@@ -13,3 +13,12 @@
 .expenses__currency {
   display: inline-block;
 }
+
+@media (min-width: $widthTablet) {
+  .expenses {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    max-width: 175px;
+    text-align: right;
+  }
+}

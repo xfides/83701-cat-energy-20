@@ -5,3 +5,11 @@
 .steps__panel {
   margin: 0;
 }
+
+@media (min-width: $widthTablet) {
+  .steps {
+    padding-bottom: 9px;
+
+    border-bottom: 1px solid $colorDecor--light;
+  }
+}

@@ -6,3 +6,10 @@
 .container .blockTitle {
   margin: 0;
 }
+
+@media (min-width: $widthTablet) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

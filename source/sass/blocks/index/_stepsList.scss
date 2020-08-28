@@ -35,3 +35,72 @@
   line-height: calc(18 / 14);
   color: $colorFont--lessDark;
 }
+
+@media (min-width: $widthTablet) {
+  .stepsList {
+    padding-top: 0;
+
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .stepsList__itemWrapImg {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+
+  .stepsList__item {
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 72px;
+    position: relative;
+    width: 245px;
+
+    &::before {
+      content: "1";
+      display: inline-block;
+      height: auto;
+      position: absolute;
+      top: 0;
+      left: 114px;
+      font-family: $fontMajor;
+      font-weight: normal;
+
+      font-size: 280px;
+      line-height: calc(280 / 280);
+      color: $colorDecor--mostLight;
+
+    }
+
+    &:nth-of-type(2):before {
+      content: "2";
+    }
+
+    &:nth-of-type(3):before {
+      content: "3";
+    }
+
+    &:nth-of-type(4):before {
+      content: "4";
+    }
+
+    &:nth-of-type(2n) {
+      left: 30px;
+    }
+  }
+
+  .stepsList__itemImg {
+    width: 60%;
+  }
+
+  .stepsList__itemText {
+    padding-top: 33px;
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    position: relative;
+  }
+}

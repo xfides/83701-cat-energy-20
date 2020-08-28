@@ -45,3 +45,19 @@
 .blockTitle--stripped {
   max-width: 75%;
 }
+
+@media (min-width: $widthTablet) {
+  .blockTitle {
+    padding-top: 42px;
+    padding-bottom: 32px;
+
+    font-size: 60px;
+    line-height: calc(60 / 60);
+  }
+
+  .blockTitle--sub {
+  }
+
+  .blockTitle--stripped {
+  }
+}

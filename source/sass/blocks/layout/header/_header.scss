@@ -40,16 +40,31 @@
   &--closedJS {
     max-height: 0;
   }
+}
 
-  @media (min-width: $widthTablet) {
+.header__nav {
+  margin: 0;
+}
+
+@media (min-width: $widthTablet) {
+  .header {
+    flex-wrap: nowrap;
+    padding-top: 24px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .header__logoWrap {
+    margin: 0;
+  }
+
+  .header__wrapNav {
     width: auto;
 
     &--closedJS {
       max-height: none;
     }
   }
-}
-
-.header__nav {
-  margin: 0;
 }
