@@ -56,8 +56,24 @@
   }
 
   .blockTitle--sub {
+    font-size: 36px;
+    line-height: calc(36 / 36);
+    padding-top: 65px;
+    padding-bottom: 55px;
+
+    span {
+      padding-left: 37px;
+      padding-right: 34px;
+    }
+
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 87px;
+    }
   }
 
   .blockTitle--stripped {
+    max-width: 100%;
   }
 }

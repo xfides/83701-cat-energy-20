@@ -301,19 +301,41 @@
       <div class="slider__track">
 
         <div class="slider__slide">
-          <img
-            class="slider__img"
-            src="./img/before-mobile@1x.png"
-            alt="ваш питомец до использования еды Cat-energy"
-          /><!-- /.slider__img -->
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x"
+            />
+            <img
+              class="slider__img"
+              src="./img/before-mobile@1x.png"
+              srcset="./img/before-mobile@2x.png 2x"
+              alt="ваш питомец до использования еды Cat-energy"
+            /><!-- /.slider__img -->
+          </picture>
         </div><!-- /.slider__slide -->
 
         <div class="slider__slide">
-          <img
-            class="slider__img"
-            src="./img/after-mobile@1x.png"
-            alt="ваш питомец после использования еды Cat-energy"
-          /><!-- /.slider__img -->
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/after-desktop@1x.png 1x, ./img/after-desktop@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/after-tablet@1x.png 1x, ./img/after-tablet@2x.png 2x"
+            />
+            <img
+              class="slider__img"
+              src="./img/after-mobile@1x.png"
+              srcset="./img/after-mobile@2x.png 2x"
+              alt="ваш питомец после использования еды Cat-energy"
+            /><!-- /.slider__img -->
+          </picture>
         </div><!-- /.slider__slide -->
 
       </div><!-- /.slider__track -->

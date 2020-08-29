@@ -15,13 +15,17 @@
   <header class="header container">
 
     <a class="logo header__logoWrap" href="index.html">
-      <img
-        class="logo__img"
-        src="./img/logo-mobile.svg"
-        alt="Логотип"
-        width="192"
-        height="38"
-      /><!-- /.header__logoImg -->
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg"/>
+        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg"/>
+        <img
+          class="logo__img"
+          src="./img/logo-mobile.svg"
+          alt="Логотип"
+          width="192"
+          height="38"
+        /><!-- /.header__logoImg -->
+      </picture>
     </a><!-- /.header__logoWrap -->
 
     <button
@@ -339,7 +343,7 @@
     <article class="contacts container contacts--backgroundDark">
 
       <h5 class="contacts__title">
-        Приглашаем к сотрудничеству дилеров!
+        Приглашаем <br/> к сотрудничеству дилеров!
       </h5>
       <!-- /.contacts__title -->
 

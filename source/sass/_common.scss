@@ -19,6 +19,10 @@ body {
   background-color: $colorBackground--mostLight;
 }
 
+body {
+  //overflow-x: hidden;
+}
+
 .visuallyHidden {
   position: absolute;
 

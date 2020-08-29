@@ -5,6 +5,17 @@
   padding-top: 4px;
 }
 
-.extraList__item {
-  // for the future
+@media (min-width: $widthTablet) {
+  .extraList {
+    border: 1px solid $colorDecor--lessDark;
+  }
+
+  .extraList__item {
+    margin-bottom: 5px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
+

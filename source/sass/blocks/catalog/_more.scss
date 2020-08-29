@@ -9,3 +9,15 @@
 .more__extraList {
   margin: 0;
 }
+
+@media (min-width: $widthTablet) {
+  .more__extraList {
+    margin-top: 24px;
+  }
+
+  .more__discount {
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+
+}

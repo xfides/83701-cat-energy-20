@@ -5,3 +5,12 @@
 
   grid-template-columns: 1fr;
 }
+
+@media (min-width: $widthTablet) {
+  .productList {
+    grid-template-columns: 1fr 1fr;
+    gap: 72px 60px;
+    padding-top: 63px;
+    padding-bottom: 3px;
+  }
+}
