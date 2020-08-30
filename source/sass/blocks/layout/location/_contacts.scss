@@ -6,11 +6,10 @@
   padding-top: 28px;
   padding-bottom: 26px;
   overflow: hidden;
+  background-color: $colorBackground--moreLight;
 
-  background-color: $colorBackground--mostLight;
-
-  &--backgroundDark {
-    background-color: $colorBackground--moreLight;
+  &--backgroundLight {
+    background-color: $colorBackground--mostLight;
   }
 }
 
@@ -78,6 +77,8 @@
     z-index: 1;
     transform: translateX(-325px);
     padding-left: 76px;
+
+    background-color: $colorBackground--mostLight;;
   }
 
   .contacts__address {

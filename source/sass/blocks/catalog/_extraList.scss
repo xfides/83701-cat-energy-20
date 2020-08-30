@@ -19,3 +19,11 @@
   }
 }
 
+@media (min-width: $widthDesktop) {
+  .extraList {
+    max-width: 896px;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    padding-top: 5px;
+  }
+}

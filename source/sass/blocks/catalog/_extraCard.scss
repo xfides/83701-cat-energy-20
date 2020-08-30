@@ -69,10 +69,6 @@
     padding-bottom: 0;
   }
 
-  .extraCard__link {
-
-  }
-
   .extraCard__spec {
     padding-bottom: 0;
     width: 50%;
@@ -90,4 +86,42 @@
   .extraCard__button {
     margin-top: 20px;
   }
+}
+
+@media (min-width: $widthDesktop) {
+  .extraCard {
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 11px;
+    padding-bottom: 16px;
+
+    &:last-of-type {
+      padding-bottom: 16px;
+    }
+  }
+
+  .extraCard__title {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  .extraCard__spec {
+    width: 294px;
+    margin-right: 35px;
+    top: 2px;
+    right: 0;
+
+    &:nth-of-type(2n+1){
+      text-align: left;
+
+    }
+  }
+
+  .extraCard__button {
+    width: 244px;
+    margin-top: 0;
+  }
+
 }

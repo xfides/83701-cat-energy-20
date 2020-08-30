@@ -195,6 +195,7 @@
     width: 100%;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
   }
 
   .card__img {
@@ -275,4 +276,25 @@
     }
 
   }
+}
+
+@media (min-width: $widthDesktop) {
+  .card__wrapImg {
+    top: -7px;
+  }
+
+  .card__info {
+    padding-bottom: 35px;
+  }
+
+  .card__button {
+    margin-right: 38px;
+  }
+
+  .card--more {
+    .card__title {
+      padding-top: 41px;
+    }
+  }
+
 }

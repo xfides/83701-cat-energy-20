@@ -11,3 +11,9 @@
     margin: 0;
   }
 }
+
+@media (min-width: $widthDesktop) {
+  .goods {
+    padding-top: 146px;
+  }
+}

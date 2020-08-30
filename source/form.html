@@ -12,49 +12,53 @@
 </head>
 <body>
 
-  <header class="header container">
+  <header class="header">
 
-    <a class="logo header__logoWrap" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg"/>
-        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg"/>
-        <img
-          class="logo__img"
-          src="./img/logo-mobile.svg"
-          alt="Логотип"
-          width="192"
-          height="38"
-        /><!-- /.header__logoImg -->
-      </picture>
-    </a><!-- /.header__logoWrap -->
+    <div class="header__container container">
 
-    <button
-      class="hamburger header__controlNav"
-      type="button"
-      aria-controls="nav"
-    >
-      <span class="hamburger__inner">Переключить меню</span>
-    </button><!-- /.header__controlNav -->
+      <a class="logo header__logoWrap" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg"/>
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg"/>
+          <img
+            class="logo__img"
+            src="./img/logo-mobile.svg"
+            alt="Логотип"
+            width="192"
+            height="38"
+          /><!-- /.header__logoImg -->
+        </picture>
+      </a><!-- /.header__logoWrap -->
 
-    <nav class="header__wrapNav" id="nav">
-      <ul class="header__nav nav">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="nav__item">
+      <button
+        class="hamburger header__controlNav"
+        type="button"
+        aria-controls="nav"
+      >
+        <span class="hamburger__inner">Переключить меню</span>
+      </button><!-- /.header__controlNav -->
+
+      <nav class="header__wrapNav" id="nav">
+        <ul class="header__nav nav">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="nav__item">
           <span class="nav__link nav__link--active">
             Подбор программы
           </span>
-        </li>
-      </ul><!-- /.nav -->
-    </nav><!-- /.nav .header__nav -->
+          </li>
+        </ul><!-- /.nav -->
+      </nav><!-- /.nav .header__nav -->
+
+    </div><!-- /.header__container -->
 
   </header><!-- /.header -->
 
@@ -340,7 +344,7 @@
 
   <div class="location">
 
-    <article class="contacts container contacts--backgroundDark">
+    <article class="contacts container">
 
       <h5 class="contacts__title">
         Приглашаем <br/> к сотрудничеству дилеров!
@@ -371,72 +375,74 @@
 
   </div><!-- /.location -->
 
-  <footer class="footer container">
+  <footer class="footer">
 
-    <a class="logo logo--name footer__logoWrap" href="index.html">
-      <img
-        class="logo__img"
-        src="./img/logo-footer.svg"
-        alt="магазин Сat-energy"
-        width="128"
-        height="24"
-      /><!-- /.footer__logoImg -->
-    </a><!-- /.footer__logoWrap -->
+    <div class="footer__container container">
 
-    <ul class="social footer__social">
+      <a class="logo logo--name footer__logoWrap" href="index.html">
+        <img
+          class="logo__img"
+          src="./img/logo-footer.svg"
+          alt="магазин Сat-energy"
+          width="128"
+          height="24"
+        /><!-- /.footer__logoImg -->
+      </a><!-- /.footer__logoWrap -->
 
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт vk.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-vk.svg"
-            alt="Логотип сайта vk.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
+      <ul class="social footer__social">
 
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт instagram.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-insta.svg"
-            alt="Логотип сайта instagram.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт vk.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-vk.svg"
+              alt="Логотип сайта vk.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
 
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт facebook.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-fb.svg"
-            alt="Логотип сайта facebook.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт instagram.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-insta.svg"
+              alt="Логотип сайта instagram.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
 
-    </ul><!-- /.social .footer__social-->
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт facebook.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-fb.svg"
+              alt="Логотип сайта facebook.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
 
-    <a
-      class="authorSite footer__authorSite"
-      href="https://htmlacademy.ru/intensive/adaptive">
-      <strong class="authorSite__text">HTML Academy</strong>
-      <span class="authorSite__wrapImg">
+      </ul><!-- /.social .footer__social-->
+
+      <a
+        class="authorSite footer__authorSite"
+        href="https://htmlacademy.ru/intensive/adaptive">
+        <strong class="authorSite__text">HTML Academy</strong>
+        <span class="authorSite__wrapImg">
         <img
           class="authorSite__img"
           src="./img/htmlacademy.svg"
@@ -445,7 +451,9 @@
           height="34"
         />
       </span>
-    </a><!-- /.authorSite .footer__authorSite-->
+      </a><!-- /.authorSite .footer__authorSite-->
+
+    </div><!-- /.footer__container -->
 
   </footer><!-- /.footer -->
 

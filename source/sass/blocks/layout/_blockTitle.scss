@@ -26,7 +26,7 @@
     left: 0;
 
     display: block;
-    width: 200%;
+    width: 10000%;
     height: 2px;
 
     background-color: $colorBackground--dark;
@@ -75,5 +75,14 @@
 
   .blockTitle--stripped {
     max-width: 100%;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .blockTitle--sub {
+    span {
+      position: relative;
+      left: -37px;
+    }
   }
 }

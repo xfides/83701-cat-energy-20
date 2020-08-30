@@ -14,3 +14,11 @@
     padding-bottom: 3px;
   }
 }
+
+@media (min-width: $widthDesktop) {
+  .productList {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 72px 81px;
+    padding-bottom: 12px;
+  }
+}
