@@ -1,4 +1,4 @@
-.header {
+.header__container {
   position: relative;
 
   display: flex;
@@ -47,7 +47,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .header {
+  .header__container {
     flex-wrap: nowrap;
     padding-top: 24px;
     padding-bottom: 23px;
@@ -67,5 +67,24 @@
     &--closedJS {
       max-height: none;
     }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .header {
+    width: 100%;
+    position: relative;
+    z-index: 99;
+  }
+
+  .header__container {
+    padding-top: 53px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  .header__wrapNav {
+    max-width: 50%;
   }
 }

@@ -1,9 +1,11 @@
 .footer {
+  background-color: $colorBackground--moreLight;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   padding-top: 39px;
-
-  background-color: $colorBackground--moreLight;
 }
 
 .footer__logoWrap {
@@ -21,7 +23,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .footer {
+  .footer__container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -43,4 +45,16 @@
     margin-bottom: 0;
   }
 
+}
+
+@media (min-width: $widthDesktop) {
+  .footer__container {
+    padding-left: 73px;
+    padding-right: 109px;
+  }
+
+  .footer__social {
+    position: relative;
+    left: -4px;
+  }
 }

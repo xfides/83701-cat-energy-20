@@ -562,5 +562,5 @@
   let map = new Map();
   slider.init();
   nav.init();
-  // map.init();
+  map.init();
 }());

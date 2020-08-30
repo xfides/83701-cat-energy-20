@@ -131,7 +131,7 @@
 
     padding-top: 76px;
     padding-right: 312px;
-    padding-bottom: 40px;
+    padding-bottom: 41px;
     padding-left: 53px;
 
     grid-template-columns: 1fr;
@@ -158,9 +158,6 @@
     }
   }
 
-  .benefit__img {
-  }
-
   .benefit__title {
     padding-left: 0;
 
@@ -175,6 +172,7 @@
     font-size: 16px;
     line-height: calc(24 / 16);
     color: $colorFont--mostDark;
+    border-bottom: none;
   }
 
   .benefit__link {
@@ -185,4 +183,46 @@
   .benefit__linkText {
     padding-right: 24px;
   }
+}
+
+@media (min-width: $widthDesktop) {
+  .benefit {
+    max-width: 570px;
+    grid-template-columns: 134px 1fr;
+    padding-right: 50px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+    padding-left: 52px;
+    align-items:start;
+  }
+
+  .benefit__wrapImg {
+    position: relative;
+    width: 134px;
+    height: 134px;
+    transform: none;
+    top: 1px;
+    left: -18px;
+    right: auto;
+
+
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .benefit__title {
+    padding-left: 28px;
+    padding-top: 49px;
+  }
+
+  .benefit__description{
+    padding-bottom: 8px;
+  }
+
+  .benefit__linkText {
+    padding-right: 28px;
+  }
+
 }

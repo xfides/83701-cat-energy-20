@@ -80,7 +80,19 @@
     line-height: calc(24 / 18);
 
     &--active::after {
-      bottom: -9px;
+      bottom: -8px;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .nav__link {
+    font-size: 20px;
+    line-height: calc(27 / 20);
+    color: $colorFont--mostLight;
+
+    &::after {
+      background-color: $colorBackground--mostLight;
     }
   }
 }

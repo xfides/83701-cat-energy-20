@@ -12,87 +12,95 @@
 </head>
 <body>
 
-  <header class="header container">
+  <header class="header">
 
-    <span class="logo logo--active header__logoWrap">
+    <div class="header__container container">
 
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg"/>
-        <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg"/>
-        <img
-          class="logo__img"
-          src="./img/logo-mobile.svg"
-          alt="Логотип"
-          width="192"
-          height="38"
-        /><!-- /.header__logoImg -->
-      </picture>
+      <span class="logo logo--active header__logoWrap">
 
-    </span><!-- /.header__logoWrap -->
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./img/logo-desktop.svg"/>
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg"/>
+          <img
+            class="logo__img"
+            src="./img/logo-mobile.svg"
+            alt="Логотип"
+            width="192"
+            height="38"
+          /><!-- /.header__logoImg -->
+        </picture>
 
-    <button
-      class="hamburger header__controlNav"
-      type="button"
-      aria-controls="nav"
-    >
-      <span class="hamburger__inner">Переключить меню</span>
-    </button><!-- /.header__controlNav -->
+      </span><!-- /.header__logoWrap -->
 
-    <nav class="header__wrapNav" id="nav">
-      <ul class="header__nav nav">
-        <li class="nav__item">
+      <button
+        class="hamburger header__controlNav"
+        type="button"
+        aria-controls="nav"
+      >
+        <span class="hamburger__inner">Переключить меню</span>
+      </button><!-- /.header__controlNav -->
+
+      <nav class="header__wrapNav" id="nav">
+        <ul class="header__nav nav">
+          <li class="nav__item">
           <span class="nav__link nav__link--active">
             Главная
           </span>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul><!-- /.nav -->
-    </nav><!-- /.nav .header__nav -->
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul><!-- /.nav -->
+      </nav><!-- /.nav .header__nav -->
+
+    </div><!-- /.header__container -->
 
   </header><!-- /.header -->
 
   <main class="main">
 
-    <section class="promo container">
+    <section class="promo ">
 
-      <h1 class="promo__mainTitle">
-        Функциональное питание для котов
-      </h1><!-- /.promo__mainTitle -->
+      <div class="promo__container container">
 
-      <h2 class="promo__subTitle">
-        Занялся собой? Займись котом!
-      </h2><!-- /.promo__subTitle -->
+        <h1 class="promo__mainTitle">
+          Функциональное питание для котов
+        </h1><!-- /.promo__mainTitle -->
 
-      <div class="promo__wrapImg">
-        <picture>
-          <source
-            media="(min-width: 1440px)"
-            srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x"
-          >
-          <source
-            media="(min-width: 768px)"
-            srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@2x.jpg 2x"
-          >
-          <img
-            class="promo__img"
-            src="./img/index-can-mobile@1x.png"
-            srcset="./img/index-can-mobile@2x.png 2x"
-            alt="Изображение лучшего товара от магазина Cat-energy"/>
-        </picture><!-- /.promo__img -->
-      </div><!-- /.promo__wrapImg -->
+        <h2 class="promo__subTitle">
+          Занялся собой? Займись котом!
+        </h2><!-- /.promo__subTitle -->
 
-      <a class="button promo__refLink" href="form.html">
-        Подобрать программу
-      </a><!-- /.promo__refLink -->
+        <div class="promo__wrapImg">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x"
+            >
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@2x.jpg 2x"
+            >
+            <img
+              class="promo__img"
+              src="./img/index-can-mobile@1x.png"
+              srcset="./img/index-can-mobile@2x.png 2x"
+              alt="Изображение лучшего товара от магазина Cat-energy"/>
+          </picture><!-- /.promo__img -->
+        </div><!-- /.promo__wrapImg -->
+
+        <a class="button promo__refLink" href="form.html">
+          Подобрать программу
+        </a><!-- /.promo__refLink -->
+
+      </div><!-- /.promo__container -->
 
     </section><!-- /.promo -->
 
@@ -169,7 +177,7 @@
 
     <section class="steps container">
 
-      <h3 class="blockTitle container__blockTitle">
+      <h3 class="blockTitle">
         Как это работает
       </h3><!-- /.blockTitle -->
 
@@ -247,52 +255,56 @@
 
     </section><!-- /.steps -->
 
-    <section class="sample container">
+    <section class="sample">
 
-      <h3 class="blockTitle container__blockTitle">
-        Живой пример
+      <h3 class="blockTitle">
+        <span class="container">Живой пример</span>
       </h3><!-- /.blockTitle -->
 
-      <p class="sample__text">
-        Борис сбросил 5 кг за 2 месяца, просто заменив
-        свой обычный корм на Cat Energy Slim. Отличный
-        результат без изнуряющих тренировок! При этом
-        он не менял своих привычек и по-прежнему
-        спит по 16 часов в день.
-      </p><!-- /.sample__text -->
+      <div class="sample__container container">
 
-      <ul class="results sample__results">
+        <p class="sample__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив
+          свой обычный корм на Cat Energy Slim. Отличный
+          результат без изнуряющих тренировок! При этом
+          он не менял своих привычек и по-прежнему
+          спит по 16 часов в день.
+        </p><!-- /.sample__text -->
 
-        <li class="results__item">
+        <ul class="results sample__results">
+
+          <li class="results__item">
           <span class="results__value">
             5 КГ
           </span>
-          <span class="results__claim">
+            <span class="results__claim">
           снижение веса
         </span>
-        </li>
-        <!-- /.results__item -->
+          </li>
+          <!-- /.results__item -->
 
-        <li class="results__item">
+          <li class="results__item">
           <span class="results__value">
             60 ДНЕЙ
           </span>
-          <span class="results__claim">
+            <span class="results__claim">
             затрачено времени
           </span>
-        </li>
-        <!-- /.results__item -->
+          </li>
+          <!-- /.results__item -->
 
-      </ul><!-- /.results -->
+        </ul><!-- /.results -->
 
-      <div class="expenses sample__expenses">
+        <div class="expenses sample__expenses">
         <span class="expenses__title">
           Затраты на питание:
         </span>
-        <span class="expenses__currency">
+          <span class="expenses__currency">
           15 000 РУБ.
         </span>
-      </div><!-- /.expenses .sample__expenses -->
+        </div><!-- /.expenses .sample__expenses -->
+
+      </div><!-- /.sample__container -->
 
     </section><!-- /.sample -->
 
@@ -383,80 +395,94 @@
     </article><!-- /.contacts -->
 
     <div class="map" id="map">
-      <img
-        class="map__img"
-        src="./img/bg-map-mobile@1x.png"
-        alt="Наше местопололжение на карте">
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="./img/bg-map-desktop@1x.png 1x, ./img/bg-map-desktop@2x.png 2x"
+        >
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/bg-map-tablet@1x.png 1x, ./img/bg-map-tablet@2x.png 2x"
+        >
+        <img
+          class="map__img"
+          src="./img/bg-map-mobile@1x.png"
+          srcset="./img/bg-map-mobile@2x.png 2x"
+          alt="Наше местопололжение на карте"
+        >
+      </picture>
     </div><!-- /.map -->
 
   </div><!-- /.location -->
 
-  <footer class="footer container">
+  <footer class="footer">
 
-    <span class="logo logo--name logo--active footer__logoWrap">
-      <img
-        class="logo__img"
-        src="./img/logo-footer.svg"
-        alt="магазин Сat-energy"
-        width="128"
-        height="24"
-      /><!-- /.footer__logoImg -->
-    </span><!-- /.footer__logoWrap -->
+    <div class="footer__container container">
 
-    <ul class="social footer__social">
+      <span class="logo logo--name logo--active footer__logoWrap">
+        <img
+          class="logo__img"
+          src="./img/logo-footer.svg"
+          alt="магазин Сat-energy"
+          width="128"
+          height="24"
+        /><!-- /.footer__logoImg -->
+      </span><!-- /.footer__logoWrap -->
 
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт vk.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-vk.svg"
-            alt="Логотип сайта vk.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
+      <ul class="social footer__social">
 
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт instagram.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-insta.svg"
-            alt="Логотип сайта instagram.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт vk.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-vk.svg"
+              alt="Логотип сайта vk.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
 
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт facebook.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-fb.svg"
-            alt="Логотип сайта facebook.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт instagram.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-insta.svg"
+              alt="Логотип сайта instagram.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
 
-    </ul><!-- /.social .footer__social-->
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт facebook.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-fb.svg"
+              alt="Логотип сайта facebook.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
 
-    <a
-      class="authorSite footer__authorSite"
-      href="https://htmlacademy.ru/intensive/adaptive">
-      <strong class="authorSite__text">HTML Academy</strong>
-      <span class="authorSite__wrapImg">
+      </ul><!-- /.social .footer__social-->
+
+      <a
+        class="authorSite footer__authorSite"
+        href="https://htmlacademy.ru/intensive/adaptive">
+        <strong class="authorSite__text">HTML Academy</strong>
+        <span class="authorSite__wrapImg">
         <img
           class="authorSite__img"
           src="./img/htmlacademy.svg"
@@ -465,7 +491,9 @@
           height="34"
         />
       </span>
-    </a><!-- /.authorSite .footer__authorSite-->
+      </a><!-- /.authorSite .footer__authorSite-->
+
+    </div><!-- /.footer__container -->
 
   </footer><!-- /.footer -->
 

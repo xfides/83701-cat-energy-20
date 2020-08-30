@@ -76,3 +76,13 @@
   }
 
 }
+
+@media (min-width: $widthDesktop) {
+  .results {
+    padding-bottom: 3px;
+  }
+
+  .results__claim {
+    background-color: $colorBackground--moreLight;
+  }
+}

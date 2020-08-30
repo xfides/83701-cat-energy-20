@@ -19,17 +19,17 @@
   @include centerImage;
 }
 
-@media (min-width: $widthDesktop) {
-  .logo {
-    width: 202px;
-    height: 60px;
-  }
-}
-
 @media (min-width: $widthTablet) {
   .logo {
     width: 174px;
     min-width: 174px;
     height: 52px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .logo {
+    width: 202px;
+    height: 60px;
   }
 }

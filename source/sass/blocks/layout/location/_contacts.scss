@@ -1,5 +1,6 @@
 .contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 28px;
@@ -16,6 +17,7 @@
 .contacts__title {
   margin: 0;
   padding-right: 10px;
+  max-width: 140px;
 
   font-weight: normal;
   font-size: 16px;
@@ -66,5 +68,20 @@
 
   .contacts__street {
     padding-bottom: 20px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .contacts {
+    position: relative;
+    width: 570px;
+    z-index: 1;
+    transform: translateX(-325px);
+    padding-left: 76px;
+  }
+
+  .contacts__address {
+    text-align: left;
+    width: 175px;
   }
 }

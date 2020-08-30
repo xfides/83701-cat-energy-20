@@ -1,4 +1,10 @@
 .sample {
+  .blockTitle {
+    margin: 0;
+  }
+}
+
+.sample__container {
   background-color: $colorBackground--lessLight;
 }
 
@@ -21,7 +27,7 @@
 }
 
 @media (min-width: $widthTablet) {
-  .sample {
+  .sample__container {
     background-color: $colorBackground--mostLight;
     display: flex;
     flex-wrap: wrap;
@@ -46,4 +52,51 @@
   .sample__expenses {
     margin-top: 53px;
   }
+}
+
+@media (min-width: $widthDesktop) {
+  .sample {
+    position: relative;
+    background-color: $colorBackground--moreLight;
+
+    .blockTitle {
+      background-color: $colorBackground--mostLight;
+      margin: 0;
+      padding-bottom: 76px;
+      position: relative;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      background-color: $colorBackground--lessLight;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: calc(50% - 322px);
+    }
+  }
+
+  .sample__container {
+    background-color: $colorBackground--moreLight;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 35px;
+  }
+
+  .sample__text {
+    max-width: 450px;
+    padding-top: 12px;
+  }
+
+  .sample__results {
+    margin-top: 67px;
+  }
+
+  .sample__expenses {
+
+  }
+
 }
