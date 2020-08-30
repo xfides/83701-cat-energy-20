@@ -8,17 +8,19 @@
 
 @media (min-width: $widthTablet) {
   .productList {
-    grid-template-columns: 1fr 1fr;
-    gap: 72px 60px;
     padding-top: 63px;
     padding-bottom: 3px;
+
+    gap: 72px 60px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .productList {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 72px 81px;
     padding-bottom: 12px;
+
+    gap: 72px 81px;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

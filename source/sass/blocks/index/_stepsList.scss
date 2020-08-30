@@ -39,9 +39,9 @@
 @media (min-width: $widthTablet) {
   .stepsList {
     padding-top: 0;
+    overflow: hidden;
 
     grid-template-columns: 1fr 1fr;
-    overflow: hidden;
   }
 
   .stepsList__itemWrapImg {
@@ -51,38 +51,39 @@
   }
 
   .stepsList__item {
+    position: relative;
+
     flex-wrap: wrap;
     align-content: flex-start;
+    width: 245px;
     padding-top: 40px;
     padding-bottom: 72px;
-    position: relative;
-    width: 245px;
 
     &::before {
       content: "1";
-      display: inline-block;
-      height: auto;
       position: absolute;
       top: 0;
       left: 114px;
-      font-family: $fontMajor;
-      font-weight: normal;
 
+      display: inline-block;
+      height: auto;
+
+      font-weight: normal;
       font-size: 280px;
       line-height: calc(280 / 280);
+      font-family: $fontMajor;
       color: $colorDecor--mostLight;
-
     }
 
-    &:nth-of-type(2):before {
+    &:nth-of-type(2)::before {
       content: "2";
     }
 
-    &:nth-of-type(3):before {
+    &:nth-of-type(3)::before {
       content: "3";
     }
 
-    &:nth-of-type(4):before {
+    &:nth-of-type(4)::before {
       content: "4";
     }
 
@@ -96,20 +97,21 @@
   }
 
   .stepsList__itemText {
+    position: relative;
+
     padding-top: 33px;
     padding-left: 0;
 
     font-size: 16px;
     line-height: calc(24 / 16);
-    position: relative;
   }
 }
 
 @media (min-width: $widthDesktop) {
   .stepsList {
-    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
 
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .stepsList__item {
@@ -121,29 +123,26 @@
       }
     }
 
-    &:nth-of-type(2n) {
-      left: auto;
-    }
-
     &:nth-of-type(1n) {
       justify-self: start;
-
     }
 
     &:nth-of-type(2n) {
-      justify-self: center;
       left: -10px;
+
+      justify-self: center;
     }
 
     &:nth-of-type(3n) {
-      justify-self: center;
       left: 10px;
+
+      justify-self: center;
     }
 
     &:nth-of-type(4n) {
-      justify-self: end;
       left: auto;
-    }
 
+      justify-self: end;
+    }
   }
 }

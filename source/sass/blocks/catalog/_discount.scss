@@ -16,7 +16,6 @@
   @media (min-resolution: $hiRes--dpi), (min-resolution: $hiRes--dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
-
 }
 
 .discount__wrapImg {
@@ -61,17 +60,17 @@
 
   .discount__text {
     margin-top: 13px;
-    text-align: left;
     margin-right: 120px;
-  }
 
+    text-align: left;
+  }
 }
 
 @media (min-width: $widthDesktop) {
   .discount {
-    width: 245px;
-    align-content: center;
     flex-direction: column;
+    align-content: center;
+    width: 245px;
     padding-top: 59px;
     padding-bottom: 42px;
 
@@ -87,11 +86,12 @@
   }
 
   .discount__text {
-    margin-right: auto;
-    max-width: none;
     width: 165px;
-    margin-left: auto;
-    text-align: center;
+    max-width: none;
     margin-top: 59px;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
   }
 }

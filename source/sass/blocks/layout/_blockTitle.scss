@@ -56,20 +56,22 @@
   }
 
   .blockTitle--sub {
-    font-size: 36px;
-    line-height: calc(36 / 36);
     padding-top: 65px;
     padding-bottom: 55px;
 
+    font-size: 36px;
+    line-height: calc(36 / 36);
+
     span {
-      padding-left: 37px;
       padding-right: 34px;
+      padding-left: 37px;
     }
 
     &::before {
-      left: 50%;
-      transform: translateX(-50%);
       top: 87px;
+      left: 50%;
+
+      transform: translateX(-50%);
     }
   }
 

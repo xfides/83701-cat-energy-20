@@ -1,7 +1,6 @@
 .extraList {
   @include pureUl;
 
-
   padding-top: 4px;
 }
 
@@ -22,8 +21,9 @@
 @media (min-width: $widthDesktop) {
   .extraList {
     max-width: 896px;
+    padding-top: 5px;
+
     border-right-color: transparent;
     border-left-color: transparent;
-    padding-top: 5px;
   }
 }

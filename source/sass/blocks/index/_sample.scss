@@ -28,11 +28,12 @@
 
 @media (min-width: $widthTablet) {
   .sample__container {
-    background-color: $colorBackground--mostLight;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    background-color: $colorBackground--mostLight;
   }
 
   .sample__text {
@@ -57,33 +58,39 @@
 @media (min-width: $widthDesktop) {
   .sample {
     position: relative;
+
     background-color: $colorBackground--moreLight;
 
     .blockTitle {
-      background-color: $colorBackground--mostLight;
+      position: relative;
+
       margin: 0;
       padding-bottom: 76px;
-      position: relative;
+
+      background-color: $colorBackground--mostLight;
     }
 
     &::before {
       content: "";
-      display: block;
-      background-color: $colorBackground--lessLight;
-      height: 100%;
       position: absolute;
-      bottom: 0;
       right: 0;
+      bottom: 0;
+
+      display: block;
       width: calc(50% - 322px);
+      height: 100%;
+
+      background-color: $colorBackground--lessLight;
     }
   }
 
   .sample__container {
-    background-color: $colorBackground--moreLight;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 60px;
     padding-bottom: 35px;
+
+    background-color: $colorBackground--moreLight;
   }
 
   .sample__text {
@@ -94,9 +101,4 @@
   .sample__results {
     margin-top: 67px;
   }
-
-  .sample__expenses {
-
-  }
-
 }

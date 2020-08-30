@@ -172,6 +172,7 @@
     font-size: 16px;
     line-height: calc(24 / 16);
     color: $colorFont--mostDark;
+
     border-bottom: none;
   }
 
@@ -187,23 +188,26 @@
 
 @media (min-width: $widthDesktop) {
   .benefit {
+    align-items: start;
     max-width: 570px;
-    grid-template-columns: 134px 1fr;
-    padding-right: 50px;
     padding-top: 28px;
+    padding-right: 50px;
     padding-bottom: 40px;
     padding-left: 52px;
-    align-items:start;
+
+    grid-template-columns: 134px 1fr;
   }
 
   .benefit__wrapImg {
     position: relative;
+    top: 1px;
+    right: auto;
+    left: -18px;
+
     width: 134px;
     height: 134px;
+
     transform: none;
-    top: 1px;
-    left: -18px;
-    right: auto;
 
 
     &::before {
@@ -213,16 +217,15 @@
   }
 
   .benefit__title {
-    padding-left: 28px;
     padding-top: 49px;
+    padding-left: 28px;
   }
 
-  .benefit__description{
+  .benefit__description {
     padding-bottom: 8px;
   }
 
   .benefit__linkText {
     padding-right: 28px;
   }
-
 }

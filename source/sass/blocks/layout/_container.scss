@@ -17,10 +17,10 @@
 
 @media (min-width: $widthDesktop) {
   .container {
-    padding-left: 110px;
-    padding-right: 110px;
     width: 1440px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }

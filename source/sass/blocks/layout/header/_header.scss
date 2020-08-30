@@ -72,16 +72,18 @@
 
 @media (min-width: $widthDesktop) {
   .header {
-    width: 100%;
     position: relative;
     z-index: 99;
+
+    width: 100%;
   }
 
   .header__container {
-    padding-top: 53px;
     position: absolute;
-    left: 0;
     right: 0;
+    left: 0;
+
+    padding-top: 53px;
   }
 
   .header__wrapNav {

@@ -48,8 +48,8 @@
 
 @media (min-width: $widthTablet) {
   .results {
-    width: 366px;
     flex-wrap: wrap;
+    width: 366px;
   }
 
   .results__item {
@@ -64,17 +64,19 @@
   }
 
   .results__claim {
+    bottom: -6px;
+
     width: auto;
-    white-space: nowrap;
+    max-width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+
     font-size: 14px;
     line-height: calc(14 / 14);
-    bottom: -6px;
-    background-color: $colorBackground--mostLight;
-    padding: 0 10px;
-    max-width: 100%;
-    overflow: hidden;
-  }
+    white-space: nowrap;
 
+    background-color: $colorBackground--mostLight;
+  }
 }
 
 @media (min-width: $widthDesktop) {
