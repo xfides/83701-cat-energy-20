@@ -6,6 +6,11 @@
   font-size: 36px;
   line-height: calc(36 / 36);
   font-family: $fontMajor;
+
+  .container &,
+  .sample & {
+    margin: 0;
+  }
 }
 
 .blockTitle--sub {
@@ -24,9 +29,8 @@
     position: absolute;
     top: 45px;
     left: 0;
-
     display: block;
-    width: 10000%;
+    width: 100vw;
     height: 2px;
 
     background-color: $colorBackground--dark;
@@ -39,6 +43,10 @@
     padding-right: 20px;
 
     background-color: $colorBackground--mostLight;
+  }
+
+  .form__group:last-of-type & {
+    margin-bottom: 8px;
   }
 }
 
@@ -73,6 +81,15 @@
 
       transform: translateX(-50%);
     }
+
+    .form & {
+      margin-bottom: 21px;
+
+      span {
+        left: -39px;
+        padding-right: 42px;
+      }
+    }
   }
 
   .blockTitle--stripped {
@@ -81,10 +98,36 @@
 }
 
 @media (min-width: $widthDesktop) {
-  .blockTitle--sub {
-    span {
-      position: relative;
-      left: -37px;
+
+  .blockTitle {
+    .more & {
+      width: 100%;
     }
+
+    .sample & {
+      position: relative;
+
+      padding-bottom: 76px;
+
+      background-color: $colorBackground--mostLight;
+    }
+  }
+
+  .blockTitle--sub {
+
+    .form & {
+      padding-top: 68px;
+
+      &::before {
+        top: 90px;
+      }
+    }
+
+    .more & {
+      span {
+        left: -37px;
+      }
+    }
+
   }
 }

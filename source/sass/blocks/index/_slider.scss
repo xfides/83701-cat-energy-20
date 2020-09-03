@@ -234,7 +234,7 @@
     margin-left: auto;
     overflow: hidden;
 
-    transform: translate(325px, -100%);
+    transform: translate(290px, -100%);
 
     &::before {
       display: none;
@@ -244,6 +244,10 @@
   .slider__track {
     margin-bottom: 30px;
 
-    transform: translateX(-28px);
+    transform: translateX(7px);
+  }
+
+  .slider__control {
+    transform: translateX(35px);
   }
 }

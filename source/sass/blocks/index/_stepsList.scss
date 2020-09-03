@@ -42,6 +42,7 @@
     overflow: hidden;
 
     grid-template-columns: 1fr 1fr;
+    counter-reset: stepListItemIndex;
   }
 
   .stepsList__itemWrapImg {
@@ -60,10 +61,12 @@
     padding-bottom: 72px;
 
     &::before {
-      content: "1";
+      counter-increment: stepListItemIndex;
+      content: counter(stepListItemIndex);
       position: absolute;
       top: 0;
-      left: 114px;
+      //left: 114px;
+      right: 0;
 
       display: inline-block;
       height: auto;
@@ -75,20 +78,8 @@
       color: $colorDecor--mostLight;
     }
 
-    &:nth-of-type(2)::before {
-      content: "2";
-    }
-
-    &:nth-of-type(3)::before {
-      content: "3";
-    }
-
-    &:nth-of-type(4)::before {
-      content: "4";
-    }
-
     &:nth-of-type(2n) {
-      left: 30px;
+      //left: 30px;
     }
   }
 
@@ -117,9 +108,11 @@
   .stepsList__item {
     margin-bottom: 10px;
 
+    outline: 4px solid blue;
+
     &:first-of-type {
       &::before {
-        left: 119px;
+        //left: 119px;
       }
     }
 
@@ -128,21 +121,28 @@
     }
 
     &:nth-of-type(2n) {
-      left: -10px;
+      //left: -10px;
 
-      justify-self: center;
+      //justify-self: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &:nth-of-type(3n) {
-      left: 10px;
+      //left: 10px;
 
-      justify-self: center;
+      //justify-self: center;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     &:nth-of-type(4n) {
       left: auto;
 
       justify-self: end;
+
+      margin-left: auto;
+      margin-right: 0;
     }
   }
 }

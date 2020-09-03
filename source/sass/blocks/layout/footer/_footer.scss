@@ -35,6 +35,7 @@
 
   .footer__logoWrap {
     margin-bottom: 0;
+    width: 174px;
   }
 
   .footer__social {
@@ -47,13 +48,8 @@
 }
 
 @media (min-width: $widthDesktop) {
-  .footer__container {
-    padding-right: 109px;
-    padding-left: 73px;
-  }
-
   .footer__social {
     position: relative;
-    left: -4px;
+    left: 3px;
   }
 }

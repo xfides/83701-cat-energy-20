@@ -26,10 +26,6 @@
 
   &:last-of-type {
     padding-bottom: 35px;
-
-    .blockTitle--sub {
-      margin-bottom: 8px;
-    }
   }
 }
 
@@ -236,16 +232,6 @@
 @media (min-width: $widthTablet) {
   .form {
     padding-bottom: 72px;
-
-    .blockTitle--sub {
-      left: -39px;
-
-      margin-bottom: 21px;
-
-      span {
-        padding-right: 42px;
-      }
-    }
   }
 
   .form__group {
@@ -384,15 +370,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 81px;
-
-    .blockTitle--sub {
-      padding-top: 68px;
-      padding-left: 37px;
-
-      &::before {
-        top: 90px;
-      }
-    }
   }
 
   .form__group {
