@@ -11,6 +11,10 @@
   .sample & {
     margin: 0;
   }
+
+  .sample & {
+    background-color: $colorBackground--lessLight;
+  }
 }
 
 .blockTitle--sub {
@@ -62,6 +66,10 @@
 
     font-size: 60px;
     line-height: calc(60 / 60);
+
+    .sample & {
+      background-color: $colorBackground--mostLight;
+    }
   }
 
   .blockTitle--sub {
@@ -109,8 +117,6 @@
       position: relative;
 
       padding-bottom: 76px;
-
-      background-color: $colorBackground--mostLight;
     }
   }
 
