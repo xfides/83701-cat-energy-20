@@ -1,10 +1,10 @@
 .stepsList {
   @include pureUl;
 
-  display: grid;
+  //display: grid;
   padding-top: 4px;
 
-  grid-template-columns: 1fr;
+  //grid-template-columns: 1fr;
 }
 
 .stepsList__item {
@@ -41,8 +41,12 @@
     padding-top: 0;
     overflow: hidden;
 
-    grid-template-columns: 1fr 1fr;
+    display: grid;
     counter-reset: stepListItemIndex;
+
+    //noinspection CssInvalidFunction
+    grid-template-columns: repeat(auto-fill, 247px);
+    column-gap: 137px;
   }
 
   .stepsList__itemWrapImg {
@@ -56,7 +60,6 @@
 
     flex-wrap: wrap;
     align-content: flex-start;
-    width: 245px;
     padding-top: 40px;
     padding-bottom: 72px;
 
@@ -65,7 +68,6 @@
       content: counter(stepListItemIndex);
       position: absolute;
       top: 0;
-      //left: 114px;
       right: 0;
 
       display: inline-block;
@@ -78,9 +80,11 @@
       color: $colorDecor--mostLight;
     }
 
-    &:nth-of-type(2n) {
-      //left: 30px;
+    &:nth-of-type(1)::before {
+      right: 18px;
     }
+
+
   }
 
   .stepsList__itemImg {
@@ -100,49 +104,11 @@
 
 @media (min-width: $widthDesktop) {
   .stepsList {
-    justify-content: space-between;
-
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
   }
 
   .stepsList__item {
     margin-bottom: 10px;
-
-    outline: 4px solid blue;
-
-    &:first-of-type {
-      &::before {
-        //left: 119px;
-      }
-    }
-
-    &:nth-of-type(1n) {
-      justify-self: start;
-    }
-
-    &:nth-of-type(2n) {
-      //left: -10px;
-
-      //justify-self: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &:nth-of-type(3n) {
-      //left: 10px;
-
-      //justify-self: center;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &:nth-of-type(4n) {
-      left: auto;
-
-      justify-self: end;
-
-      margin-left: auto;
-      margin-right: 0;
-    }
   }
 }
