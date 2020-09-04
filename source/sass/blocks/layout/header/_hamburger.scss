@@ -27,10 +27,6 @@
   .noJS & {
     display: none;
   }
-
-  @media (min-width: $widthTablet) {
-    display: none;
-  }
 }
 
 .hamburger__inner {
@@ -109,5 +105,11 @@
       transform 0.125s cubic-bezier(0.075, 0.82, 0.165, 1) 0.175s,
       right 0.125s ease-out,
       top 0.05s 0.125s linear;
+  }
+}
+
+@media (min-width: $widthTablet) {
+  .hamburger {
+    display: none;
   }
 }

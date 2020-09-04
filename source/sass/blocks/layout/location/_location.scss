@@ -1,3 +1,8 @@
-.location {
-  // for the future
+@media (min-width: $widthDesktop) {
+  .location {
+    position: relative;
+
+    padding-top: 95px;
+    padding-bottom: 104px;
+  }
 }

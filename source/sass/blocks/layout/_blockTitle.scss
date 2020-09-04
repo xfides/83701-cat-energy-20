@@ -6,6 +6,11 @@
   font-size: 36px;
   line-height: calc(36 / 36);
   font-family: $fontMajor;
+
+  .container &,
+  .sample & {
+    margin: 0;
+  }
 }
 
 .blockTitle--sub {
@@ -26,7 +31,7 @@
     left: 0;
 
     display: block;
-    width: 200%;
+    width: 100vw;
     height: 2px;
 
     background-color: $colorBackground--dark;
@@ -40,8 +45,88 @@
 
     background-color: $colorBackground--mostLight;
   }
+
+  .form__group:last-of-type & {
+    margin-bottom: 8px;
+  }
 }
 
 .blockTitle--stripped {
   max-width: 75%;
+}
+
+@media (min-width: $widthTablet) {
+  .blockTitle {
+    padding-top: 42px;
+    padding-bottom: 32px;
+
+    font-size: 60px;
+    line-height: calc(60 / 60);
+  }
+
+  .blockTitle--sub {
+    padding-top: 65px;
+    padding-bottom: 55px;
+
+    font-size: 36px;
+    line-height: calc(36 / 36);
+
+    span {
+      padding-right: 34px;
+      padding-left: 37px;
+    }
+
+    &::before {
+      top: 87px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+
+    .form & {
+      margin-bottom: 21px;
+
+      span {
+        left: -39px;
+
+        padding-right: 42px;
+      }
+    }
+  }
+
+  .blockTitle--stripped {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .blockTitle {
+    .more & {
+      width: 100%;
+    }
+
+    .sample & {
+      position: relative;
+
+      padding-bottom: 76px;
+
+      background-color: $colorBackground--mostLight;
+    }
+  }
+
+  .blockTitle--sub {
+    .form & {
+      padding-top: 68px;
+
+      &::before {
+        top: 90px;
+      }
+    }
+
+    .more & {
+      span {
+        left: -37px;
+      }
+    }
+  }
 }

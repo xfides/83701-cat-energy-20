@@ -12,45 +12,53 @@
 </head>
 <body>
 
-  <header class="header container">
+  <header class="header">
 
-    <a class="logo header__logoWrap" href="index.html">
-      <img
-        class="logo__img"
-        src="./img/logo-mobile.svg"
-        alt="Логотип"
-        width="192"
-        height="38"
-      /><!-- /.header__logoImg -->
-    </a><!-- /.header__logoWrap -->
+    <div class="header__container container">
 
-    <button
-      class="hamburger header__controlNav"
-      type="button"
-      aria-controls="nav"
-    >
-      <span class="hamburger__inner">Переключить меню</span>
-    </button><!-- /.header__controlNav -->
+      <a class="logo header__logoWrap" href="index.html">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="./img/logo-desktop.svg"/>
+          <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg"/>
+          <img
+            class="logo__img"
+            src="./img/logo-mobile.svg"
+            alt="Логотип"
+            width="192"
+            height="38"
+          /><!-- /.header__logoImg -->
+        </picture>
+      </a><!-- /.header__logoWrap -->
 
-    <nav class="header__wrapNav" id="nav">
-      <ul class="header__nav nav">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="nav__item">
-          <span class="nav__link nav__link--active">
-            Каталог продукции
-          </span>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="form.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul><!-- /.nav -->
-    </nav><!-- /.nav .header__nav -->
+      <button
+        class="hamburger header__controlNav"
+        type="button"
+        aria-controls="nav"
+      >
+        <span class="hamburger__inner">Переключить меню</span>
+      </button><!-- /.header__controlNav -->
+
+      <nav class="header__wrapNav" id="nav">
+        <ul class="header__nav nav">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <span class="nav__link nav__link--active">
+              Каталог продукции
+            </span>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul><!-- /.nav -->
+      </nav><!-- /.nav .header__nav -->
+
+    </div><!-- /.header__container -->
 
   </header><!-- /.header -->
 
@@ -68,9 +76,18 @@
 
           <a class="card__wrapImg" href="#">
             <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/chicken-small-desktop@1x.png 1x, ./img/chicken-small-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/chicken-small-tablet@1x.png 1x, ./img/chicken-small-tablet@2x.png 2x"
+              />
               <img
                 class="card__img"
                 src="./img/chicken-small-mobile@1x.jpg"
+                srcset="./img/chicken-small-mobile@2x.jpg 2x"
                 alt="Изображение товара Cat Energy PRO (курица) 500 г"/>
             </picture><!-- /.card__picture -->
           </a>
@@ -79,7 +96,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Cat Energy PRO 500 г
+                <span>Cat Energy PRO</span>
+                <span>500 г</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -113,9 +131,18 @@
 
           <a class="card__wrapImg" href="#">
             <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/chicken-big-desktop@1x.png 1x, ./img/chicken-big-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/chicken-big-tablet@1x.png 1x, ./img/chicken-big-tablet@2x.png 2x"
+              />
               <img
                 class="card__img"
                 src="./img/chicken-big-mobile@1x.jpg"
+                srcset="./img/chicken-big-mobile@2x.jpg 2x"
                 alt="Изображение товара Cat Energy PRO (курица) 1000 г"/>
             </picture><!-- /.card__picture -->
           </a>
@@ -124,7 +151,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Cat Energy PRO 1000 г
+                <span>Cat Energy PRO</span>
+                <span>1000 г</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -158,9 +186,18 @@
 
           <a class="card__wrapImg" href="#">
             <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/fish-small-desktop@1x.png 1x, ./img/fish-small-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/fish-small-tablet@1x.png 1x, ./img/fish-small-tablet@2x.png 2x"
+              />
               <img
                 class="card__img"
                 src="./img/fish-small-mobile@1x.jpg"
+                srcset="./img/fish-small-mobile@2x.jpg 2x"
                 alt="Изображение товара Cat Energy PRO (рыба) 500 г"/>
             </picture><!-- /.card__picture -->
           </a>
@@ -169,7 +206,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Cat Energy PRO 500 г
+                <span>Cat Energy PRO</span>
+                <span>500 г</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -203,9 +241,18 @@
 
           <a class="card__wrapImg" href="#">
             <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/fish-big-desktop@1x.png 1x, ./img/fish-big-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/fish-big-tablet@1x.png 1x, ./img/fish-big-tablet@2x.png 2x"
+              />
               <img
                 class="card__img"
                 src="./img/fish-big-mobile@1x.jpg"
+                srcset="./img/fish-big-mobile@2x.jpg 2x"
                 alt="Изображение товара Cat Energy PRO (рыба) 1000 г"/>
             </picture><!-- /.card__picture -->
           </a>
@@ -214,7 +261,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Cat Energy PRO 1000 г
+                <span>Cat Energy PRO</span>
+                <span>1000 г</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -248,9 +296,18 @@
 
           <a class="card__wrapImg" href="#">
             <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/buckwheat-small-desktop@1x.png 1x, ./img/buckwheat-small-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/buckwheat-small-tablet@1x.png 1x, ./img/buckwheat-small-tablet@2x.png 2x"
+              />
               <img
                 class="card__img"
                 src="./img/buckwheat-small-mobile@1x.jpg"
+                srcset="./img/buckwheat-small-mobile@2x.jpg 2x"
                 alt="Изображение товара Cat Energy Slim (гречка) 500 г"/>
             </picture><!-- /.card__picture -->
           </a>
@@ -259,7 +316,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Cat Energy Slim 500 г
+                <span>Cat Energy Slim</span>
+                <span>500 г</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -293,9 +351,18 @@
 
           <a class="card__wrapImg" href="#">
             <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/buckwheat-big-desktop@1x.png 1x, ./img/buckwheat-big-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/buckwheat-big-tablet@1x.png 1x, ./img/buckwheat-big-tablet@2x.png 2x"
+              />
               <img
                 class="card__img"
                 src="./img/buckwheat-big-mobile@1x.jpg"
+                srcset="./img/buckwheat-big-mobile@2x.jpg 2x"
                 alt="Изображение товара Cat Energy Slim (гречка) 1000 г"/>
             </picture><!-- /.card__picture -->
           </a>
@@ -304,7 +371,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Cat Energy Slim 1000 г
+                <span>Cat Energy Slim</span>
+                <span>1000 г</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -338,9 +406,18 @@
 
           <a class="card__wrapImg" href="#">
             <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="./img/rice-small-desktop@1x.png 1x, ./img/rice-small-desktop@2x.png 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/rice-small-tablet@1x.png 1x, ./img/rice-small-tablet@2x.png 2x"
+              />
               <img
                 class="card__img"
                 src="./img/rice-small-mobile@1x.jpg"
+                srcset="./img/rice-small-mobile@2x.jpg 2x"
                 alt="Изображение товара Cat Energy Slim Red (рис) 500 г"/>
             </picture><!-- /.card__picture -->
           </a>
@@ -349,7 +426,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Cat Energy Slim X 500 г
+                <span>Cat Energy Slim X</span>
+                <span>500 г</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -389,7 +467,8 @@
 
             <h3 class="card__title">
               <a class="card__link" href="#">
-                Показать еще 100500 товаров
+                <span>Показать еще</span>
+                <span>100500 товаров</span>
               </a>
             </h3><!-- /.card__title -->
 
@@ -435,8 +514,8 @@
           <table class="extraCard__spec">
             <tbody>
               <tr>
-                <td>1 упаковка (100гр)</td>
-                <td>100 Р.</td>
+                <td>1 упаковка (100 г)</td>
+                <td>200 Р.</td>
               </tr>
             </tbody>
           </table><!-- /.extraCard__spec -->
@@ -530,7 +609,7 @@
             alt="Картинка акции">
         </span>
         <span class="discount__text">
-        Закажите все и получите чехол для кота в подарок!
+          Закажите все <br/> и получите чехол для кота в подарок!
         </span>
       </h6><!-- /.more__discount -->
 
@@ -540,10 +619,10 @@
 
   <div class="location">
 
-    <article class="contacts container contacts--backgroundDark">
+    <article class="contacts container">
 
       <h5 class="contacts__title">
-        Приглашаем к сотрудничеству дилеров!
+        Приглашаем <br/> к сотрудничеству дилеров!
       </h5>
       <!-- /.contacts__title -->
 
@@ -571,81 +650,85 @@
 
   </div><!-- /.location -->
 
-  <footer class="footer container">
+  <footer class="footer">
 
-    <a class="logo logo--name footer__logoWrap" href="index.html">
-      <img
-        class="logo__img"
-        src="./img/logo-footer.svg"
-        alt="магазин Сat-energy"
-        width="128"
-        height="24"
-      /><!-- /.footer__logoImg -->
-    </a><!-- /.footer__logoWrap -->
+    <div class="footer__container container">
 
-    <ul class="social footer__social">
-
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт vk.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-vk.svg"
-            alt="Логотип сайта vk.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
-
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт instagram.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-insta.svg"
-            alt="Логотип сайта instagram.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
-
-      <li class="social__item">
-        <a class="social__link" href="#">
-          <em class="visuallyHidden">
-            Перейти на сайт facebook.com
-          </em>
-          <img
-            class="social__img"
-            src="./img/icon-fb.svg"
-            alt="Логотип сайта facebook.com"
-            width="23"
-            height="23"
-          /><!-- /.social__img -->
-        </a><!-- /.social__link -->
-      </li><!-- /.social__item -->
-
-    </ul><!-- /.social .footer__social-->
-
-    <a
-      class="authorSite footer__authorSite"
-      href="https://htmlacademy.ru/intensive/adaptive">
-      <strong class="authorSite__text">HTML Academy</strong>
-      <span class="authorSite__wrapImg">
+      <a class="logo logo--name footer__logoWrap" href="index.html">
         <img
-          class="authorSite__img"
-          src="./img/htmlacademy.svg"
-          alt="логотип HTML Academy"
-          width="27"
-          height="34"
-        />
-      </span>
-    </a><!-- /.authorSite .footer__authorSite-->
+          class="logo__img"
+          src="./img/logo-footer.svg"
+          alt="магазин Сat-energy"
+          width="128"
+          height="24"
+        /><!-- /.footer__logoImg -->
+      </a><!-- /.footer__logoWrap -->
+
+      <ul class="social footer__social">
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт vk.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-vk.svg"
+              alt="Логотип сайта vk.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт instagram.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-insta.svg"
+              alt="Логотип сайта instagram.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
+
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <em class="visuallyHidden">
+              Перейти на сайт facebook.com
+            </em>
+            <img
+              class="social__img"
+              src="./img/icon-fb.svg"
+              alt="Логотип сайта facebook.com"
+              width="23"
+              height="23"
+            /><!-- /.social__img -->
+          </a><!-- /.social__link -->
+        </li><!-- /.social__item -->
+
+      </ul><!-- /.social .footer__social-->
+
+      <a
+        class="authorSite footer__authorSite"
+        href="https://htmlacademy.ru/intensive/adaptive">
+        <strong class="authorSite__text">HTML Academy</strong>
+        <span class="authorSite__wrapImg">
+          <img
+            class="authorSite__img"
+            src="./img/htmlacademy.svg"
+            alt="логотип HTML Academy"
+            width="27"
+            height="34"
+          />
+        </span>
+      </a><!-- /.authorSite .footer__authorSite-->
+
+    </div><!-- /.footer__container -->
 
   </footer><!-- /.footer -->
 

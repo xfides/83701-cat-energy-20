@@ -1,7 +1,3 @@
-.selection {
-  overflow: hidden;
-}
-
 .selection__invite {
   max-width: 230px;
   margin: 0;
@@ -12,4 +8,27 @@
   line-height: calc(18 / 14);
   font-family: $fontMajor;
   text-transform: uppercase;
+}
+
+@media (min-width: $widthTablet) {
+  .selection__invite {
+    max-width: 330px;
+    margin-bottom: 27px;
+    margin-left: 40px;
+    padding-top: 22px;
+
+    font-size: 20px;
+    line-height: calc(30 / 20);
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .selection {
+    padding-top: 145px;
+  }
+
+  .selection__invite {
+    margin-left: 0;
+    padding-top: 24px;
+  }
 }

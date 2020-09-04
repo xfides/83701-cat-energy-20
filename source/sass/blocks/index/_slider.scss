@@ -52,6 +52,8 @@
 
   transform: translateY(-50%);
 
+  user-select: none;
+
   object-fit: cover;
 }
 
@@ -77,6 +79,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  user-select: none;
 
   &:hover,
   &:active,
@@ -135,7 +139,115 @@
 }
 
 @media (min-width: $widthTablet) {
+  .slider {
+    position: relative;
+
+    padding-top: 52px;
+    padding-bottom: 65px;
+    padding-left: 14px;
+
+    background-color: transparent;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      height: 462px;
+
+      background-color: $colorBackground--lessLight;
+    }
+  }
+
+  .slider__track {
+    max-width: 688px;
+    height: 516px;
+    margin-bottom: 10px;
+  }
+
+  .slider__control {
+    position: relative;
+    left: -7px;
+
+    width: 582px;
+  }
+
+  .slider__bar {
+    flex-grow: 1;
+    width: auto;
+    max-width: 428px;
+    height: 6px;
+    padding-right: 0;
+    padding-left: 0;
+    overflow: visible;
+
+    background-color: $colorDecor--lessDark;
+  }
+
   .slider__btn {
-    border-bottom: 1px dotted $colorDecor--dark;
+    font-size: 20px;
+    line-height: calc(27 / 20);
+
+    &::after {
+      bottom: 3px;
+
+      border-bottom: 1px dotted $colorFont--light;
+    }
+  }
+
+  .slider__roll {
+    width: 35px;
+    height: 35px;
+
+    background-color: $colorBackground--mostLight;
+    border: 1px solid $colorDecor--lessDark;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px $colorDecor--lessDark;
+    cursor: pointer;
+
+    &::after {
+      @include centerImage;
+
+      content: "";
+
+      display: block;
+      width: 8px;
+      height: 8px;
+
+      background-color: $colorBackground--dark;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .slider {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+
+    transform: translate(290px, -100%);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slider__track {
+    margin-bottom: 30px;
+
+    transform: translateX(7px);
+  }
+
+  .slider__control {
+    transform: translateX(35px);
   }
 }

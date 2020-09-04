@@ -13,3 +13,23 @@
 .expenses__currency {
   display: inline-block;
 }
+
+@media (min-width: $widthTablet) {
+  .expenses {
+    max-width: 175px;
+
+    font-size: 20px;
+    line-height: calc(30 / 20);
+    text-align: right;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .expenses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 328px;
+    max-width: none;
+  }
+}

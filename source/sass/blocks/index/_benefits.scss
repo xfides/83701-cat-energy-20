@@ -9,3 +9,27 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $widthTablet) {
+  .benefits {
+    padding-top: 0;
+  }
+
+  .benefits__item {
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 19px;
+  }
+
+  .benefits__item {
+    margin-bottom: 10px;
+  }
+}

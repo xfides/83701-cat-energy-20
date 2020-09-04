@@ -1,3 +1,19 @@
 .goods {
   overflow: hidden;
 }
+
+.goods__productList {
+  margin: 0 -20px;
+}
+
+@media (min-width: $widthTablet) {
+  .goods__productList {
+    margin: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .goods {
+    padding-top: 146px;
+  }
+}

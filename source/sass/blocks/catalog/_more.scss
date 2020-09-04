@@ -1,7 +1,37 @@
-.more {
-  overflow: hidden;
-}
-
 .more__discount {
   margin-top: 40px;
+}
+
+.more__extraList {
+  margin: 0;
+}
+
+@media (min-width: $widthTablet) {
+  .more__extraList {
+    margin-top: 24px;
+  }
+
+  .more__discount {
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 86px;
+  }
+
+  .more__extraList {
+    flex-grow: 1;
+  }
+
+  .more__discount {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }

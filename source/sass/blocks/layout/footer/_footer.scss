@@ -1,9 +1,11 @@
 .footer {
+  background-color: $colorBackground--moreLight;
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   padding-top: 39px;
-
-  background-color: $colorBackground--moreLight;
 }
 
 .footer__logoWrap {
@@ -18,4 +20,36 @@
 
 .footer__authorSite {
   margin-bottom: 22px;
+}
+
+@media (min-width: $widthTablet) {
+  .footer__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-right: 29px;
+    padding-bottom: 40px;
+    padding-left: 7px;
+  }
+
+  .footer__logoWrap {
+    width: 174px;
+    margin-bottom: 0;
+  }
+
+  .footer__social {
+    margin-bottom: 0;
+  }
+
+  .footer__authorSite {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .footer__social {
+    position: relative;
+    left: 3px;
+  }
 }

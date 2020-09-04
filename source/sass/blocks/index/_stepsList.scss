@@ -1,10 +1,10 @@
 .stepsList {
   @include pureUl;
+  //display: grid;
 
-  display: grid;
   padding-top: 4px;
 
-  grid-template-columns: 1fr;
+  //grid-template-columns: 1fr;
 }
 
 .stepsList__item {
@@ -34,4 +34,82 @@
   font-size: 14px;
   line-height: calc(18 / 14);
   color: $colorFont--lessDark;
+}
+
+@media (min-width: $widthTablet) {
+  .stepsList {
+    display: grid;
+    padding-top: 0;
+    overflow: hidden;
+
+    column-gap: 137px;
+
+    counter-reset: stepListItemIndex;
+    //noinspection CssInvalidFunction
+
+    grid-template-columns: repeat(auto-fill, 247px);
+  }
+
+  .stepsList__itemWrapImg {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+  }
+
+  .stepsList__item {
+    position: relative;
+
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 40px;
+    padding-bottom: 72px;
+
+    &::before {
+      content: counter(stepListItemIndex);
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: inline-block;
+      height: auto;
+
+      font-weight: normal;
+      font-size: 280px;
+      line-height: calc(280 / 280);
+      font-family: $fontMajor;
+      color: $colorDecor--mostLight;
+
+      counter-increment: stepListItemIndex;
+    }
+
+    &:nth-of-type(1)::before {
+      right: 18px;
+    }
+  }
+
+  .stepsList__itemImg {
+    width: 60%;
+  }
+
+  .stepsList__itemText {
+    position: relative;
+
+    padding-top: 33px;
+    padding-left: 0;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .stepsList {
+    column-gap: 80px;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .stepsList__item {
+    margin-bottom: 10px;
+  }
 }

@@ -45,3 +45,46 @@
   background-color: $colorBackground--lessLight;
   transform: translateX(-50%);
 }
+
+@media (min-width: $widthTablet) {
+  .results {
+    flex-wrap: wrap;
+    width: 366px;
+  }
+
+  .results__item {
+    width: 162px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+
+  .results__value {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+
+  .results__claim {
+    bottom: -6px;
+
+    width: auto;
+    max-width: 100%;
+    padding: 0 10px;
+    overflow: hidden;
+
+    font-size: 14px;
+    line-height: calc(14 / 14);
+    white-space: nowrap;
+
+    background-color: $colorBackground--mostLight;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .results {
+    padding-bottom: 3px;
+  }
+
+  .results__claim {
+    background-color: $colorBackground--moreLight;
+  }
+}

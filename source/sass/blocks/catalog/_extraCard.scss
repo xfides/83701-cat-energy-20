@@ -46,3 +46,86 @@
 .extraCard__button {
   width: 100%;
 }
+
+@media (min-width: $widthTablet) {
+  .extraCard {
+    padding-top: 21px;
+    padding-right: 37px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+
+    border-top: none;
+    border-bottom: 1px solid $colorDecor--lessDark;
+
+    &:last-of-type {
+      padding-bottom: 27px;
+
+      border: none;
+    }
+  }
+
+  .extraCard__title {
+    width: 50%;
+    padding-bottom: 0;
+
+    font-size: 20px;
+    line-height: calc(20 / 20);
+  }
+
+  .extraCard__spec {
+    position: relative;
+    right: -4px;
+
+    width: 50%;
+    padding-bottom: 0;
+
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    text-align: right;
+
+    td:nth-of-type(2n) {
+      width: 92px;
+    }
+  }
+
+  .extraCard__button {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .extraCard {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 11px;
+    padding-right: 0;
+    padding-bottom: 16px;
+    padding-left: 0;
+
+    &:last-of-type {
+      padding-bottom: 16px;
+    }
+  }
+
+  .extraCard__title {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .extraCard__spec {
+    top: 2px;
+    right: 0;
+
+    width: 294px;
+    margin-right: 35px;
+
+    &:nth-of-type(2n+1) {
+      text-align: left;
+    }
+  }
+
+  .extraCard__button {
+    width: 244px;
+    margin-top: 0;
+  }
+}

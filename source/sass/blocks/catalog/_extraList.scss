@@ -1,10 +1,29 @@
 .extraList {
   @include pureUl;
 
-  margin: 0;
   padding-top: 4px;
 }
 
-.extraList__item {
-  // for the future
+@media (min-width: $widthTablet) {
+  .extraList {
+    border: 1px solid $colorDecor--lessDark;
+  }
+
+  .extraList__item {
+    margin-bottom: 5px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $widthDesktop) {
+  .extraList {
+    max-width: 896px;
+    padding-top: 5px;
+
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
 }

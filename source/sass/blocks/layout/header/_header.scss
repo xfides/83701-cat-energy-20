@@ -1,4 +1,4 @@
-.header {
+.header__container {
   position: relative;
 
   display: flex;
@@ -40,8 +40,28 @@
   &--closedJS {
     max-height: 0;
   }
+}
 
-  @media (min-width: $widthTablet) {
+.header__nav {
+  margin: 0;
+}
+
+@media (min-width: $widthTablet) {
+  .header__container {
+    flex-wrap: nowrap;
+    padding-top: 24px;
+    padding-bottom: 23px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .header__logoWrap {
+    margin: 0;
+  }
+
+  .header__wrapNav {
     width: auto;
 
     &--closedJS {
@@ -50,6 +70,23 @@
   }
 }
 
-.header__nav {
-  margin: 0;
+@media (min-width: $widthDesktop) {
+  .header {
+    position: relative;
+    z-index: 99;
+
+    width: 100%;
+  }
+
+  .header__container {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    padding-top: 53px;
+  }
+
+  .header__wrapNav {
+    max-width: 50%;
+  }
 }
