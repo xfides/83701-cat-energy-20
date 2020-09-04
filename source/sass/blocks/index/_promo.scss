@@ -157,7 +157,6 @@
 
     &::after {
       background-image: url("../img/index-background-desktop@1x.jpg");
-
       background-repeat: no-repeat;
       background-position: left top;
       background-size: auto 100%;
@@ -166,14 +165,11 @@
         background-image: url("../img/index-background-desktop@2x.jpg");
       }
     }
-
   }
 
   .promo__container {
     padding-top: 185px;
     padding-bottom: 185px;
-
-
   }
 
   .promo__wrapImg {

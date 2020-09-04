@@ -29,6 +29,7 @@
     position: absolute;
     top: 45px;
     left: 0;
+
     display: block;
     width: 100vw;
     height: 2px;
@@ -87,6 +88,7 @@
 
       span {
         left: -39px;
+
         padding-right: 42px;
       }
     }
@@ -98,7 +100,6 @@
 }
 
 @media (min-width: $widthDesktop) {
-
   .blockTitle {
     .more & {
       width: 100%;
@@ -114,7 +115,6 @@
   }
 
   .blockTitle--sub {
-
     .form & {
       padding-top: 68px;
 
@@ -128,6 +128,5 @@
         left: -37px;
       }
     }
-
   }
 }

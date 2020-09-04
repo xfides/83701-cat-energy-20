@@ -1,7 +1,7 @@
 .stepsList {
   @include pureUl;
-
   //display: grid;
+
   padding-top: 4px;
 
   //grid-template-columns: 1fr;
@@ -38,15 +38,16 @@
 
 @media (min-width: $widthTablet) {
   .stepsList {
+    display: grid;
     padding-top: 0;
     overflow: hidden;
 
-    display: grid;
-    counter-reset: stepListItemIndex;
-
-    //noinspection CssInvalidFunction
-    grid-template-columns: repeat(auto-fill, 247px);
     column-gap: 137px;
+
+    counter-reset: stepListItemIndex;
+    //noinspection CssInvalidFunction
+
+    grid-template-columns: repeat(auto-fill, 247px);
   }
 
   .stepsList__itemWrapImg {
@@ -64,7 +65,6 @@
     padding-bottom: 72px;
 
     &::before {
-      counter-increment: stepListItemIndex;
       content: counter(stepListItemIndex);
       position: absolute;
       top: 0;
@@ -78,13 +78,13 @@
       line-height: calc(280 / 280);
       font-family: $fontMajor;
       color: $colorDecor--mostLight;
+
+      counter-increment: stepListItemIndex;
     }
 
     &:nth-of-type(1)::before {
       right: 18px;
     }
-
-
   }
 
   .stepsList__itemImg {
@@ -104,8 +104,9 @@
 
 @media (min-width: $widthDesktop) {
   .stepsList {
-    grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
+
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .stepsList__item {
