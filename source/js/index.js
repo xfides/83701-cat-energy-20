@@ -564,5 +564,3 @@
   nav.init();
   // map.init();
 }());
-
-// empty line for commit - will be deleted
