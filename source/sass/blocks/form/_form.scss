@@ -129,6 +129,17 @@
 
   width: 100%;
   height: 100%;
+
+  fill: $colorFont--dark;
+
+  .form__input:active ~ .form__wrapIcon &,
+  .form__input:focus ~ .form__wrapIcon &{
+    fill: $colorBackground--dark;
+  }
+
+  .form__input--error ~ .form__wrapIcon &{
+    fill: $colorDecor--error;
+  }
 }
 
 .form__radio + .form__label {

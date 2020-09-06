@@ -1,6 +1,4 @@
 // TM = TaskManager
-
-
 class TM {
   static pkgs = {
     gulp: require("gulp"),
@@ -11,8 +9,11 @@ class TM {
     autoprefixer: require("autoprefixer"),
     sync: require("browser-sync").create(),
     webp: require('gulp-webp'),
-    del: require("del")
-  };
+    del: require("del"),
+    rename: require("gulp-rename"),
+    svgstore: require("gulp-svgstore"),
+    svgmin: require('gulp-svgmin')
+  }
 
   static paths = {
     fonts: 'source/fonts',
@@ -25,10 +26,16 @@ class TM {
   };
 
   static names = {
-    extPng: `.png`,
-    extJpg: `.jpg`,
-    extSvg: `.svg`,
-    extWebp: `.webp`
+    ext: {
+      png: `.png`,
+      jpg: `.jpg`,
+      svg: `.svg`,
+      webp: `.webp`
+    },
+    perix: {
+      icon: `icon`
+    },
+    spriteSvg: `sprite`
   };
 
   static tasks = {
@@ -63,25 +70,64 @@ class TM {
     },
 
     webp ()  {
-      const webpGlob = `${TM.paths.img}/**/*${TM.names.extWebp}`;
+      const webpGlob = `${TM.paths.img}/**/*${TM.names.ext.webp}`;
       const imgGlob =
-        `${TM.paths.img}/**/*{${TM.names.extJpg},${TM.names.extPng}}`;
+        `${TM.paths.img}/**/*{${TM.names.ext.jpg},${TM.names.ext.png}}`;
 
-      return TM.pkgs.del(webpGlob)
-        .then(
-        () => {
-          TM.pkgs.gulp.src(imgGlob)
-            .pipe(TM.pkgs.webp())
-            .pipe(TM.pkgs.gulp.dest(TM.paths.img))
+      const createWebpImages = () => {
+        TM.pkgs.gulp.src(imgGlob)
+          .pipe(TM.pkgs.webp())
+          .pipe(TM.pkgs.gulp.dest(TM.paths.img))
+      };
+
+      return TM.pkgs.del(webpGlob).then(createWebpImages);
+    },
+
+    spriteSvg () {
+      const svgGlob =
+        `${TM.paths.img}/**/${TM.names.perix.icon}-*${TM.names.ext.svg}`;
+      const newSpriteName = `${TM.names.spriteSvg}${TM.names.ext.svg}`;
+
+      const svgMinPlugins = [
+        {
+          removeViewBox: false
+        },
+        {
+          removeStyleElement: true
+        },
+        {
+          removeScriptElement: true
+        },
+        {
+          removeAttrs: {
+            preserveCurrentColor: true,
+            attrs: `(fill|stroke|style)`
+          }
         }
-      );
 
+      ];
+
+      const createSpriteSvg = () => {
+        TM.pkgs.gulp.src(svgGlob)
+          .pipe(TM.pkgs.svgmin({
+            plugins: svgMinPlugins
+          }))
+          .pipe(TM.pkgs.svgstore())
+          .pipe(TM.pkgs.rename(newSpriteName))
+          .pipe(TM.pkgs.gulp.dest(TM.paths.img));
+      };
+
+      return TM.pkgs.del(`${TM.paths.img}/${newSpriteName}`).then(
+        createSpriteSvg
+      )
     }
   }
 }
 
+//(( EXPORTS ))
 exports.styles = TM.tasks.styles;
 exports.webp = TM.tasks.webp;
+exports.spriteSvg = TM.tasks.spriteSvg;
 exports.default = TM.pkgs.gulp.series(
   TM.tasks.styles,
   TM.tasks.server,
