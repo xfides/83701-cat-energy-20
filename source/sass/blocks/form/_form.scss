@@ -133,11 +133,11 @@
   fill: $colorFont--dark;
 
   .form__input:active ~ .form__wrapIcon &,
-  .form__input:focus ~ .form__wrapIcon &{
+  .form__input:focus ~ .form__wrapIcon & {
     fill: $colorBackground--dark;
   }
 
-  .form__input--error ~ .form__wrapIcon &{
+  .form__input--error ~ .form__wrapIcon & {
     fill: $colorDecor--error;
   }
 }

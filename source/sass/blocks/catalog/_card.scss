@@ -249,15 +249,15 @@
   }
 
   .card--more {
+    align-self: flex-end;
     padding-bottom: 37px;
+
     background-color: $colorBackground--mostLight;
     border: 2px solid $colorDecor--moreLight;
-    align-self: flex-end;
 
     .card__wrapImg {
       width: 60px;
       height: 60px;
-
       margin-top: 52px;
     }
 
