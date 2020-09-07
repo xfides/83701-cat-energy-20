@@ -278,10 +278,10 @@
       margin-left: auto;
 
       line-height: calc(18 / 16);
+    }
 
-      tr {
-        border: none;
-      }
+    tr {
+      border: none;
     }
   }
 }
@@ -308,11 +308,9 @@
       margin-top: 56px;
     }
 
-    .card__spec {
-      td {
-        padding-right: 0;
-        padding-left: 0;
-      }
+    td {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }

@@ -1,6 +1,6 @@
 // TM = TaskManager
-class TM {
-  static pkgs = {
+const TM = {
+  pkgs: {
     gulp: require("gulp"),
     plumber: require("gulp-plumber"),
     sourcemap: require("gulp-sourcemaps"),
@@ -13,19 +13,19 @@ class TM {
     rename: require("gulp-rename"),
     svgstore: require("gulp-svgstore"),
     svgmin: require('gulp-svgmin')
-  }
+  },
 
-  static paths = {
+  paths: {
+    src: `source`,
     fonts: 'source/fonts',
     js: 'source/js',
     img: 'source/img',
     sass: 'source/sass',
     css: 'source/css',
     build: 'build',
+  },
 
-  };
-
-  static names = {
+  names: {
     ext: {
       png: `.png`,
       jpg: `.jpg`,
@@ -35,12 +35,13 @@ class TM {
     perix: {
       icon: `icon`
     },
-    spriteSvg: `sprite`
-  };
+    spriteSvg: `sprite`,
+    resultStyle: `style.scss`
+  },
 
-  static tasks = {
+  tasks: {
     styles ()  {
-      return TM.pkgs.gulp.src("source/sass/style.scss")
+      return TM.pkgs.gulp.src(`${TM.paths.sass}/${TM.names.resultStyle}`)
         .pipe(TM.pkgs.plumber())
         .pipe(TM.pkgs.sourcemap.init())
         .pipe(TM.pkgs.sass())
@@ -48,14 +49,14 @@ class TM {
           TM.pkgs.autoprefixer()
         ]))
         .pipe(TM.pkgs.sourcemap.write("."))
-        .pipe(TM.pkgs.gulp.dest("source/css"))
+        .pipe(TM.pkgs.gulp.dest(TM.paths.css))
         .pipe(TM.pkgs.sync.stream());
     },
 
     server (done) {
       TM.pkgs.sync.init({
         server: {
-          baseDir: 'source'
+          baseDir: TM.paths.src
         },
         cors: true,
         notify: false,
