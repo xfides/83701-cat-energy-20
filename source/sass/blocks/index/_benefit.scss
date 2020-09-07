@@ -37,6 +37,8 @@
   width: 100%;
   height: 100%;
 
+  fill: $colorFont--mostDark;
+
   .benefit--slim & {
     height: 75%;
 
@@ -123,6 +125,8 @@
 
 .benefit__linkImg {
   @include centerImage;
+
+  fill: $colorFont--mostDark;
 }
 
 @media (min-width: $widthTablet) {

@@ -122,6 +122,17 @@
   right: 10px;
 
   display: block;
+
+  fill: $colorFont--dark;
+
+  .form__input:active ~ &,
+  .form__input:focus ~ & {
+    fill: $colorBackground--dark;
+  }
+
+  .form__input--error ~ & {
+    fill: $colorDecor--error;
+  }
 }
 
 .form__icon {

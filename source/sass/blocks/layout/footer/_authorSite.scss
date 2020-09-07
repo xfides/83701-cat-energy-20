@@ -29,6 +29,12 @@
   @include centerImage;
 
   width: 100%;
+
+  fill: $colorFont--leastDark;
+
+  .authorSite:hover & {
+    fill: $colorBackground--dark;
+  }
 }
 
 @media (min-width: $widthTablet) {
