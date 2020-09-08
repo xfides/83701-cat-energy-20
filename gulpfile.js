@@ -197,7 +197,8 @@ const TM = {
       },
 
       imgs(){
-        const imgGlob = `${TM.paths.img}/**/*`;
+        const imgGlob =
+          `${TM.paths.img}/**/*${TM.names.ext.jpg},${TM.names.ext.png},${TM.names.ext.svg}`;
 
         return TM.pkgs.gulp.src(imgGlob, {base: TM.paths.src})
           .pipe(TM.pkgs.imagemin([
@@ -228,7 +229,7 @@ exports.build = TM.pkgs.gulp.series(
   // TM.pkgs.gulp.parallel(
     TM.tasks.build.html,
     TM.tasks.build.styles,
-    // TM.tasks.build.imgs,
+    TM.tasks.build.imgs,
     TM.tasks.build.js,
     TM.tasks.build.fonts
   // ),
