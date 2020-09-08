@@ -159,7 +159,8 @@ const TM = {
           .pipe(TM.pkgs.replace(TM.names.scriptSrcEnd, TM.names.srciptSrcEndMin))
           .pipe(TM.pkgs.htmlmin({
             collapseWhitespace: true,
-            removeComments: true
+            removeComments: true,
+            conservativeCollapse: true
           }))
           .pipe(TM.pkgs.gulp.dest(TM.paths.build))
       },
