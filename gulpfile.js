@@ -225,12 +225,12 @@ exports.default = TM.pkgs.gulp.series(
 
 exports.build = TM.pkgs.gulp.series(
   TM.tasks.build.cleanDir,
-  TM.pkgs.gulp.parallel(
+  // TM.pkgs.gulp.parallel(
     TM.tasks.build.html,
     TM.tasks.build.styles,
     TM.tasks.build.imgs,
     TM.tasks.build.js,
     TM.tasks.build.fonts
-  ),
+  // ),
   // TM.tasks.server.bind(this, TM.paths.build)
 );
