@@ -228,7 +228,7 @@ exports.build = TM.pkgs.gulp.series(
   // TM.pkgs.gulp.parallel(
     TM.tasks.build.html,
     TM.tasks.build.styles,
-    TM.tasks.build.imgs,
+    // TM.tasks.build.imgs,
     TM.tasks.build.js,
     TM.tasks.build.fonts
   // ),
