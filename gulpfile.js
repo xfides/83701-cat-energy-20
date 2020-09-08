@@ -198,7 +198,7 @@ const TM = {
 
       imgs(){
         const imgGlob =
-          `${TM.paths.img}/**/*${TM.names.ext.jpg},${TM.names.ext.png},${TM.names.ext.svg}`;
+          `${TM.paths.img}/**/*{${TM.names.ext.jpg},${TM.names.ext.png},${TM.names.ext.svg}}`;
 
         return TM.pkgs.gulp.src(imgGlob, {base: TM.paths.src})
           .pipe(TM.pkgs.imagemin([
