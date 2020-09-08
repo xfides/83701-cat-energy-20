@@ -56,30 +56,6 @@
    */
   class Slider {
 
-    static classNames = {
-      SLIDER: 'slider',
-      SLIDE: 'slider__slide',
-      BTN_PREV: 'slider__btn--prevJS',
-      BTN_NEXT: 'slider__btn--nextJS',
-      BAR_OUTER: 'slider__bar',
-      BAR_INNER: 'slider__roll'
-    };
-
-    static config = {
-      THROTTLE_TIME_RELOAD: 500,
-      THROTTLE_TIME_DRAG: 33,
-      SEPARATOR_POS_MAX: 100,
-      SEPARATOR_POS_MIN: 0,
-      mobile: {
-        SEPARATOR_START_POS: 100,
-        TYPE_VIEW: 'mobile'
-      },
-      desktop: {
-        SEPARATOR_START_POS: 50,
-        TYPE_VIEW: 'desktop'
-      }
-    };
-
     //(( start slider ))
     constructor() {
       const domSlider = document.querySelector(`.${Slider.classNames.SLIDER}`);
@@ -330,18 +306,32 @@
     }
   }
 
+  Slider.classNames = {
+    SLIDER: 'slider',
+    SLIDE: 'slider__slide',
+    BTN_PREV: 'slider__btn--prevJS',
+    BTN_NEXT: 'slider__btn--nextJS',
+    BAR_OUTER: 'slider__bar',
+    BAR_INNER: 'slider__roll'
+  };
+
+  Slider.config = {
+    THROTTLE_TIME_RELOAD: 500,
+    THROTTLE_TIME_DRAG: 33,
+    SEPARATOR_POS_MAX: 100,
+    SEPARATOR_POS_MIN: 0,
+    mobile: {
+      SEPARATOR_START_POS: 100,
+      TYPE_VIEW: 'mobile'
+    },
+    desktop: {
+      SEPARATOR_START_POS: 50,
+      TYPE_VIEW: 'desktop'
+    }
+  };
+
+
   class Nav {
-
-    static classNames = {
-      NAV: 'header__wrapNav',
-      NAV_CLOSED: 'header__wrapNav--closedJS',
-      SPIN_BTN: 'hamburger',
-      SPIN_BTN_CLOSED_NAV: 'hamburger--pressedJS'
-    };
-
-    static config = {
-      THROTTLE_TIME: 500
-    };
 
     constructor() {
       this._domNav = document.querySelector(`.${Nav.classNames.NAV}`);
@@ -381,68 +371,18 @@
     }
   }
 
-  class Map {
+  Nav.classNames = {
+    NAV: 'header__wrapNav',
+    NAV_CLOSED: 'header__wrapNav--closedJS',
+    SPIN_BTN: 'hamburger',
+    SPIN_BTN_CLOSED_NAV: 'hamburger--pressedJS'
+  };
 
-    static config = {
-      ID: 'map',
-      SRC_YANDEX_MAP_API: 'https://api-maps.yandex.ru/2.1/?lang=ru_RU',
-      THROTTLE_TIME_RELOAD: 500,
-      mobile: {
-        TYPE_VIEW: 'mobile',
-        CENTER_COORDS: [59.93857427, 30.32311762],
-        ZOOM: 15,
-        ZOOM_COORDS: {
-          top: 20,
-          left: 20
-        },
-        placeMark: {
-          COORDS: [59.93852105, 30.32322291],
-          icon: {
-            LAYOUT: 'default#image',
-            IMAGE_HREF: 'img/map-pin.png',
-            IMAGE_SIZE: [57, 53],
-            IMAGE_OFFSET: [-28, -53]
-          }
-        }
-      },
-      tablet: {
-        TYPE_VIEW: 'tablet',
-        MAX_VIEW_WIDTH: 1440,
-        CENTER_COORDS: [59.93857427, 30.32311762],
-        ZOOM: 15,
-        ZOOM_COORDS: {
-          top: 20,
-          left: 20
-        },
-        placeMark: {
-          COORDS: [59.93852105, 30.32322291],
-          icon: {
-            LAYOUT: 'default#image',
-            IMAGE_HREF: 'img/map-pin.png',
-            IMAGE_SIZE: [113, 106],
-            IMAGE_OFFSET: [-52, -106]
-          }
-        }
-      },
-      desktop: {
-        TYPE_VIEW: 'desktop',
-        CENTER_COORDS: [59.93836854, 30.31903718],
-        ZOOM: 16,
-        ZOOM_COORDS: {
-          top: 20,
-          right: 20
-        },
-        placeMark: {
-          COORDS: [59.93852105, 30.32322291],
-          icon: {
-            LAYOUT: 'default#image',
-            IMAGE_HREF: 'img/map-pin.png',
-            IMAGE_SIZE: [113, 106],
-            IMAGE_OFFSET: [-52, -106]
-          }
-        }
-      }
-    };
+  Nav.config = {
+    THROTTLE_TIME: 500
+  };
+
+  class Map {
 
     constructor() {
       this._domMap = document.querySelector(`#${Map.config.ID}`);
@@ -555,6 +495,67 @@
     }
   }
 
+  Map.config = {
+    ID: 'map',
+    SRC_YANDEX_MAP_API: 'https://api-maps.yandex.ru/2.1/?lang=ru_RU',
+    THROTTLE_TIME_RELOAD: 500,
+    mobile: {
+      TYPE_VIEW: 'mobile',
+      CENTER_COORDS: [59.93857427, 30.32311762],
+      ZOOM: 15,
+      ZOOM_COORDS: {
+        top: 20,
+        left: 20
+      },
+      placeMark: {
+        COORDS: [59.93852105, 30.32322291],
+        icon: {
+          LAYOUT: 'default#image',
+          IMAGE_HREF: 'img/map-pin.png',
+          IMAGE_SIZE: [57, 53],
+          IMAGE_OFFSET: [-28, -53]
+        }
+      }
+    },
+    tablet: {
+      TYPE_VIEW: 'tablet',
+      MAX_VIEW_WIDTH: 1440,
+      CENTER_COORDS: [59.93857427, 30.32311762],
+      ZOOM: 15,
+      ZOOM_COORDS: {
+        top: 20,
+        left: 20
+      },
+      placeMark: {
+        COORDS: [59.93852105, 30.32322291],
+        icon: {
+          LAYOUT: 'default#image',
+          IMAGE_HREF: 'img/map-pin.png',
+          IMAGE_SIZE: [113, 106],
+          IMAGE_OFFSET: [-52, -106]
+        }
+      }
+    },
+    desktop: {
+      TYPE_VIEW: 'desktop',
+      CENTER_COORDS: [59.93836854, 30.31903718],
+      ZOOM: 16,
+      ZOOM_COORDS: {
+        top: 20,
+        right: 20
+      },
+      placeMark: {
+        COORDS: [59.93852105, 30.32322291],
+        icon: {
+          LAYOUT: 'default#image',
+          IMAGE_HREF: 'img/map-pin.png',
+          IMAGE_SIZE: [113, 106],
+          IMAGE_OFFSET: [-52, -106]
+        }
+      }
+    }
+  };
+
 
   //(( client code ))
   let slider = new Slider();
@@ -562,5 +563,5 @@
   let map = new Map();
   slider.init();
   nav.init();
-  // map.init();
+  map.init();
 }());
