@@ -30,6 +30,7 @@ const TM = {
     css: 'source/css',
     build: 'build',
     buildCss: 'build/css',
+    buildImg: 'build/img',
   },
 
   names: {
@@ -144,7 +145,7 @@ const TM = {
     },
 
     build: {
-      fonts () {
+      fonts() {
         const fontsGlob =
           `${TM.paths.fonts}/**/*{${TM.names.ext.woff},${TM.names.ext.woff2}}`;
 
@@ -163,7 +164,7 @@ const TM = {
           .pipe(TM.pkgs.gulp.dest(TM.paths.build))
       },
 
-      cleanDir(){
+      cleanDir() {
         return TM.pkgs.del(TM.paths.build);
       },
 
@@ -196,7 +197,7 @@ const TM = {
           .pipe(TM.pkgs.gulp.dest(TM.paths.buildCss))
       },
 
-      imgs(){
+      imgs() {
         const imgGlob =
           `${TM.paths.img}/**/*{${TM.names.ext.jpg},${TM.names.ext.png},${TM.names.ext.svg}}`;
 
@@ -209,6 +210,15 @@ const TM = {
             })
           ]))
           .pipe(TM.pkgs.gulp.dest(TM.paths.build));
+      },
+
+      webp() {
+        const imgGlob =
+          `${TM.paths.img}/**/*{${TM.names.ext.jpg},${TM.names.ext.png}}`;
+
+        return TM.pkgs.gulp.src(imgGlob)
+          .pipe(TM.pkgs.webp())
+          .pipe(TM.pkgs.gulp.dest(TM.paths.buildImg))
       }
     }
   }
@@ -226,12 +236,12 @@ exports.default = TM.pkgs.gulp.series(
 
 exports.build = TM.pkgs.gulp.series(
   TM.tasks.build.cleanDir,
-  // TM.pkgs.gulp.parallel(
+  TM.pkgs.gulp.parallel(
     TM.tasks.build.html,
     TM.tasks.build.styles,
     TM.tasks.build.imgs,
     TM.tasks.build.js,
-    TM.tasks.build.fonts
-  // ),
-  // TM.tasks.server.bind(this, TM.paths.build)
+    TM.tasks.build.fonts,
+    TM.tasks.build.webp,
+  )
 );
