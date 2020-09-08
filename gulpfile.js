@@ -232,5 +232,5 @@ exports.build = TM.pkgs.gulp.series(
     TM.tasks.build.js,
     TM.tasks.build.fonts
   ),
-  TM.tasks.server.bind(this, TM.paths.build)
+  // TM.tasks.server.bind(this, TM.paths.build)
 );
