@@ -242,7 +242,7 @@ exports.build = TM.pkgs.gulp.series(
     TM.tasks.build.styles,
     TM.tasks.build.imgs,
     TM.tasks.build.js,
-    TM.tasks.build.fonts,
-    TM.tasks.build.webp,
-  )
+    TM.tasks.build.fonts
+  ),
+  TM.tasks.build.webp,
 );
