@@ -9,8 +9,19 @@
     document.documentElement.className =
       document.documentElement.className.replace(/\bnoJS\b/g, '');
   </script>
-  <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="./fonts/oswaldregular.woff2" as="font">
+  <link
+    rel="preload" href="./fonts/oswaldmedium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="preload"
+    href="./fonts/oswaldregular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  />
 </head>
 <body>
 
@@ -149,7 +160,7 @@
               checked
             />
 
-            <label for="petSlimming" class="form__label">
+            <label class="form__label" for="petSlimming">
               Похудение
             </label>
 
@@ -165,7 +176,7 @@
               value="petPumping"
             />
 
-            <label for="petPumping" class="form__label">
+            <label class="form__label" for="petPumping">
               Набор массы
             </label>
 
@@ -181,7 +192,7 @@
               value="needAdvice"
             />
 
-            <label for="needAdvice" class="form__label">
+            <label class="form__label" for="needAdvice">
               Не знаю (нужен ваш совет)
             </label>
 
@@ -283,7 +294,7 @@
               checked
             />
 
-            <label for="sweetener" class="form__label">
+            <label class="form__label" for="sweetener">
               Сахарозаменитель
             </label>
 
@@ -298,7 +309,7 @@
               name="water"
             />
 
-            <label for="water" class="form__label">
+            <label class="form__label" for="water">
               Питьевая вода
             </label>
 
@@ -313,7 +324,7 @@
               name="milk"
             />
 
-            <label for="milk" class="form__label">
+            <label class="form__label" for="milk">
               Молоко
             </label>
 
@@ -328,7 +339,7 @@
               name="vitamins"
             />
 
-            <label for="vitamins" class="form__label">
+            <label class="form__label" for="vitamins">
               Витамины
             </label>
 
