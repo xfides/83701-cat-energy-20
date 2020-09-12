@@ -1,19 +1,19 @@
 // TM = TaskManager
 const TM = {
   pkgs: {
-    gulp: require("gulp"),
-    plumber: require("gulp-plumber"),
-    sourcemap: require("gulp-sourcemaps"),
-    sass: require("gulp-sass"),
-    postcss: require("gulp-postcss"),
-    autoprefixer: require("autoprefixer"),
-    sync: require("browser-sync").create(),
+    gulp: require('gulp'),
+    plumber: require('gulp-plumber'),
+    sourcemap: require('gulp-sourcemaps'),
+    sass: require('gulp-sass'),
+    postcss: require('gulp-postcss'),
+    autoprefixer: require('autoprefixer'),
+    sync: require('browser-sync').create(),
     webp: require('gulp-webp'),
-    del: require("del"),
-    rename: require("gulp-rename"),
-    svgstore: require("gulp-svgstore"),
+    del: require('del'),
+    rename: require('gulp-rename'),
+    svgstore: require('gulp-svgstore'),
     svgmin: require('gulp-svgmin'),
-    htmlmin: require("gulp-htmlmin"),
+    htmlmin: require('gulp-htmlmin'),
     replace: require('gulp-replace'),
     uglify: require('gulp-uglify'),
     babel: require('gulp-babel'),
@@ -22,7 +22,7 @@ const TM = {
   },
 
   paths: {
-    src: `source`,
+    src: 'source',
     fonts: 'source/fonts',
     js: 'source/js',
     img: 'source/img',
@@ -35,27 +35,27 @@ const TM = {
 
   names: {
     ext: {
-      png: `.png`,
-      jpg: `.jpg`,
-      svg: `.svg`,
-      webp: `.webp`,
-      html: `.html`,
-      woff: `.woff`,
-      woff2: `.woff2`,
-      js: `.js`,
-      jsMin: `.min.js`,
-      cssMin: `.min.css`,
-      scss: `.scss`
+      png: '.png',
+      jpg: '.jpg',
+      svg: '.svg',
+      webp: '.webp',
+      html: '.html',
+      woff: '.woff',
+      woff2: '.woff2',
+      js: '.js',
+      jsMin: '.min.js',
+      cssMin: '.min.css',
+      scss: '.scss'
     },
     perix: {
-      icon: `icon`
+      icon: 'icon'
     },
-    spriteSvg: `sprite`,
-    resultStyle: `style.scss`,
-    linkHrefEnd: `.css"`,
-    scriptSrcEnd: `.js"`,
-    linkHrefEndMin: `.min.css"`,
-    srciptSrcEndMin: `.min.js"`
+    spriteSvg: 'sprite',
+    resultStyle: 'style.scss',
+    linkHrefEnd: '.css"',
+    scriptSrcEnd: '.js"',
+    linkHrefEndMin: '.min.css"',
+    srciptSrcEndMin: '.min.js"'
   },
 
   tasks: {
@@ -67,7 +67,7 @@ const TM = {
         .pipe(TM.pkgs.postcss([
           TM.pkgs.autoprefixer()
         ]))
-        .pipe(TM.pkgs.sourcemap.write("."))
+        .pipe(TM.pkgs.sourcemap.write('.'))
         .pipe(TM.pkgs.gulp.dest(TM.paths.css))
         .pipe(TM.pkgs.sync.stream());
     },
@@ -89,7 +89,7 @@ const TM = {
         `${TM.paths.sass}/**/*${TM.names.ext.scss}`,
         TM.pkgs.gulp.series(TM.tasks.styles)
       );
-      TM.pkgs.gulp.watch("source/*.html").on("change", TM.pkgs.sync.reload);
+      TM.pkgs.gulp.watch('source/*.html').on('change', TM.pkgs.sync.reload);
     },
 
     webp ()  {
@@ -124,7 +124,7 @@ const TM = {
         {
           removeAttrs: {
             preserveCurrentColor: true,
-            attrs: `(fill|stroke|style)`
+            attrs: '(fill|stroke|style)'
           }
         }
       ];

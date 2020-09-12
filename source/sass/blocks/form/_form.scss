@@ -62,7 +62,6 @@
   padding-left: 14px;
 
   font-size: 16px;
-  line-height: calc(42 / 16);
   font-family: $fontMajor;
   color: $colorFont--lessDark;
   text-transform: uppercase;
@@ -76,7 +75,7 @@
   }
 
   &--withIcon {
-    padding-right: 34px;
+    padding-right: 40px;
     padding-left: 10px;
   }
 
@@ -84,6 +83,7 @@
     display: block;
     width: 100%;
     min-height: 150px;
+    padding-top: 16px;
     padding-right: 5px;
     padding-left: 13px;
 
@@ -216,10 +216,13 @@
   background-size: 100% 100%;
 }
 
-.form__radio + .form__label:focus,
-.form__radio + .form__label:active,
-.form__checkbox + .form__label:focus,
-.form__checkbox + .form__label:active {
+.form__label:focus,
+.form__label:active {
+  opacity: 0.3;
+}
+
+.form__radio:focus + .form__label::before,
+.form__checkbox:focus + .form__label::before {
   opacity: 0.3;
 }
 
@@ -312,12 +315,15 @@
     padding-left: 20px;
 
     font-size: 20px;
-    line-height: calc(52 / 20);
 
     &--textArea {
       min-height: 174px;
-      padding-top: 0;
+      padding-top: 14px;
       padding-left: 17px;
+    }
+
+    &--withIcon {
+      padding-right: 60px;
     }
   }
 
@@ -421,6 +427,10 @@
         display: inline-flex;
         width: calc(50% - 40px);
         padding-bottom: 0;
+
+        &:nth-of-type(2n) {
+          margin-left: 80px;
+        }
       }
     }
 

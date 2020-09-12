@@ -52,6 +52,7 @@
 
 .card__spec {
   width: 100%;
+  margin-bottom: 14px;
 
   border-collapse: collapse;
   border-spacing: 0;
@@ -228,6 +229,8 @@
   }
 
   .card__spec {
+    margin-bottom: 0;
+
     font-size: 16px;
     line-height: calc(16 / 16);
 

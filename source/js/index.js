@@ -452,7 +452,6 @@
     _createAndLoadAPIScript() {
       const script = document.createElement("script");
       script.src = Map.config.SRC_YANDEX_MAP_API;
-      script.type = "text/javascript";
       script.addEventListener('load', () => {
         ymaps.ready(this._renderMap);
       });

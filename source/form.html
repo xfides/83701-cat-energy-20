@@ -147,7 +147,8 @@
 
         </fieldset><!-- /. .form__group-->
 
-        <fieldset class="form__group form__group--withoutTitle form__group--goal">
+        <fieldset
+          class="form__group form__group--withoutTitle form__group--goal">
 
           <div class="form__line">
 
@@ -221,7 +222,7 @@
               required
             />
 
-            <span class="form__wrapIcon" aria-label="иконка почты">
+            <span class="form__wrapIcon">
               <svg
                 class="form__icon"
                 width="20"
@@ -249,7 +250,7 @@
               required
             />
 
-            <span class="form__wrapIcon" aria-label="иконка телефона">
+            <span class="form__wrapIcon">
               <svg
                 class="form__icon"
                 width="20"
@@ -270,8 +271,16 @@
             <span>Комментарий</span>
           </h2><!-- /.blockTitle -->
 
+          <label
+            class="visuallyHidden"
+            for="comment"
+          >
+            Расскажите о коте
+          </label>
+
           <textarea
             class="form__input form__input--textArea"
+            id="comment"
             name="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
           <!-- /.form__textArea -->
@@ -438,10 +447,7 @@
       <ul class="social footer__social">
 
         <li class="social__item">
-          <a
-            class="social__link" href="#"
-            aria-label="Перейти на сайт vk.com"
-          >
+          <a class="social__link" href="#">
             <em class="visuallyHidden">
               Перейти на сайт vk.com
             </em>
@@ -457,10 +463,7 @@
         </li><!-- /.social__item -->
 
         <li class="social__item">
-          <a
-            class="social__link" href="#"
-            aria-label="Перейти на сайт instagram.com"
-          >
+          <a class="social__link" href="#">
             <em class="visuallyHidden">
               Перейти на сайт instagram.com
             </em>
@@ -476,10 +479,7 @@
         </li><!-- /.social__item -->
 
         <li class="social__item">
-          <a
-            class="social__link" href="#"
-            aria-label="Перейти на сайт facebook.com"
-          >
+          <a class="social__link" href="#">
             <em class="visuallyHidden">
               Перейти на сайт facebook.com
             </em>
@@ -499,7 +499,6 @@
       <a
         class="authorSite footer__authorSite"
         href="https://htmlacademy.ru/intensive/adaptive"
-        aria-label="сайт HTML Academy"
       >
         <strong class="authorSite__text">HTML Academy</strong>
         <span class="authorSite__wrapImg">
