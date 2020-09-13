@@ -191,6 +191,7 @@ const TM = {
           .pipe(TM.pkgs.postcss([
             TM.pkgs.autoprefixer()
           ]))
+          .pipe(TM.pkgs.gulp.dest(TM.paths.buildCss))
           .pipe(TM.pkgs.csso())
           .pipe(TM.pkgs.rename((path) => {
             path.extname = TM.names.ext.cssMin;

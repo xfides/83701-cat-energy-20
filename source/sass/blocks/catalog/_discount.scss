@@ -13,6 +13,8 @@
   background-position: center;
   background-size: cover;
 
+  background-color: $colorBackground--moreDark;
+
   @media (min-resolution: $hiRes--dpi), (min-resolution: $hiRes--dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }

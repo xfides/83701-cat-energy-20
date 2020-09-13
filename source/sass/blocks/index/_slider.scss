@@ -83,8 +83,7 @@
   user-select: none;
 
   &:hover,
-  &:active,
-  &:focus {
+  &:active {
     border: none;
     outline: none;
   }
@@ -219,6 +218,16 @@
 
       background-color: $colorBackground--dark;
       border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0 2px 4px $colorDecor--dark;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: 0 3px 5px $colorDecor--dark;
+      border-color: $colorBackground--moreDark;
     }
   }
 }

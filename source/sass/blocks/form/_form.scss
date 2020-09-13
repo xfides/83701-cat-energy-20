@@ -109,7 +109,8 @@
     box-shadow: 0 0 0 1px $colorDecor--mostDark;
   }
 
-  &--error {
+  &--error,
+  &:focus:invalid {
     border: 1px solid $colorDecor--error;
     box-shadow: 0 0 0 1px $colorDecor--error;
   }
