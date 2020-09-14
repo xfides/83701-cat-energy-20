@@ -8,12 +8,11 @@
   text-align: center;
   color: $colorFont--mostLight;
 
+  background-color: $colorBackground--moreDark;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  background-color: $colorBackground--moreDark;
 
   @media (min-resolution: $hiRes--dpi), (min-resolution: $hiRes--dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");

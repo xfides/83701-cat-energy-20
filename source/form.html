@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" class="noJS">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
   <title>Заказать</title>
-  <script>
-    document.documentElement.className =
-      document.documentElement.className.replace(/\bnoJS\b/g, '');
-  </script>
   <link
     rel="preload" href="./fonts/oswaldmedium.woff2"
     as="font"
@@ -44,7 +40,7 @@
       </a><!-- /.header__logoWrap -->
 
       <button
-        class="hamburger header__controlNav"
+        class="hamburger header__controlNav hamburger--hiddenWithNoJS"
         type="button"
         aria-controls="nav"
       >
@@ -203,7 +199,7 @@
 
         <fieldset class="form__group form__group--ownerContacts">
 
-          <h2 class="blockTitle blockTitle--sub blockTitle--stripped">
+          <h2 class="form__subTitle blockTitle blockTitle--sub blockTitle--stripped">
             <span>Контактные данные (владельца кота)</span>
           </h2><!-- /.blockTitle -->
 
@@ -267,7 +263,7 @@
 
         <fieldset class="form__group">
 
-          <h2 class="blockTitle blockTitle--sub">
+          <h2 class="form__subTitle blockTitle blockTitle--sub">
             <span>Комментарий</span>
           </h2><!-- /.blockTitle -->
 
@@ -289,7 +285,7 @@
 
         <fieldset class="form__group form__group--extra">
 
-          <h2 class="blockTitle blockTitle--sub">
+          <h2 class="form__subTitle form__subTitle--last blockTitle blockTitle--sub">
             <span>Дополнительно</span>
           </h2><!-- /.blockTitle -->
 

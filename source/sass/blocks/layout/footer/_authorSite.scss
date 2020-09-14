@@ -6,6 +6,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .authorSite__img {
+    fill: $colorBackground--dark;
+  }
 }
 
 .authorSite__text {
@@ -31,10 +35,6 @@
   width: 100%;
 
   fill: $colorFont--leastDark;
-
-  .authorSite:hover & {
-    fill: $colorBackground--dark;
-  }
 }
 
 @media (min-width: $widthTablet) {

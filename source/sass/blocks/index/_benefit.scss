@@ -8,6 +8,12 @@
   background-color: $colorBackground--moreLight;
 
   grid-template-columns: 67px 1fr;
+
+  &--slim .benefit__img {
+    height: 75%;
+
+    transform: translate(-50%, -57%);
+  }
 }
 
 .benefit__wrapImg {
@@ -38,12 +44,6 @@
   height: 100%;
 
   fill: $colorFont--mostDark;
-
-  .benefit--slim & {
-    height: 75%;
-
-    transform: translate(-50%, -57%);
-  }
 }
 
 .benefit__title {

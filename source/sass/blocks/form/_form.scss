@@ -29,6 +29,10 @@
   }
 }
 
+.form__subTitle--last {
+  margin-bottom: 8px;
+}
+
 .form__line {
   position: relative;
 
@@ -62,9 +66,9 @@
   padding-left: 14px;
 
   font-size: 16px;
+  line-height: normal;
   font-family: $fontMajor;
   color: $colorFont--lessDark;
-  line-height: normal;
   text-transform: uppercase;
 
   border: 1px solid $colorDecor--light;
@@ -109,10 +113,20 @@
     box-shadow: 0 0 0 1px $colorDecor--mostDark;
   }
 
+  &:active ~ .form__wrapIcon,
+  &:focus ~ .form__wrapIcon {
+    fill: $colorBackground--dark;
+  }
+
   &--error,
   &:focus:invalid {
     border: 1px solid $colorDecor--error;
     box-shadow: 0 0 0 1px $colorDecor--error;
+  }
+
+  &--error ~ .form__wrapIcon,
+  &:focus:invalid ~ .form__wrapIcon {
+    fill: $colorDecor--error;
   }
 }
 
@@ -126,15 +140,6 @@
   display: block;
 
   fill: $colorFont--dark;
-
-  .form__input:active ~ &,
-  .form__input:focus ~ & {
-    fill: $colorBackground--dark;
-  }
-
-  .form__input--error ~ & {
-    fill: $colorDecor--error;
-  }
 }
 
 .form__icon {
@@ -301,6 +306,18 @@
     }
   }
 
+  .form__subTitle {
+    &:not(&--last) {
+      margin-bottom: 21px;
+    }
+
+    span {
+      left: -39px;
+
+      padding-right: 42px;
+    }
+  }
+
   .form__line {
     padding-bottom: 20px;
   }
@@ -320,7 +337,7 @@
 
     &--textArea {
       min-height: 174px;
-      padding-top: 14px;
+      padding-top: 10px;
       padding-left: 17px;
     }
 
@@ -455,6 +472,14 @@
 
     &:last-of-type {
       padding-bottom: 37px;
+    }
+  }
+
+  .form__subTitle {
+    padding-top: 68px;
+
+    &::before {
+      top: 90px;
     }
   }
 

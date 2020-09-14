@@ -22,6 +22,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover .social__img {
+    fill: $colorBackground--dark;
+  }
 }
 
 .social__img {
@@ -30,10 +34,6 @@
   height: 100%;
 
   fill: $colorFont--leastDark;
-
-  .social__link:hover & {
-    fill: $colorBackground--dark;
-  }
 }
 
 @media (min-width: $widthTablet) {

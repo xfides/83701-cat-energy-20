@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru" class="noJS">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/style.css" rel="stylesheet">
   <title>Каталог</title>
-  <script>
-    document.documentElement.className =
-      document.documentElement.className.replace(/\bnoJS\b/g, '');
-  </script>
   <link
     rel="preload" href="./fonts/oswaldmedium.woff2"
     as="font"
@@ -44,7 +40,7 @@
       </a><!-- /.header__logoWrap -->
 
       <button
-        class="hamburger header__controlNav"
+        class="hamburger header__controlNav hamburger--hiddenWithNoJS"
         type="button"
         aria-controls="nav"
       >
@@ -622,7 +618,7 @@
 
     <section class="more container">
 
-      <h2 class="blockTitle blockTitle--sub">
+      <h2 class="blockTitle blockTitle--sub blockTitle--withOffset">
         <span>Дополнительные товары</span>
       </h2><!-- /.blockTitle -->
 

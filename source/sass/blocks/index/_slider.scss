@@ -226,8 +226,8 @@
 
     &:focus,
     &:active {
-      box-shadow: 0 3px 5px $colorDecor--dark;
       border-color: $colorBackground--moreDark;
+      box-shadow: 0 3px 5px $colorDecor--dark;
     }
   }
 }
