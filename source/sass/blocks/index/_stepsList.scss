@@ -1,39 +1,74 @@
 .stepsList {
   @include pureUl;
-  //display: grid;
 
   padding-top: 4px;
-
-  //grid-template-columns: 1fr;
 }
 
 .stepsList__item {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-}
+  position: relative;
+  padding-left: 60px;
 
-.stepsList__itemWrapImg {
-  @include wrapCenteredImage(60px, 60px);
+  &::after {
+    content: "";
+    display: block;
+    background-color: $colorBackground--dark;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    z-index: 9;
+    background-position: center;
+    background-size: 50px auto;
+  }
 
-  min-width: 60px;
+  &:nth-of-type(1):after {
+    background-image: url("../img/advantage-leaf@1x.png");
 
-  background-color: $colorBackground--dark;
-}
+    @media (min-resolution: $hiRes--dpi), (min-resolution: $hiRes--dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
 
-.stepsList__itemImg {
-  @include centerImage;
+  &:nth-of-type(2):after {
+    background-image: url("../img/advantage-powder@1x.png");
 
-  width: 100%;
+    @media (min-resolution: $hiRes--dpi), (min-resolution: $hiRes--dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
+
+  &:nth-of-type(3):after {
+    background-image: url("../img/advantage-dining@1x.png");
+
+    @media (min-resolution: $hiRes--dpi), (min-resolution: $hiRes--dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
+
+  &:nth-of-type(4):after {
+    background-image: url("../img/advantage-clock@1x.png");
+
+    @media (min-resolution: $hiRes--dpi), (min-resolution: $hiRes--dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
 }
 
 .stepsList__itemText {
   margin: 0;
   padding-left: 20px;
+  padding-bottom: 4px;
+  padding-top: 2px;
 
   font-size: 14px;
   line-height: calc(18 / 14);
   color: $colorFont--lessDark;
+  z-index: 10;
 }
 
 @media (min-width: $widthTablet) {
@@ -50,19 +85,14 @@
     grid-template-columns: repeat(auto-fill, 247px);
   }
 
-  .stepsList__itemWrapImg {
-    width: 80px;
-    min-width: 80px;
-    height: 80px;
-  }
-
   .stepsList__item {
     position: relative;
 
     flex-wrap: wrap;
     align-content: flex-start;
-    padding-top: 40px;
-    padding-bottom: 72px;
+    padding-top: 120px;
+    padding-bottom: 68px;
+    padding-left: 0;
 
     &::before {
       content: counter(stepListItemIndex);
@@ -85,10 +115,12 @@
     &:nth-of-type(1)::before {
       right: 18px;
     }
-  }
 
-  .stepsList__itemImg {
-    width: 60%;
+    &:after {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
   }
 
   .stepsList__itemText {
