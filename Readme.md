@@ -1,22 +1,15 @@
-# Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Кэт энерджи»
+Страницы проекта для просмотра: [Главная](https://xfides.github.io/83701-cat-energy-20/index.html), [Каталог продукции](https://xfides.github.io/83701-cat-energy-20/catalog.html), [Подбор программы](https://xfides.github.io/83701-cat-energy-20/form.html)
 
 * Студент: [Дмитрий Барабанов](https://htmlacademy.ru/profile/id83701).
 * Наставник: [Илья Сачев](https://htmlacademy.ru/profile/id11939).
 
 ---
 
-**Обратите внимание, что папка с вашими исходными файлами — `source/`.**
-
-Полезный файл:
-
-- [Contributing.md](Contributing.md) — руководство по внесению изменений.
-
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.gitattributes`, `.gitignore`, `.stylelintrc`, `.travis.yml`, `package-lock.json`, `package.json`._
-
----
-
 ### Памятка
+
+<details>
+<summary>Развернуть</summary>
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
@@ -48,13 +41,9 @@ git clone SSH-адрес_вашего_форка
 
 #### 4. Начинайте обучение!
 
+</details>
 ---
 
 <a href="https://htmlacademy.ru/intensive/adaptive"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png"></a>
 
 Репозиторий создан для обучения на профессиональном онлайн‑курсе «[HTML и CSS, уровень 2](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.com/htmlacademy-adaptive/83701-cat-energy-20.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-adaptive/83701-cat-energy-20
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/83701-cat-energy-20/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/83701-cat-energy-20?type=dev
